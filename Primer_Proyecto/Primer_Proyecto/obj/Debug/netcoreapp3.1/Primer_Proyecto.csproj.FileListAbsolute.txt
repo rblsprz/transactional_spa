@@ -22,3 +22,16 @@ C:\Users\ROBLES\OneDrive\Escritorio\Lenguajes Aplicaciones Comerciales\Primer Pr
 C:\Users\ROBLES\OneDrive\Escritorio\Lenguajes Aplicaciones Comerciales\Primer Proyecto\Primer_Proyecto\Primer_Proyecto\obj\Debug\netcoreapp3.1\Primer_Proyecto.RazorTargetAssemblyInfo.cs
 C:\Users\ROBLES\OneDrive\Escritorio\Lenguajes Aplicaciones Comerciales\Primer Proyecto\Primer_Proyecto\Primer_Proyecto\obj\Debug\netcoreapp3.1\Primer_Proyecto.dll
 C:\Users\ROBLES\OneDrive\Escritorio\Lenguajes Aplicaciones Comerciales\Primer Proyecto\Primer_Proyecto\Primer_Proyecto\obj\Debug\netcoreapp3.1\Primer_Proyecto.pdb
+C:\Users\ROBLES\OneDrive\Escritorio\Lenguajes Aplicaciones Comerciales\Primer Proyecto\Primer_Proyecto\Primer_Proyecto\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\ROBLES\OneDrive\Escritorio\Lenguajes Aplicaciones Comerciales\Primer Proyecto\Primer_Proyecto\Primer_Proyecto\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\ROBLES\OneDrive\Escritorio\Lenguajes Aplicaciones Comerciales\Primer Proyecto\Primer_Proyecto\Primer_Proyecto\bin\Debug\netcoreapp3.1\Primer_Proyecto.exe
+C:\Users\ROBLES\OneDrive\Escritorio\Lenguajes Aplicaciones Comerciales\Primer Proyecto\Primer_Proyecto\Primer_Proyecto\bin\Debug\netcoreapp3.1\Primer_Proyecto.deps.json
+C:\Users\ROBLES\OneDrive\Escritorio\Lenguajes Aplicaciones Comerciales\Primer Proyecto\Primer_Proyecto\Primer_Proyecto\bin\Debug\netcoreapp3.1\Primer_Proyecto.runtimeconfig.json
+C:\Users\ROBLES\OneDrive\Escritorio\Lenguajes Aplicaciones Comerciales\Primer Proyecto\Primer_Proyecto\Primer_Proyecto\bin\Debug\netcoreapp3.1\Primer_Proyecto.runtimeconfig.dev.json
+C:\Users\ROBLES\OneDrive\Escritorio\Lenguajes Aplicaciones Comerciales\Primer Proyecto\Primer_Proyecto\Primer_Proyecto\bin\Debug\netcoreapp3.1\Primer_Proyecto.dll
+C:\Users\ROBLES\OneDrive\Escritorio\Lenguajes Aplicaciones Comerciales\Primer Proyecto\Primer_Proyecto\Primer_Proyecto\bin\Debug\netcoreapp3.1\Primer_Proyecto.pdb
+C:\Users\ROBLES\OneDrive\Escritorio\Lenguajes Aplicaciones Comerciales\Primer Proyecto\Primer_Proyecto\Primer_Proyecto\bin\Debug\netcoreapp3.1\Primer_Proyecto.Views.dll
+C:\Users\ROBLES\OneDrive\Escritorio\Lenguajes Aplicaciones Comerciales\Primer Proyecto\Primer_Proyecto\Primer_Proyecto\bin\Debug\netcoreapp3.1\Primer_Proyecto.Views.pdb
+C:\Users\ROBLES\OneDrive\Escritorio\Lenguajes Aplicaciones Comerciales\Primer Proyecto\Primer_Proyecto\Primer_Proyecto\obj\Debug\netcoreapp3.1\Primer_Proyecto.Views.pdb
+C:\Users\ROBLES\OneDrive\Escritorio\Lenguajes Aplicaciones Comerciales\Primer Proyecto\Primer_Proyecto\Primer_Proyecto\obj\Debug\netcoreapp3.1\Primer_Proyecto.genruntimeconfig.cache
+C:\Users\ROBLES\OneDrive\Escritorio\Lenguajes Aplicaciones Comerciales\Primer Proyecto\Primer_Proyecto\Primer_Proyecto\obj\Debug\netcoreapp3.1\Primer_Proyecto.csproj.CopyComplete
