@@ -23,8 +23,6 @@
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
     <!-- MAIN CSS -->
-    <link rel="stylesheet" type="text/css" href="css/Style.css">
-    <link type="text/css" href="css/datatables.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/templatemo-style.css">
 
 </head>
@@ -56,50 +54,569 @@
                     <span class="icon icon-bar"></span>
                     <span class="icon icon-bar"></span>
                 </button>
-                <img id="ucrImage" src="" style="border: 0; float: left; margin-right: 15px" width="80" height="35" />
+
                 <!-- lOGO TEXT HERE -->
-
-
+                <a href="#" class="navbar-brand">UCR Business Computing</a>
             </div>
 
             <!-- MENU LINKS -->
-            <div id="navBar" class="collapse navbar-collapse">
+            <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-nav-first">
-                    <li class="smoothScroll">  </li>
-
-                    <button type="button" id="btnLog" class="btn" onclick="clearTextBoxStudent();">SIGN UP</button>
-
-                    <button type="button" id="btnSignLog" data-toggle="modal" data-target="#myModalSignLog" onclick="clearTextBoxSignLog();" class="btn">SIGN IN</button>
-
-                    <button type="button" id="btnProfessor" onclick="clearTextBoxProfessor();" class="btn">REGISTER PROFFESOR</button>
-
-                    <button type="button" id="btnCourse" onclick="clearTextBoxCourse();" class="btn">REGISTER COURSE</button>
-
-                    <button type="button" id="btnEnrollCourse" data-toggle="modal" data-target="#myModalEnrollCourse" class="btn" onclick="enrollCourse();">ENROLL IN A COURSE</button>
-
-                    <button type="button" id="btnEnrollCourseProfessor" data-toggle="modal" data-target="#myModalEnrollCourseProfessor" class="btn">ENROLL PROFESSOR IN A COURSE</button>
-
-                    <button type="button" id="btnNews" data-toggle="modal" data-target="#modalNews" class="btn" onclick="clearTextBoxNews();">ADD NEW</button>
-
-                    <button type="button" id="btnStudentCourses" class="btn" onclick="studentCourses();">STUDENT COURSES</button>
-
-                    <button type="button" id="btnProfessorCourses" class="btn" onclick="professorCourses();">PROFESSOR COURSES</button>
-
-                    <button type="button" id="btnNewsStudent" class="btn" onclick="newsStudent();">STUDENT NEWS</button>
-
-                    <button type="button" id="btnNewsProfessor" class="btn" onclick="newsProfessor();">PROFESSOR NEWS</button>
-
-                    <button type="button" id="btnReturnStudent" class="btn" onclick="returnStudent();">BACK TO STUDENT</button>
-
-                    <button type="button" id="btnReturnProfessor" class="btn" onclick="returnProfessor();">BACK TO PROFESSOR</button>
-
-                    <button type="button" id="btnLogOut" class="btn" onclick="logOut();">SIGN OFF</button>
-
+                    <li><a href="#top" class="smoothScroll">Home</a></li>
+                    <li><a href="#btnLog" class="smoothScroll">Sign Up</a></li>
+                    <li><a href="#btnSignLog" class="smoothScroll">Sign In</a></li>
+                    <li><a href="#btnProfessor" class="smoothScroll">Register Professor</a></li>
+                    <li><a href="#btnCourse" class="smoothScroll">Register Course</a></li>
+                    <li><a href="#btnEnrollCourse" class="smoothScroll">Enroll in a Course</a></li>
+                    <li><a href="#btnEnrollCourseProfessor" class="smoothScroll">Enroll Professor in a Course</a></li>
+                    <li><a href="#btnNews" class="smoothScroll">Add New</a></li>
+                    <li><a href="#btnStudentCourses" class="smoothScroll">Student Courses</a></li>
+                    <li><a href="#btnProfessorCourses" class="smoothScroll">Professor Courses</a></li>
+                    <li><a href="#btnNewsStudent" class="smoothScroll">Student News</a></li>
+                    <li><a href="#btnNewsProfessor" class="smoothScroll">Professor News</a></li>
+                    <li><a href="#btnReturnStudent" class="smoothScroll">Back to Student</a></li>
+                    <li><a href="#btnReturnProfessor" class="smoothScroll">Back to Professor</a></li>
+                    <li><a href="#contact" class="smoothScroll">Contact</a></li>
+                    <li><a href="#btnLogOut" class="smoothScroll">Sign Off</a></li>
                 </ul>
+
+                <!--<ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><i class="fa fa-phone"></i> +65 2244 1100</a></li>
+                </ul>-->
             </div>
 
         </div>
     </section>
+
+
+    <!-- HOME -->
+    <section id="home">
+        <div class="row">
+
+            <div class="owl-carousel owl-theme home-slider">
+                <div class="item item-first">
+                    <div class="caption">
+                        <div class="container">
+                            <div class="col-md-6 col-sm-12">
+                                <h1>Distance Learning Education Center</h1>
+                                <h3>Our online courses are designed to fit in your industry supporting all-round with latest technologies.</h3>
+                                <a href="#feature" class="section-btn btn btn-default smoothScroll">Discover more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item item-second">
+                    <div class="caption">
+                        <div class="container">
+                            <div class="col-md-6 col-sm-12">
+                                <h1>Start your journey with our practical courses</h1>
+                                <h3>Our online courses are built in partnership with technology leaders and are designed to meet industry demands.</h3>
+                                <a href="#courses" class="section-btn btn btn-default smoothScroll">Take a course</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item item-third">
+                    <div class="caption">
+                        <div class="container">
+                            <div class="col-md-6 col-sm-12">
+                                <h1>Efficient Learning Methods</h1>
+                                <h3>Nam eget sapien vel nibh euismod vulputate in vel nibh. Quisque eu ex eu urna venenatis sollicitudin ut at libero. Visit <a rel="nofollow" href="https://www.facebook.com/templatemo">templatemo</a> page.</h3>
+                                <a href="#contact" class="section-btn btn btn-default smoothScroll">Let's chat</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SIGN UP -->
+    <section id="btnLog">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6 col-sm-12">
+                    <form id="btnLog-form" role="form" action="" method="post">
+                        <div class="section-title">
+                            <h2>SIGN UP</h2>
+                        </div>
+
+                        <div class="col-md-12 col-sm-12">
+                            <!--<input type="text" class="form-control" placeholder="Enter full name" name="name" required="">-->
+                            <!--<input type="email" class="form-control" placeholder="Enter email address" name="email" required="">-->
+                            <!--<textarea class="form-control" rows="6" placeholder="Tell us about your message" name="message" required=""></textarea>-->
+                        </div>
+
+                        <div class="col-md-4 col-sm-12">
+                            <button type="submit" id="btnLog" class="btn" onclick="clearTextBoxStudent();">SIGN UP</button>
+                            <!--<input type="submit" class="form-control" name="send message" value="SIGN UP">-->
+                            <!--<input type="submit" id="btnLog" class="form-control" onclick="clearTextBoxStudent();" value="SIGN UP">-->
+                        </div>
+
+                    </form>
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                    <div class="contact-image">
+                        <img src="images/contact-image.jpg" class="img-responsive" alt="Smiling Two Girls">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SIGN IN -->
+    <section id="btnSignLog">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6 col-sm-12">
+                    <form id="btnSignLog-form" role="form" action="" method="post">
+                        <div class="section-title">
+                            <h2>SIGN IN</h2>
+                        </div>
+
+                        <div class="col-md-12 col-sm-12">
+                            <!--<input type="text" class="form-control" placeholder="Enter full name" name="name" required="">-->
+                            <!--<input type="email" class="form-control" placeholder="Enter email address" name="email" required="">-->
+                            <!--<textarea class="form-control" rows="6" placeholder="Tell us about your message" name="message" required=""></textarea>-->
+                        </div>
+
+                        <div class="col-md-4 col-sm-12">
+                            <!--<button type="submit" id="btnLog" class="btn" onclick="clearTextBoxStudent();">SIGN UP</button>-->
+                            <!--<input type="submit" class="form-control" name="send message" value="SIGN UP">-->
+                            <!--<input type="submit" id="btnLog" class="form-control" onclick="clearTextBoxStudent();" value="SIGN UP">-->
+                            <button type="button" id="btnSignLog" data-toggle="modal" data-target="#myModalSignLog" onclick="clearTextBoxSignLog();" class="btn">SIGN IN</button>
+                        </div>
+
+                    </form>
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                    <div class="contact-image">
+                        <img src="images/contact-image.jpg" class="img-responsive" alt="Smiling Two Girls">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--REGISTER PROFESSOR -->
+    <section id="btnProfessor">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6 col-sm-12">
+                    <form id="btnProfessor-form" role="form" action="" method="post">
+                        <div class="section-title">
+                            <h2>REGISTER PROFESSOR</h2>
+                        </div>
+
+                        <div class="col-md-12 col-sm-12">
+                            <!--<input type="text" class="form-control" placeholder="Enter full name" name="name" required="">-->
+                            <!--<input type="email" class="form-control" placeholder="Enter email address" name="email" required="">-->
+                            <!--<textarea class="form-control" rows="6" placeholder="Tell us about your message" name="message" required=""></textarea>-->
+                        </div>
+
+                        <div class="col-md-4 col-sm-12">
+                            <!--<button type="submit" id="btnLog" class="btn" onclick="clearTextBoxStudent();">SIGN UP</button>-->
+                            <!--<input type="submit" class="form-control" name="send message" value="SIGN UP">-->
+                            <!--<input type="submit" id="btnLog" class="form-control" onclick="clearTextBoxStudent();" value="SIGN UP">-->
+                            <button type="button" id="btnProfessor" onclick="clearTextBoxProfessor();" class="btn">REGISTER PROFESSOR</button>
+                        </div>
+
+                    </form>
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                    <div class="contact-image">
+                        <img src="images/contact-image.jpg" class="img-responsive" alt="Smiling Two Girls">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!--REGISTER COURSE -->
+    <section id="btnCourse">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6 col-sm-12">
+                    <form id="btnCourse-form" role="form" action="" method="post">
+                        <div class="section-title">
+                            <h2>REGISTER COURSE</h2>
+                        </div>
+
+                        <div class="col-md-12 col-sm-12">
+                            <!--<input type="text" class="form-control" placeholder="Enter full name" name="name" required="">-->
+                            <!--<input type="email" class="form-control" placeholder="Enter email address" name="email" required="">-->
+                            <!--<textarea class="form-control" rows="6" placeholder="Tell us about your message" name="message" required=""></textarea>-->
+                        </div>
+
+                        <div class="col-md-4 col-sm-12">
+                            <!--<button type="submit" id="btnLog" class="btn" onclick="clearTextBoxStudent();">SIGN UP</button>-->
+                            <!--<input type="submit" class="form-control" name="send message" value="SIGN UP">-->
+                            <!--<input type="submit" id="btnLog" class="form-control" onclick="clearTextBoxStudent();" value="SIGN UP">-->
+                            <button type="button" id="btnCourse" onclick="clearTextBoxCourse();" class="btn">REGISTER COURSE</button>
+                        </div>
+
+                    </form>
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                    <div class="contact-image">
+                        <img src="images/contact-image.jpg" class="img-responsive" alt="Smiling Two Girls">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--ENROLL IN A COURSE -->
+    <section id="btnEnrollCourse">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6 col-sm-12">
+                    <form id="btnEnrollCourse-form" role="form" action="" method="post">
+                        <div class="section-title">
+                            <h2>ENROLL IN A COURSE</h2>
+                        </div>
+
+                        <div class="col-md-12 col-sm-12">
+                            <!--<input type="text" class="form-control" placeholder="Enter full name" name="name" required="">-->
+                            <!--<input type="email" class="form-control" placeholder="Enter email address" name="email" required="">-->
+                            <!--<textarea class="form-control" rows="6" placeholder="Tell us about your message" name="message" required=""></textarea>-->
+                        </div>
+
+                        <div class="col-md-4 col-sm-12">
+                            <!--<button type="submit" id="btnLog" class="btn" onclick="clearTextBoxStudent();">SIGN UP</button>-->
+                            <!--<input type="submit" class="form-control" name="send message" value="SIGN UP">-->
+                            <!--<input type="submit" id="btnLog" class="form-control" onclick="clearTextBoxStudent();" value="SIGN UP">-->
+                            <button type="button" id="btnEnrollCourse" data-toggle="modal" data-target="#myModalEnrollCourse" class="btn" onclick="enrollCourse();">ENROLL IN A COURSE</button>
+                        </div>
+
+                    </form>
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                    <div class="contact-image">
+                        <img src="images/contact-image.jpg" class="img-responsive" alt="Smiling Two Girls">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--ENROLL PROFESSOR IN A COURSE -->
+    <section id="btnEnrollCourseProfessor">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6 col-sm-12">
+                    <form id="btnEnrollCourseProfessor-form" role="form" action="" method="post">
+                        <div class="section-title">
+                            <h2>ENROLL PROFESSOR IN A COURSE</h2>
+                        </div>
+
+                        <div class="col-md-12 col-sm-12">
+                            <!--<input type="text" class="form-control" placeholder="Enter full name" name="name" required="">-->
+                            <!--<input type="email" class="form-control" placeholder="Enter email address" name="email" required="">-->
+                            <!--<textarea class="form-control" rows="6" placeholder="Tell us about your message" name="message" required=""></textarea>-->
+                        </div>
+
+                        <div class="col-md-4 col-sm-12">
+                            <!--<button type="submit" id="btnLog" class="btn" onclick="clearTextBoxStudent();">SIGN UP</button>-->
+                            <!--<input type="submit" class="form-control" name="send message" value="SIGN UP">-->
+                            <!--<input type="submit" id="btnLog" class="form-control" onclick="clearTextBoxStudent();" value="SIGN UP">-->
+                            <button type="button" id="btnEnrollCourseProfessor" data-toggle="modal" data-target="#myModalEnrollCourseProfessor" class="btn">ENROLL PROFESSOR IN A COURSE</button>
+                        </div>
+
+                    </form>
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                    <div class="contact-image">
+                        <img src="images/contact-image.jpg" class="img-responsive" alt="Smiling Two Girls">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!--ADD NEW -->
+    <section id="btnNews">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6 col-sm-12">
+                    <form id="btnNews-form" role="form" action="" method="post">
+                        <div class="section-title">
+                            <h2>ADD NEW</h2>
+                        </div>
+
+                        <div class="col-md-12 col-sm-12">
+                            <!--<input type="text" class="form-control" placeholder="Enter full name" name="name" required="">-->
+                            <!--<input type="email" class="form-control" placeholder="Enter email address" name="email" required="">-->
+                            <!--<textarea class="form-control" rows="6" placeholder="Tell us about your message" name="message" required=""></textarea>-->
+                        </div>
+
+                        <div class="col-md-4 col-sm-12">
+                            <!--<button type="submit" id="btnLog" class="btn" onclick="clearTextBoxStudent();">SIGN UP</button>-->
+                            <!--<input type="submit" class="form-control" name="send message" value="SIGN UP">-->
+                            <!--<input type="submit" id="btnLog" class="form-control" onclick="clearTextBoxStudent();" value="SIGN UP">-->
+                            <button type="button" id="btnNews" data-toggle="modal" data-target="#modalNews" class="btn" onclick="clearTextBoxNews();">ADD NEW</button>
+                        </div>
+
+                    </form>
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                    <div class="contact-image">
+                        <img src="images/contact-image.jpg" class="img-responsive" alt="Smiling Two Girls">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!--STUDENT COURSES -->
+    <section id="btnStudentCourses">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6 col-sm-12">
+                    <form id="btnStudentCourses-form" role="form" action="" method="post">
+                        <div class="section-title">
+                            <h2>STUDENT COURSES</h2>
+                        </div>
+
+                        <div class="col-md-12 col-sm-12">
+                            <!--<input type="text" class="form-control" placeholder="Enter full name" name="name" required="">-->
+                            <!--<input type="email" class="form-control" placeholder="Enter email address" name="email" required="">-->
+                            <!--<textarea class="form-control" rows="6" placeholder="Tell us about your message" name="message" required=""></textarea>-->
+                        </div>
+
+                        <div class="col-md-4 col-sm-12">
+                            <!--<button type="submit" id="btnLog" class="btn" onclick="clearTextBoxStudent();">SIGN UP</button>-->
+                            <!--<input type="submit" class="form-control" name="send message" value="SIGN UP">-->
+                            <!--<input type="submit" id="btnLog" class="form-control" onclick="clearTextBoxStudent();" value="SIGN UP">-->
+                            <button type="button" id="btnStudentCourses" class="btn" onclick="studentCourses();">STUDENT COURSES</button>
+                        </div>
+
+                    </form>
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                    <div class="contact-image">
+                        <img src="images/contact-image.jpg" class="img-responsive" alt="Smiling Two Girls">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--PROFESSOR COURSES -->
+    <section id="btnProfessorCourses">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6 col-sm-12">
+                    <form id="btnProfessorCourses-form" role="form" action="" method="post">
+                        <div class="section-title">
+                            <h2>PROFESSOR COURSES</h2>
+                        </div>
+
+                        <div class="col-md-12 col-sm-12">
+                            <!--<input type="text" class="form-control" placeholder="Enter full name" name="name" required="">-->
+                            <!--<input type="email" class="form-control" placeholder="Enter email address" name="email" required="">-->
+                            <!--<textarea class="form-control" rows="6" placeholder="Tell us about your message" name="message" required=""></textarea>-->
+                        </div>
+
+                        <div class="col-md-4 col-sm-12">
+                            <!--<button type="submit" id="btnLog" class="btn" onclick="clearTextBoxStudent();">SIGN UP</button>-->
+                            <!--<input type="submit" class="form-control" name="send message" value="SIGN UP">-->
+                            <!--<input type="submit" id="btnLog" class="form-control" onclick="clearTextBoxStudent();" value="SIGN UP">-->
+                            <button type="button" id="btnProfessorCourses" class="btn" onclick="professorCourses();">PROFESSOR COURSES</button>
+                        </div>
+
+                    </form>
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                    <div class="contact-image">
+                        <img src="images/contact-image.jpg" class="img-responsive" alt="Smiling Two Girls">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!--STUDENT NEWS -->
+    <section id="btnNewsStudent">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6 col-sm-12">
+                    <form id="btnNewsStudent-form" role="form" action="" method="post">
+                        <div class="section-title">
+                            <h2>STUDENT NEWS</h2>
+                        </div>
+
+                        <div class="col-md-12 col-sm-12">
+                            <!--<input type="text" class="form-control" placeholder="Enter full name" name="name" required="">-->
+                            <!--<input type="email" class="form-control" placeholder="Enter email address" name="email" required="">-->
+                            <!--<textarea class="form-control" rows="6" placeholder="Tell us about your message" name="message" required=""></textarea>-->
+                        </div>
+
+                        <div class="col-md-4 col-sm-12">
+                            <!--<button type="submit" id="btnLog" class="btn" onclick="clearTextBoxStudent();">SIGN UP</button>-->
+                            <!--<input type="submit" class="form-control" name="send message" value="SIGN UP">-->
+                            <!--<input type="submit" id="btnLog" class="form-control" onclick="clearTextBoxStudent();" value="SIGN UP">-->
+                            <button type="button" id="btnNewsStudent" class="btn" onclick="newsStudent();">STUDENT NEWS</button>
+                        </div>
+
+                    </form>
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                    <div class="contact-image">
+                        <img src="images/contact-image.jpg" class="img-responsive" alt="Smiling Two Girls">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--STUDENT NEWS -->
+    <section id="btnNewsStudent">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6 col-sm-12">
+                    <form id="btnNewsStudent-form" role="form" action="" method="post">
+                        <div class="section-title">
+                            <h2>STUDENT NEWS</h2>
+                        </div>
+
+                        <div class="col-md-12 col-sm-12">
+                            <!--<input type="text" class="form-control" placeholder="Enter full name" name="name" required="">-->
+                            <!--<input type="email" class="form-control" placeholder="Enter email address" name="email" required="">-->
+                            <!--<textarea class="form-control" rows="6" placeholder="Tell us about your message" name="message" required=""></textarea>-->
+                        </div>
+
+                        <div class="col-md-4 col-sm-12">
+                            <!--<button type="submit" id="btnLog" class="btn" onclick="clearTextBoxStudent();">SIGN UP</button>-->
+                            <!--<input type="submit" class="form-control" name="send message" value="SIGN UP">-->
+                            <!--<input type="submit" id="btnLog" class="form-control" onclick="clearTextBoxStudent();" value="SIGN UP">-->
+                            <button type="button" id="btnNewsStudent" class="btn" onclick="newsStudent();">STUDENT NEWS</button>
+                        </div>
+
+                    </form>
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                    <div class="contact-image">
+                        <img src="images/contact-image.jpg" class="img-responsive" alt="Smiling Two Girls">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--PROFESSOR NEWS -->
+    <section id="btnNewsProfessor">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6 col-sm-12">
+                    <form id="btnNewsProfessor-form" role="form" action="" method="post">
+                        <div class="section-title">
+                            <h2>PROFESSOR NEWS</h2>
+                        </div>
+
+                        <div class="col-md-12 col-sm-12">
+                            <!--<input type="text" class="form-control" placeholder="Enter full name" name="name" required="">-->
+                            <!--<input type="email" class="form-control" placeholder="Enter email address" name="email" required="">-->
+                            <!--<textarea class="form-control" rows="6" placeholder="Tell us about your message" name="message" required=""></textarea>-->
+                        </div>
+
+                        <div class="col-md-4 col-sm-12">
+                            <!--<button type="submit" id="btnLog" class="btn" onclick="clearTextBoxStudent();">SIGN UP</button>-->
+                            <!--<input type="submit" class="form-control" name="send message" value="SIGN UP">-->
+                            <!--<input type="submit" id="btnLog" class="form-control" onclick="clearTextBoxStudent();" value="SIGN UP">-->
+                            <button type="button" id="btnNewsProfessor" class="btn" onclick="newsProfessor();">PROFESSOR NEWS</button>
+                        </div>
+
+                    </form>
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                    <div class="contact-image">
+                        <img src="images/contact-image.jpg" class="img-responsive" alt="Smiling Two Girls">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6 col-sm-12">
+                    <form id="contact-form" role="form" action="" method="post">
+                        <div class="section-title">
+                            <h2>Contact us <small>we love conversations. let us talk!</small></h2>
+                        </div>
+
+                        <div class="col-md-12 col-sm-12">
+                            <input type="text" class="form-control" placeholder="Enter full name" name="name" required="">
+
+                            <input type="email" class="form-control" placeholder="Enter email address" name="email" required="">
+
+                            <textarea class="form-control" rows="6" placeholder="Tell us about your message" name="message" required=""></textarea>
+                        </div>
+
+                        <div class="col-md-4 col-sm-12">
+                            <input type="submit" class="form-control" name="send message" value="Send Message">
+                        </div>
+
+                    </form>
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                    <div class="contact-image">
+                        <img src="images/contact-image.jpg" class="img-responsive" alt="Smiling Two Girls">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
 
     <!---Sign up log in-->
 
@@ -120,13 +637,13 @@
                     <form>
                         <div class="form-group">
                             <label for="UsernameSignLog">Username</label>
-                            <input type="text" class="form-control" id="UsernameSignLog" placeholder="Add Username" autocomplete="off">
+                            <input type="text" class="form-control" id="UsernameSignLog" placeholder="Add Username" autocomplete="nope">
 
                         </div>
 
                         <div class="form-group">
                             <label for="PasswordSignLog">Password</label>
-                            <input type="password" class="form-control" id="PasswordSignLog" placeholder="Add Password" autocomplete="off">
+                            <input type="password" class="form-control" id="PasswordSignLog" placeholder="Add Password" autocomplete="nope">
                         </div>
 
                     </form>
@@ -140,6 +657,7 @@
             </div>
         </div>
     </div>
+
 
     <!-- Insert Update News-->
     <div class="modal fade" id="modalNews" tabindex="-1" role="dialog" hidden>
@@ -170,12 +688,12 @@
 
                         <div class="form-group">
                             <label>Title</label>
-                            <input type="text" class="form-control" id="NewsTitle" placeholder="New Title" autocomplete="off">
+                            <input type="text" class="form-control" id="NewsTitle" placeholder="New Title" autocomplete="nope">
                         </div>
 
                         <div class="form-group">
                             <label>Author</label>
-                            <input type="text" class="form-control" id="Author" placeholder="New Author" autocomplete="off">
+                            <input type="text" class="form-control" id="Author" placeholder="New Author" autocomplete="nope">
                         </div>
 
                         <div class="form-group">
@@ -185,7 +703,7 @@
 
                         <div class="form-group">
                             <label>New</label>
-                            <textarea rows="6" cols="50" class="form-control" id="text" placeholder="Add New" autocomplete="off"></textarea>
+                            <textarea rows="6" cols="50" class="form-control" id="text" placeholder="Add New" autocomplete="nope"></textarea>
                         </div>
 
                     </form>
@@ -199,6 +717,7 @@
             </div>
         </div>
     </div>
+
 
     <!-- View News-->
     <div class="modal fade" id="modalViewNews" tabindex="-1" role="dialog" hidden>
@@ -245,7 +764,7 @@
                         </div>
 
                         <div class="form-group">
-                            <input type="text" class="form-control" id="addComment" placeholder="Comment" autocomplete="off">
+                            <input type="text" class="form-control" id="addComment" placeholder="Comment" autocomplete="nope">
                             </br>
                             <button type="button" class="btn" onclick="addComments();" id="btnAddComment">Add</button>
                         </div>
@@ -259,6 +778,7 @@
             </div>
         </div>
     </div>
+
 
     <!---Student Register and Update-->
 
@@ -287,18 +807,18 @@
 
                                 <div class="form-group">
                                     <label for="StudentCard">ID</label>
-                                    <input type="text" class="form-control" id="StudentCard" placeholder="ID" autocomplete="off">
+                                    <input type="text" class="form-control" id="StudentCard" placeholder="ID" autocomplete="nope">
                                 </div>
 
                                 <div class="form-group">
                                     <label for="Name">Name</label>
-                                    <input type="text" class="form-control" id="Name" placeholder="Name" autocomplete="off">
+                                    <input type="text" class="form-control" id="Name" placeholder="Name" autocomplete="nope">
                                 </div>
 
 
                                 <div class="form-group">
                                     <label for="Last Name">Last Name</label>
-                                    <input type="text" class="form-control" id="LastName" placeholder="Last Name" autocomplete="off">
+                                    <input type="text" class="form-control" id="LastName" placeholder="Last Name" autocomplete="nope">
                                 </div>
 
                                 <div class="form-group">
@@ -308,7 +828,7 @@
 
                                 <div class="form-group">
                                     <label for="Mail">Email</label>
-                                    <input type="text" class="form-control" id="Mail" placeholder="Email" autocomplete="off">
+                                    <input type="text" class="form-control" id="Mail" placeholder="Email" autocomplete="nope">
                                 </div>
 
                                 <div class="form-group">
@@ -321,12 +841,12 @@
                             <form>
                                 <div class="form-group">
                                     <label for="Username">Username</label>
-                                    <input type="text" class="form-control" id="Username" placeholder="Username" autocomplete="off">
+                                    <input type="text" class="form-control" id="Username" placeholder="Username" autocomplete="nope">
                                 </div>
 
                                 <div class="form-group">
                                     <label for="Password">Password</label>
-                                    <input type="password" class="form-control" id="Password" placeholder="Password" autocomplete="off">
+                                    <input type="password" class="form-control" id="Password" placeholder="Password" autocomplete="nope">
                                 </div>
 
                                 <div class="form-group">
@@ -347,8 +867,8 @@
                                 <div class="form-group" hidden="hidden" id="DivStatusStudentDropdown">
                                     <label for="StatusStudentDropdown">State</label>
                                     <select class="form-control" id="StatusStudentDropdown">
-                                        <option value="0">Inactivo</option>
-                                        <option value="1">Activo</option>
+                                        <option value="0">Inactive</option>
+                                        <option value="1">Active</option>
                                     </select>
                                 </div>
 
@@ -373,7 +893,7 @@
                     <button type="button" class="btn" id="btnUpdateStudent" style="display:none" onclick="EditStudent();">Update</button>
                     <button type="button" class="btn" id="btnUpdateProfileStudent" style="display:none" onclick="editProfileStudent();">Update</button>
                     <button type="button" class="btn" id="btnDeleteStudent" onclick="deleteStudentAccount();">Delete Account</button>
-                    <button type="button" class="btn btn-default" id="btnClose" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-default" id="btnClose" data-dismiss="modal">Close</button>
 
                 </div>
             </div>
@@ -407,28 +927,28 @@
 
                                 <div class="form-group">
                                     <label for="ProfessorUsername">Username</label>
-                                    <input type="text" class="form-control" id="ProfessorUsername" placeholder="Username" autocomplete="off">
+                                    <input type="text" class="form-control" id="ProfessorUsername" placeholder="Username" autocomplete="nope">
 
                                 </div>
 
                                 <div class="form-group">
                                     <label for="ProfessorPassword">Password</label>
-                                    <input type="password" class="form-control" id="ProfessorPassword" placeholder="Password" autocomplete="off">
+                                    <input type="password" class="form-control" id="ProfessorPassword" placeholder="Password" autocomplete="nope">
                                 </div>
 
                                 <div class="form-group">
                                     <label for="ProfessorName">Name</label>
-                                    <input type="text" class="form-control" id="ProfessorName" placeholder="Name" autocomplete="off">
+                                    <input type="text" class="form-control" id="ProfessorName" placeholder="Name" autocomplete="nope">
                                 </div>
 
                                 <div class="form-group">
                                     <label for="ProfessorLastName">Last Name</label>
-                                    <input type="text" class="form-control" id="ProfessorLastName" placeholder="Last Name" autocomplete="off">
+                                    <input type="text" class="form-control" id="ProfessorLastName" placeholder="Last Name" autocomplete="nope">
                                 </div>
 
                                 <div class="form-group">
                                     <label for="ProfessorMail">Email</label>
-                                    <input type="text" class="form-control" id="ProfessorMail" placeholder="Email" autocomplete="off">
+                                    <input type="text" class="form-control" id="ProfessorMail" placeholder="Email" autocomplete="nope">
                                 </div>
                             </form>
                         </div>
@@ -459,8 +979,8 @@
                                 <div class="form-group">
                                     <label for="StatusProfessorDropdown">State</label>
                                     <select class="form-control" id="StatusProfessorDropdown" disabled="disabled">
-                                        <option value="0">Inactivo</option>
-                                        <option value="1">Activo</option>
+                                        <option value="0">Inactive</option>
+                                        <option value="1">Active</option>
                                     </select>
                                 </div>
 
@@ -484,12 +1004,13 @@
                     <button type="button" class="btn" id="btnAddProfessor" onclick="return AddProfessor();">Register</button>
                     <button type="button" class="btn" id="btnUpdateProfessor" onclick="EditProfessor();">Update</button>
                     <button type="button" class="btn" id="btnDeleteProfessor" onclick="deleteProfessorAccount();">Delete Account</button>
-                    <button type="button" class="btn btn-default" id="btnClose" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-default" id="btnClose" data-dismiss="modal">Close</button>
 
                 </div>
             </div>
         </div>
     </div>
+
 
     <!------Update Image Student-->
     <div class="modal fade" id="modalUpdateImageStudent" tabindex="-1" role="dialog" hidden>
@@ -501,7 +1022,7 @@
                 <div class="modal-header">
 
                     <button type="button" class="close" data-dismiss="modal">X</button>
-                    <h4 class="modal-title">Actualizar foto</h4>
+                    <h4 class="modal-title">Update Photo</h4>
 
                 </div>
                 <div class="modal-body">
@@ -591,25 +1112,25 @@
 
                         <div class="form-group">
                             <label for="CourseInitials">Siglas</label>
-                            <input type="text" class="form-control" id="CourseInitials" placeholder="Add Course Initials" autocomplete="off">
+                            <input type="text" class="form-control" id="CourseInitials" placeholder="Add Course Initials" autocomplete="nope">
                         </div>
 
                         <div class="form-group">
                             <label for="CourseName">Name</label>
-                            <input type="text" class="form-control" id="CourseName" placeholder="Add Course Name" autocomplete="off">
+                            <input type="text" class="form-control" id="CourseName" placeholder="Add Course Name" autocomplete="nope">
                         </div>
 
                         <div class="form-group">
                             <label for="IsCourseActive">Course State</label>
                             <select class="form-control" id="IsActiveDropdown" name="IsActiveDropdown">
-                                <option value="0">Inactivo</option>
-                                <option value="1">Activo</option>
+                                <option value="0">Inactive</option>
+                                <option value="1">Active</option>
                             </select>
                         </div>
 
                         <div class="form-group">
                             <label for="CourseCredits">Credits</label>
-                            <input type="text" class="form-control" id="CourseCredits" placeholder="Add Course Credits" autocomplete="off">
+                            <input type="text" class="form-control" id="CourseCredits" placeholder="Add Course Credits" autocomplete="nope">
                         </div>
 
                         <div class="form-group">
@@ -632,47 +1153,6 @@
             </div>
         </div>
     </div>
-
-    <!-- HOME -->
-    <section id="home">
-        <div class="row">
-
-            <div class="owl-carousel owl-theme home-slider">
-                <div class="item item-first">
-                    <div class="caption">
-                        <div class="container">
-                            <div class="col-md-6 col-sm-12">
-                                <h1></h1>
-                                <h3></h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="item item-second">
-                    <div class="caption">
-                        <div class="container">
-                            <div class="col-md-6 col-sm-12">
-                                <h1></h1>
-                                <h3></h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="item item-third">
-                    <div class="caption">
-                        <div class="container">
-                            <div class="col-md-6 col-sm-12">
-                                <h1></h1>
-                                <h3></h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!------News Section-->
     <section id="newsSection" hidden>
@@ -704,40 +1184,6 @@
         </div>
     </section>
 
-    <!------Student Courses-->
-    <section id="StudentCoursesSection" hidden>
-        <div class="table-responsive">
-            <h3>Matriculated Courses</h3>
-            <table class="table table-bordered table-hover" id="tableStudentCourses">
-
-                <thead>
-                    <tr>
-                        <th>
-                            Initials
-                        </th>
-                        <th>
-                            Name
-                        </th>
-                        <th>
-                            Credits
-                        </th>
-                        <th>
-                            Cycle
-                        </th>
-                        <th>
-                            Professor
-                        </th>
-                        <th>
-                            Action
-                        </th>
-                    </tr>
-                </thead>
-                <tbody class="tableStudentCourses">
-                </tbody>
-            </table>
-        </div>
-    </section>
-
     <!----Enroll Course --->
     <div class="modal fade" id="myModalEnrollCourse" tabindex="-1" role="dialog" hidden>
 
@@ -748,7 +1194,7 @@
                 <div class="modal-header">
 
                     <button type="button" class="close" data-dismiss="modal">X</button>
-                    <h4 class="modal-title">Join Course</h4>
+                    <h4 class="modal-title">Enroll in a Course</h4>
 
                 </div>
                 <div class="modal-body">
@@ -792,7 +1238,7 @@
                 <div class="modal-header">
 
                     <button type="button" class="close" data-dismiss="modal">X</button>
-                    <h4 class="modal-title">Join Professor Course</h4>
+                    <h4 class="modal-title">Enroll Professor in a Course</h4>
 
                 </div>
                 <div class="modal-body">
@@ -824,6 +1270,101 @@
         </div>
     </div>
 
+    <!-- Insert Update News-->
+    <div class="modal fade" id="modalNews" tabindex="-1" role="dialog" hidden>
+
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <button type="button" class="close" data-dismiss="modal">X</button>
+                    <h4 id="addNewsTitle" class="modal-title">Add New</h4>
+                    <h4 id="UpdateNewsTitle" class="modal-title">Update New</h4>
+
+                </div>
+                <div class="modal-body">
+
+                    <form>
+                        <div class="form-group" hidden>
+                            <label>ID</label>
+                            <input type="text" class="form-control" id="NewsId">
+                        </div>
+
+                        <div class="form-group">
+                            <label>User ID</label>
+                            <input type="text" class="form-control" id="AuthorId" disabled>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Title</label>
+                            <input type="text" class="form-control" id="NewsTitle" placeholder="New Title" autocomplete="nope">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Author</label>
+                            <input type="text" class="form-control" id="Author" placeholder="New Author" autocomplete="nope">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Publish Date</label>
+                            <input type="date" class="form-control" id="Date">
+                        </div>
+
+                        <div class="form-group">
+                            <label>New</label>
+                            <textarea rows="6" cols="50" class="form-control" id="text" placeholder="Add New" autocomplete="nope"></textarea>
+                        </div>
+
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn" onclick="addNews();" id="btnAddNews">Insert</button>
+                    <button type="button" class="btn" onclick="updateNews();" id="btnUpdateNews">Update</button>
+                    <button type="button" class="btn btn-default" id="btnClose" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Student Courses-->
+    <section id="StudentCoursesSection" hidden>
+        <div class="table-responsive">
+            <h3>Matriculated Courses</h3>
+            <table class="table table-bordered table-hover" id="tableStudentCourses">
+
+                <thead>
+                    <tr>
+                        <th>
+                            Initials
+                        </th>
+                        <th>
+                            Name
+                        </th>
+                        <th>
+                            Credits
+                        </th>
+                        <th>
+                            Cycle
+                        </th>
+                        <th>
+                            Professor
+                        </th>
+                        <th>
+                            Action
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="tableStudentCourses">
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+
     <!------Professor Courses-->
     <section id="ProfessorCoursesSection" hidden>
         <h4>Impartited Courses</h4>
@@ -850,12 +1391,13 @@
         </table>
     </section>
 
+
     <!------Student Section-->
 
     <section id="studentSection">
         <div class="row pre-scrollable">
             <h2 id="StudentWelcomeMessage"></h2> <hr />
-            <img src="" id="imgProfile" width="150" height="150" title="Editar" onclick="getImageStudent();" />
+            <img src="" id="imgProfile" width="150" height="150" title="Update" onclick="getImageStudent();" />
             <button type="button" id="btnSocialNetworkStudent" data-toggle="modal" data-target="#myModalSocialNetworkStudent" class="btn">Social Network Settings</button>
             <button type="button" data-toggle="modal" data-target="#myModal" class="btn" id="btngetProfileStudent" onclick="getProfileStudent();">Update Profile</button>
 
@@ -885,8 +1427,8 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="studentSocialNetwork">Red Social</label>
-                                    <input type="text" class="form-control" id="studentSocialNetwork" placeholder="" autocomplete="off">
+                                    <label for="studentSocialNetwork">Social Network</label>
+                                    <input type="text" class="form-control" id="studentSocialNetwork" placeholder="" autocomplete="nope">
                                 </div>
 
                             </form>
@@ -936,7 +1478,7 @@
                         <label id="labelStudentMail"></label>
                     </div>
 
-                    <h3>Ubicación</h3> <hr />
+                    <h3>Location</h3> <hr />
 
                     <div class="form-group">
                         <label for="Province">Province:</label>
@@ -998,7 +1540,7 @@
 
                                 <div class="form-group">
                                     <label for="professorSocialNetwork">Social Network</label>
-                                    <input type="text" class="form-control" id="professorSocialNetwork" placeholder="" autocomplete="off">
+                                    <input type="text" class="form-control" id="professorSocialNetwork" placeholder="" autocomplete="nope">
                                 </div>
 
 
@@ -1044,7 +1586,7 @@
                         <label id="labelProfessorAcademicDegree"></label>
                     </div>
 
-                    <h3>Ubicación</h3> <hr />
+                    <h3>Location</h3> <hr />
 
                     <div class="form-group">
                         <label for="Province">Province:</label>
@@ -1190,7 +1732,7 @@
             </div>
 
             <!---NEWS-->
-            <h2>Noticias</h2>
+            <h2>News</h2>
             <div class="table-responsive">
                 <table class="table table-bordered table-hover" id="tableNewsAdministrator">
 
@@ -1264,7 +1806,7 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input type="text" class="form-control" id="addPublicConsult" placeholder="Ask" autocomplete="off">
+                                <input type="text" class="form-control" id="addPublicConsult" placeholder="Ask" autocomplete="nope">
                                 </br>
                                 <button type="button" class="btn" onclick="sendPublicConsultationStudent();" id="btnConsultationPublicStudent">Send</button>
                             </div>
@@ -1317,7 +1859,7 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input type="text" class="form-control" id="addPrivateMessage" placeholder="Ask" autocomplete="off">
+                                <input type="text" class="form-control" id="addPrivateMessage" placeholder="Ask" autocomplete="nope">
                                 </br>
                                 <button type="button" class="btn" id="btnSendPrivateMessage" onclick="sendPrivateMessage();">Send</button>
                                 <div class="form-group">
@@ -1365,7 +1907,7 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input type="text" class="form-control" id="addAppointment" placeholder="Appointment Motive" autocomplete="off">
+                                <input type="text" class="form-control" id="addAppointment" placeholder="Appointment Motive" autocomplete="nope">
                             </div>
 
                             <div class="form-group">
@@ -1399,7 +1941,76 @@
         </div>
     </div>
 
-    </div>
+    <!-- FOOTER -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="footer-info">
+                        <div class="section-title">
+                            <h2>Headquarter</h2>
+                        </div>
+                        <address>
+                            <p>1800 dapibus a tortor pretium,<br> Integer nisl dui, ABC 12000</p>
+                        </address>
+
+                        <ul class="social-icon">
+                            <li><a href="#" class="fa fa-facebook-square" attr="facebook icon"></a></li>
+                            <li><a href="#" class="fa fa-twitter"></a></li>
+                            <li><a href="#" class="fa fa-instagram"></a></li>
+                        </ul>
+
+                        <div class="copyright-text">
+                            <p>Copyright &copy; 2019 Company Name</p>
+
+                            <p>Design: TemplateMo</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="footer-info">
+                        <div class="section-title">
+                            <h2>Contact Info</h2>
+                        </div>
+                        <address>
+                            <p>+65 2244 1100, +66 1800 1100</p>
+                            <p><a href="mailto:youremail.co">hello@youremail.co</a></p>
+                        </address>
+
+                        <div class="footer_menu">
+                            <h2>Quick Links</h2>
+                            <ul>
+                                <li><a href="#">Career</a></li>
+                                <li><a href="#">Investor</a></li>
+                                <li><a href="#">Terms & Conditions</a></li>
+                                <li><a href="#">Refund Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-12">
+                    <div class="footer-info newsletter-form">
+                        <div class="section-title">
+                            <h2>Newsletter Signup</h2>
+                        </div>
+                        <div>
+                            <div class="form-group">
+                                <form action="#" method="get">
+                                    <input type="email" class="form-control" placeholder="Enter your email" name="email" id="email" required="">
+                                    <input type="submit" class="form-control" name="submit" id="form-submit" value="Send me">
+                                </form>
+                                <span><sup>*</sup> Please note - we do not spam your email.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
 
 
     <!-- SCRIPTS -->
