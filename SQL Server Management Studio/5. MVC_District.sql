@@ -1,7 +1,3 @@
-USE MVC_IF4101MVCLPAC;
-
-GO
-
 ---------- SAN JOSÉ----------
 --------DISTRITOS SAN JOSÉ--------
 
