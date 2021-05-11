@@ -66,7 +66,7 @@ html {
 }
 
 a {
-    color: #252525;
+    color: #00c0f3;
     -webkit-transition: 0.5s;
     transition: 0.5s;
     text-decoration: none !important;
@@ -80,7 +80,7 @@ input, button,
 }
 
     a:hover, a:active, a:focus {
-        color: #29ca8e;
+        color: #00c0f3;
         outline: none;
     }
 
@@ -262,7 +262,7 @@ section {
 
 .custom-navbar {
     background: #ffffff;
-    border-top: 5px solid #29ca8e;
+    border-top: 5px solid #005da4;
     border-bottom: 0;
     -webkit-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
@@ -273,7 +273,7 @@ section {
 }
 
     .custom-navbar .navbar-brand {
-        color: #454545;
+        color: #005da4;
         font-size: 18px;
         font-weight: bold;
         line-height: 40px;
@@ -313,12 +313,12 @@ section {
     }
 
     .custom-navbar .nav li a:hover {
-        background-color: #29ca8e;
+        background-color: #00c0f3;
         color: #ffffff;
     }
 
     .custom-navbar .nav li.active > a {
-        background-color: #29ca8e;
+        background-color: #00c0f3;
         color: #ffffff;
     }
 

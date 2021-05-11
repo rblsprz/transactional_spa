@@ -6304,19 +6304,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ROBLES\\.nuget\\packages\\": {}
+    "C:\\Users\\Xpc\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ROBLES\\OneDrive\\Escritorio\\Lenguajes Aplicaciones Comerciales\\Primer Proyecto\\Primer_Proyecto\\Primer_Proyecto\\Primer_Proyecto.csproj",
+      "projectUniqueName": "C:\\Users\\Xpc\\Documents\\GitHub\\transactional_spa\\Primer_Proyecto\\Primer_Proyecto\\Primer_Proyecto.csproj",
       "projectName": "Primer_Proyecto",
-      "projectPath": "C:\\Users\\ROBLES\\OneDrive\\Escritorio\\Lenguajes Aplicaciones Comerciales\\Primer Proyecto\\Primer_Proyecto\\Primer_Proyecto\\Primer_Proyecto.csproj",
-      "packagesPath": "C:\\Users\\ROBLES\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ROBLES\\OneDrive\\Escritorio\\Lenguajes Aplicaciones Comerciales\\Primer Proyecto\\Primer_Proyecto\\Primer_Proyecto\\obj\\",
+      "projectPath": "C:\\Users\\Xpc\\Documents\\GitHub\\transactional_spa\\Primer_Proyecto\\Primer_Proyecto\\Primer_Proyecto.csproj",
+      "packagesPath": "C:\\Users\\Xpc\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Xpc\\Documents\\GitHub\\transactional_spa\\Primer_Proyecto\\Primer_Proyecto\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ROBLES\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Xpc\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6391,7 +6391,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   },
