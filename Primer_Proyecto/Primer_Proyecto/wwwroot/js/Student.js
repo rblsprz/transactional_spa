@@ -29,7 +29,7 @@ function clearTextBoxStudent() {
     $('#Password').val("");
 
     loadProvinceStudent();
-    var s = '<option value="-1">Seleccione una opción</option>';
+    var s = '<option value="-1">Choose an option</option>';
     $("#ProvinceDropdown").html(s);
     $("#CantonDropdown").html(s);
     $("#DistrictDropdown").html(s);
@@ -54,7 +54,7 @@ function loadProvinceStudent() {
             url: "/Location/ListAllProvinces",
             data: "{}",
             success: function (data) {
-                var s = '<option value="-1">Seleccione una opción</option>';
+                var s = '<option value="-1">Choose an option</option>';
                 for (var i = 0; i < data.length; i++) {
                     s += '<option value="' + data[i].Id + '">' + data[i].Name + '</option>';
                 }
@@ -81,7 +81,7 @@ function loadCantonStudent(province) {
             url: "/Location/ListCantonsByIdProvince/" + province,
             data: "{}",
             success: function (data) {
-                var s = '<option value="-1">Seleccione una opción</option>';
+                var s = '<option value="-1">Choose an option</option>';
                 for (var i = 0; i < data.length; i++) {
                     s += '<option value="' + data[i].Id + '">' + data[i].Name + '</option>';
                 }
@@ -106,7 +106,7 @@ function loadDistrictStudent(canton) {
             url: "/Location/ListDistrictsByIdCanton/" + canton,
             data: "{}",
             success: function (data) {
-                var s = '<option value="-1">Seleccione una opción</option>';
+                var s = '<option value="-1">Choose an option</option>';
                 for (var i = 0; i < data.length; i++) {
                     s += '<option value="' + data[i].Id + '">' + data[i].Name + '</option>';
                 }
@@ -144,9 +144,9 @@ function Add() {
         DistrictId: district.Id,
         Image: imagePath,
         Username: $('#Username').val(),
-        RegistrationStatus: "En espera",
+        RegistrationStatus: "Waiting",
         IsAdministrator: 0,
-        Status: "Activo",
+        Status: "Active",
     };
     var isValid = Validate();
 
@@ -210,9 +210,9 @@ function getByIdStudent(id) {
             $("#ProfessorDistrictDropdown").val(loadDistrictStudent(result.CantonId));
 
             var status = result.Status;
-            if (status == "Inactivo") {
+            if (status == "Inactive") {
                 $("#StatusStudentDropdown").val(0);
-            } else if (status == "Activo") {
+            } else if (status == "Active") {
                 $("#StatusStudentDropdown").val(1);
             }
 
@@ -258,9 +258,9 @@ function EditStudent() {
 
     var active = "";
     if (isActive.Status == 0) {
-        active = "Inactivo"
+        active = "Inactive"
     } else if (isActive.Status == 1) {
-        active = "Activo"
+        active = "Active"
     }
 
     var student = {
@@ -276,7 +276,7 @@ function EditStudent() {
         DistrictId: district.DistrictId,
         IsAdministrator: administrator,
         Status: active,
-        RegistrationStatus: "Aprobado"
+        RegistrationStatus: "Aprroved"
     };
 
     $.ajax({
@@ -296,7 +296,7 @@ function EditStudent() {
 }
 
 function deleteStudent(id) {
-    var alert = confirm("¿Está seguro que desea eliminar el registro?");
+    var alert = confirm("Are you sure to delete the register?);
 
     if (alert) {
         $.ajax({
@@ -426,7 +426,7 @@ function loadData() {
                     item.StudentName,
                     item.LastName,
                     item.Mail,
-                    '<td><a href="#" onclick="StudentApproval(' + item.Id + ')">Aprobar</a> | <a href="#" onclick="StudentDeny(' + item.Id + ')">Rechazar</a></td>'
+                    '<td><a href="#" onclick="StudentApproval(' + item.Id + ')">Approve</a> | <a href="#" onclick="StudentDeny(' + item.Id + ')">Reject</a></td>'
 
                 ];
                 dataSet.push(data);
@@ -486,13 +486,13 @@ function loadStudents() {
         success: function (result) {
             dataSet = new Array();
             $.each(result, function (key, item) {
-                if (item.RegistrationStatus == "Aprobado") {
+                if (item.RegistrationStatus == "Approved") {
                     data = [
                         item.StudentCard,
                         item.StudentName,
                         item.LastName,
                         item.Mail,
-                        '<td><a href="#" onclick="getByIdStudent(' + item.Id + ')">Editar</a> | <a href="#" onclick="deleteStudent(' + item.Id + ')">Borrar</a></td>'
+                        '<td><a href="#" onclick="getByIdStudent(' + item.Id + ')">Edit</a> | <a href="#" onclick="deleteStudent(' + item.Id + ')">Delete</a></td>'
                     ];
                     dataSet.push(data);
                 }
@@ -558,9 +558,9 @@ function getProfileStudent() {
                             $("#ProfessorDistrictDropdown").val(loadDistrictStudent(data.CantonId));
 
                             var status = data.Status;
-                            if (status == "Inactivo") {
+                            if (status == "Inactive") {
                                 $("#StatusStudentDropdown").val(0);
-                            } else if (status == "Activo") {
+                            } else if (status == "Active") {
                                 $("#StatusStudentDropdown").val(1);
                             }
 
@@ -613,9 +613,9 @@ function editProfileStudent() {
 
     var active = "";
     if (isActive.Status == 0) {
-        active = "Inactivo"
+        active = "Inactive"
     } else if (isActive.Status == 1) {
-        active = "Activo"
+        active = "Active"
     }
 
     var student = {
@@ -631,7 +631,7 @@ function editProfileStudent() {
         DistrictId: district.DistrictId,
         IsAdministrator: administrator,
         Status: active,
-        RegistrationStatus: "Aprobado"
+        RegistrationStatus: "Approved"
     };
 
     $.ajax({
@@ -718,13 +718,13 @@ function studentCourses() {
             $.each(result, function (key, item) {
                 var cycle = "";
                 if (item.Cycle == 1) {
-                    cycle = "I Semestre"
+                    cycle = "I Semester"
                 }
                 else if (item.Cycle == 2) {
-                    cycle = "II Semestre"
+                    cycle = "II Semester"
                 }
                 else if (item.Cycle == 3) {
-                    cycle = "Verano"
+                    cycle = "Summer"
                 }
 
                 html += '<tr>';
@@ -733,7 +733,7 @@ function studentCourses() {
                 html += '<td>' + item.Credits + '</td>';
                 html += '<td>' + cycle + '</td>';
                 html += '<td>' + item.ProfessorName + " " + item.ProfessorLastName + '</td>';
-                html += '<td><a href="#" onclick="return publicConsultation(' + item.CourseId + ',' + item.ProfessorId + ')">Consulta Pública</a> | <a href="#" onclick="privateConsultation(' + item.CourseId + ',' + item.ProfessorId + ',' + item.StudentId + ')">Consulta Privada</a> | <a href="#" onclick="appointment(' + item.CourseId + ',' + item.ProfessorId + ',' + item.StudentId +')">Cita de atención</a></td>';
+                html += '<td><a href="#" onclick="return publicConsultation(' + item.CourseId + ',' + item.ProfessorId + ')">Public Consultations</a> | <a href="#" onclick="privateConsultation(' + item.CourseId + ',' + item.ProfessorId + ',' + item.StudentId + ')">Private Consultations</a> | <a href="#" onclick="appointment(' + item.CourseId + ',' + item.ProfessorId + ',' + item.StudentId +')">Appointment Date</a></td>';
             });
             $('.tableStudentCourses').html(html);
 
@@ -804,9 +804,9 @@ function loadPublicConsultationStudent(courseId, professorId) {
                     contenido += '<span>' + data.StudentName + " " + data.LastName + ': </span>';
                     contenido += '<span>' + consultation.Motive + ' </span>';
                     contenido += '</br>';
-                    contenido += '<span>' + "Fecha publicación: " + '</span>';
+                    contenido += '<span>' + "Publish Date: " + '</span>';
                     contenido += '<span>' + consultation.DateTime + '</span>';
-                    contenido += '<button type="button" id="btnPublicConsultation" class="btn" onclick="viewConsultation(' + consultation.Id + ')">Ver</button>';
+                    contenido += '<button type="button" id="btnPublicConsultation" class="btn" onclick="viewConsultation(' + consultation.Id + ')">See</button>';
                     contenido += '</li>';
                     $('#ulConsultationspublic').append(contenido);
                 },
@@ -846,7 +846,7 @@ function viewConsultation(id) {
                                 contenido += '<span>' + student.StudentName + " " + student.LastName + ': </span>';
                                 contenido += '<span>' + item.Motive + ' </span>';
                                 contenido += '</br>';
-                                contenido += '<span>' + "Fecha publicación: " + '</span>';
+                                contenido += '<span>' + "Publish Date: " + '</span>';
                                 contenido += '<span>' + item.DateTime + '</span>';
                                 contenido += '</li>';
                                 $('#ulRepliesConsultationspublic').append(contenido);
@@ -870,7 +870,7 @@ function viewConsultation(id) {
                                 contenido += '<span>' + professor.Name + " " + professor.LastName + ': </span>';
                                 contenido += '<span>' + item.Motive + ' </span>';
                                 contenido += '</br>';
-                                contenido += '<span>' + "Fecha publicación: " + '</span>';
+                                contenido += '<span>' + "Publish Date: " + '</span>';
                                 contenido += '<span>' + item.DateTime + '</span>';
                                 contenido += '</li>';
                                 $('#ulRepliesConsultationspublic').append(contenido);
@@ -884,8 +884,8 @@ function viewConsultation(id) {
                 }
             });
             var contentForm = '';
-            contentForm += '<input type="text" class="form-control" id="addRepliesPublicConsult" placeholder="Respuesta" autocomplete="off" >';
-            contentForm += '<button type="button" class="btn" onclick="sendRepliesPublicConsultationStudent(' + id + ');" id="btnRepliesPublicConsult">Enviar</button>'
+            contentForm += '<input type="text" class="form-control" id="addRepliesPublicConsult" placeholder="Answer" autocomplete="off" >';
+            contentForm += '<button type="button" class="btn" onclick="sendRepliesPublicConsultationStudent(' + id + ');" id="btnRepliesPublicConsult">Send</button>'
             $('#form').append(contentForm);
         },
 
@@ -984,9 +984,9 @@ function loadPrivateMessage(courseId, professorId, studentId) {
                     contenido += '<span>' + data.StudentName + " " + data.LastName + ': </span>';
                     contenido += '<span>' + message.Motive + ' </span>';
                     contenido += '</br>';
-                    contenido += '<span>' + "Fecha publicación: " + '</span>';
+                    contenido += '<span>' + "Publish Date: " + '</span>';
                     contenido += '<span>' + message.DateTime + '</span>';
-                    contenido += '<button type="button" id=btnPrivateConsultation class="btn" onclick="viewMessage(' + message.Id + ')">Ver</button>';
+                    contenido += '<button type="button" id=btnPrivateConsultation class="btn" onclick="viewMessage(' + message.Id + ')">See</button>';
                     contenido += '</li>';
                     $('#ulPrivateMessage').append(contenido);
                 },
@@ -1023,7 +1023,7 @@ function viewMessage(id) {
                                 contenido += '<span>' + student.StudentName + " " + student.LastName + ': </span>';
                                 contenido += '<span>' + item.Motive + ' </span>';
                                 contenido += '</br>';
-                                contenido += '<span>' + "Fecha publicación: " + '</span>';
+                                contenido += '<span>' + "Publish Date: " + '</span>';
                                 contenido += '<span>' + item.DateTime + '</span>';
                                 contenido += '</li>';
                                 $('#ulRepliesPrivateMessage').append(contenido);
@@ -1047,7 +1047,7 @@ function viewMessage(id) {
                                 contenido += '<span>' + professor.Name + " " + professor.LastName + ': </span>';
                                 contenido += '<span>' + item.Motive + ' </span>';
                                 contenido += '</br>';
-                                contenido += '<span>' + "Fecha publicación: " + '</span>';
+                                contenido += '<span>' + "Publish Date: " + '</span>';
                                 contenido += '<span>' + item.DateTime + '</span>';
                                 contenido += '</li>';
                                 $('#ulRepliesPrivateMessage').append(contenido);
@@ -1061,9 +1061,9 @@ function viewMessage(id) {
                 }
             });
             var contentForm = '';
-            contentForm += '<input type="text" class="form-control" id="addRepliesPrivateMessage" placeholder="Respuesta" autocomplete="off" >';
+            contentForm += '<input type="text" class="form-control" id="addRepliesPrivateMessage" placeholder="Answer" autocomplete="off" >';
             contentForm += '</br>';
-            contentForm += '<button type="button" class="btn" onclick="sendRepliesPrivateMessage(' + id + ');" id="btnRepliesPrivateMessage">Enviar</button>'
+            contentForm += '<button type="button" class="btn" onclick="sendRepliesPrivateMessage(' + id + ');" id="btnRepliesPrivateMessage">Send</button>'
             $('#formPrivateMessage').append(contentForm);
         },
 
@@ -1178,9 +1178,9 @@ function loadAppointmentStudent(studentId, professorId, courseId) {
                     contenido += '<span>' + data.StudentName + " " + data.LastName + ': </span>';
                     contenido += '<span>' + item.Motive + ' </span>';
                     contenido += '</br>';
-                    contenido += '<span>' + "Fecha cita: " + '</span>';
+                    contenido += '<span>' + "Appointment Date: " + '</span>';
                     contenido += '<span>' + item.DateTime + '</span>';
-                    contenido += '<button type="button" class="btn" id="btnViewAppointment" onclick="viewAppointment(' + item.Id + ')">Ver</button>';
+                    contenido += '<button type="button" class="btn" id="btnViewAppointment" onclick="viewAppointment(' + item.Id + ')">See</button>';
                     contenido += '</li>';
                     $('#ulAppointment').append(contenido);
                 },
@@ -1198,12 +1198,12 @@ function viewAppointment(id) {
     $.getJSON('/Course/GetAppointmentById/', { id }, function (appointment, textStatus, jqXHR) {
         var status = "";
         if (appointment.Accepted == 0) {
-            status = "En espera";
+            status = "Waiting";
         } else if (appointment.Accepted == 1) {
-            status = "Aceptada";
+            status = "Accepted";
         }
         else if (appointment.Accepted == 2) {
-            status = "Rechazada";
+            status = "Rejected";
         }
 
         $.ajax({
@@ -1217,10 +1217,10 @@ function viewAppointment(id) {
                 content += '<span>' + student.StudentName + " " + student.LastName + ': </span>';
                 content += '<span>' + appointment.Motive + ' </span>';
                 content += '</br>';
-                content += '<span>' + "Fecha publicación: " + '</span>';
+                content += '<span>' + "Publish Date: " + '</span>';
                 content += '<span>' + appointment.DateTime + '</span>';
                 content += '</br>';
-                content += '<span>' + "Estado: " + '</span>';
+                content += '<span>' + "State: " + '</span>';
                 content += '<span>' + status + '</span>';
                 content += '</li>';
                 $('#ulStatusAppointment').append(content);
@@ -1236,7 +1236,7 @@ function viewAppointment(id) {
 function deleteStudentAccount() {
     var id = document.getElementById("labelStudentId").innerHTML;
 
-    var alert = confirm("¿Está seguro que desea eliminar su cuenta?");
+    var alert = confirm("Are you sure to delete your account?");
 
     if (alert) {
         $.ajax({

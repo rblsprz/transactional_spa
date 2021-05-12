@@ -115,7 +115,7 @@ function loadNewsAdministrator() {
                     item.DateTime,
                     item.Title,
                     item.AuthorName,
-                    '<td><a href="#" onclick="getNewsById(' + item.Id + ')">Editar</a> | <a href="#" onclick="deleteNews(' + item.Id + ')">Borrar</a></td></td>'
+                    '<td><a href="#" onclick="getNewsById(' + item.Id + ')">Edit</a> | <a href="#" onclick="deleteNews(' + item.Id + ')">Delete</a></td></td>'
                 ];
                 dataSet.push(data);
 
@@ -190,7 +190,7 @@ function updateNews() {
 }
 
 function deleteNews(id) {
-    var alert = confirm("¿Está seguro que desea eliminar el registro?");
+    var alert = confirm("Are you sure to delete the register?");
 
     if (alert) {
         $.ajax({
@@ -238,7 +238,7 @@ function watchNews(id) {
                         contenido += '<span>' + comment.AuthorName + ': </span>';
                         contenido += '<span>' + comment.Text + ' </span>';
                         contenido += '</br>';
-                        contenido += '<span>' + "Fecha publicación: " + '</span>';
+                        contenido += '<span>' + "Publish Date: " + '</span>';
                         contenido += '<span>' + comment.DateTime + '</span>';
                         contenido += '</li>';
                         $('#ulComments').append(contenido);
@@ -332,7 +332,7 @@ function getComments(id) {
                 contenido += '<span>' + comment.AuthorName + ': </span>';
                 contenido += '<span>' + comment.Text + ' </span>';
                 contenido += '</br>';
-                contenido += '<span>' + "Fecha publicación: " + '</span>';
+                contenido += '<span>' + "Publish Date: " + '</span>';
                 contenido += '<span>' + comment.DateTime + '</span>';
                 contenido += '</li>';
                 $('#ulComments').append(contenido);
@@ -347,7 +347,7 @@ function getComments(id) {
 }
 
 function deleteComment(id) {
-    var alert = confirm("¿Está seguro que desea eliminar el registro?");
+    var alert = confirm("Are you sure to delete the register?");
 
     if (alert) {
         $.ajax({
@@ -378,7 +378,7 @@ function loadComments() {
                     item.DateTime,
                     item.Text,
                     item.AuthorName,
-                    '<td><a href="#" onclick="deleteComment(' + item.Id + ')">Borrar</a></td>'
+                    '<td><a href="#" onclick="deleteComment(' + item.Id + ')">Delete</a></td>'
                 ];
                 dataSet.push(data);
 

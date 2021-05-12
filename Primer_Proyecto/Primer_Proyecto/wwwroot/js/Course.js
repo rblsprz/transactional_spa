@@ -42,15 +42,15 @@ function getByIdCourse(id) {
     $('#btnEditCourse').show();
     $('#btnAddCourse').hide();
 
-    var activeDropdown = '<option value="-1">Seleccione una opción</option>';
-    activeDropdown += '<option value="0">Inactivo</option>';
-    activeDropdown += '<option value="1">Activo</option>';
+    var activeDropdown = '<option value="-1">Choose an option</option>';
+    activeDropdown += '<option value="0">Inactive</option>';
+    activeDropdown += '<option value="1">Active</option>';
     $("#IsActiveDropdown").html(activeDropdown);
 
-    var cycleDropdown = '<option value="-1">Seleccione una opción</option>';
-    cycleDropdown += '<option value="1">I Semestre</option>';
-    cycleDropdown += '<option value="2">II Semestre</option>';
-    cycleDropdown += '<option value="3">Verano</option>';
+    var cycleDropdown = '<option value="-1">Choose an option</option>';
+    cycleDropdown += '<option value="1">I Semester</option>';
+    cycleDropdown += '<option value="2">II Semester</option>';
+    cycleDropdown += '<option value="3">Summer</option>';
     $("#CycleDropdown").html(cycleDropdown);
 
     $.ajax({
@@ -113,7 +113,7 @@ function editCourse() {
 }
 
 function deleteCourse(id) {
-    var alert = confirm("¿Está seguro que desea eliminar el registro?");
+    var alert = confirm("Are you sure to delete the register?");
 
     if (alert) {
         $.ajax({
@@ -147,15 +147,15 @@ function clearTextBoxCourse() {
     $('#CourseName').val("");
     $('#CourseCredits').val("");
 
-    var activeDropdown= '<option value="-1">Seleccione una opción</option>';
-    activeDropdown += '<option value="0">Inactivo</option>';
-    activeDropdown += '<option value="1">Activo</option>';
+    var activeDropdown= '<option value="-1">Choose an option</option>';
+    activeDropdown += '<option value="0">Inactive</option>';
+    activeDropdown += '<option value="1">Active</option>';
     $("#IsActiveDropdown").html(activeDropdown);
 
-    var cycleDropdown = '<option value="-1">Seleccione una opción</option>';
-    cycleDropdown += '<option value="1">I Semestre</option>';
-    cycleDropdown += '<option value="2">II Semestre</option>';
-    cycleDropdown += '<option value="3">Verano</option>';
+    var cycleDropdown = '<option value="-1">Choose an option</option>';
+    cycleDropdown += '<option value="1">I Semester</option>';
+    cycleDropdown += '<option value="2">II Semester</option>';
+    cycleDropdown += '<option value="3">Summer</option>';
     $("#CycleDropdown").html(cycleDropdown);
 
     $('#CourseInitials').css('border-color', 'lightgrey');
@@ -227,20 +227,20 @@ function loadCourses() {
                 var cycle = "";
                 var active = "";
                 if (item.Cycle == 1) {
-                    cycle = "I Semestre"
+                    cycle = "I Semester"
                 }
                 else if (item.Cycle == 2) {
-                    cycle = "II Semestre"
+                    cycle = "II Semester"
                 }
                 else if (item.Cycle == 3) {
-                    cycle = "Verano"
+                    cycle = "Summer"
                 }
 
                 if (item.IsActive == 0) {
-                    active = "Inactivo"
+                    active = "Inactive"
                 }
                 else if (item.IsActive == 1) {
-                    active = "Activo"
+                    active = "Active"
                 }
 
                 data = [
@@ -249,7 +249,7 @@ function loadCourses() {
                     item.Credits,
                     cycle,
                     active,
-                    '<td><a href="#" onclick="getByIdCourse(' + item.Id + ')">Editar</a> | <a href="#" onclick="deleteCourse(' + item.Id + ')">Borrar</a></td>'
+                    '<td><a href="#" onclick="getByIdCourse(' + item.Id + ')">Edit</a> | <a href="#" onclick="deleteCourse(' + item.Id + ')">Delete</a></td>'
                 ];
                 dataSet.push(data);
             });
@@ -272,7 +272,7 @@ function loadStudentCourses() {
             url: "/Course/ListAllCourses",
             data: "{}",
             success: function (data) {
-                var s = '<option value="-1">Seleccione una opción</option>';
+                var s = '<option value="-1">Choose an option</option>';
                 for (var i = 0; i < data.length; i++) {
                     if (data[i].IsActive == 1) {
                         s += '<option value="' + data[i].Id + '">' + data[i].Name + '</option>';
@@ -295,7 +295,7 @@ function loadStudentCourses() {
 }
 
 function loadProfessorCourses(course) {
-    var s = '<option value="-1">Seleccione una opción</option>';
+    var s = '<option value="-1">Choose an option</option>';
     $("#professorListDropdown").html(s);
     $(document).ready(function () {
         $.ajax({
@@ -303,7 +303,7 @@ function loadProfessorCourses(course) {
             url: "/Course/GetProfessorByIdCourse/" + course,
             data: "{}",
             success: function (data) {
-                var s = '<option value="-1">Seleccione una opción</option>';
+                var s = '<option value="-1">Choose an option</option>';
                 for (var i = 0; i < data.length; i++) {
                     s += '<option value="' + data[i].Id + '">' + data[i].Name + '</option>';
                 }

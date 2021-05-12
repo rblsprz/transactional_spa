@@ -86,7 +86,7 @@ function Add() { //llame al controlador home
         success: function (result) {
             //aca recibo el resultafo del backend (datos,objetos,mensajes)
             Clean();
-            document.getElementById("message").innerHTML = "User Was Inserted";
+            document.getElementById("message").innerHTML = "User was inserted";
             document.getElementById("message").style.color = "green";
 
         },
@@ -94,7 +94,7 @@ function Add() { //llame al controlador home
             /*alert("Error");
             alert(errorMessage.responseText);
             */
-            document.getElementById("message").innerHTML = "User Was Not Inserted";
+            document.getElementById("message").innerHTML = "User was not inserted";
             document.getElementById("message").style.color = "red";
 
         }
@@ -113,7 +113,7 @@ function Delete(id) { //llame al controlador home
         dataType: "json",
         success: function (result) {
             //aca recibo el resultafo del backend (datos,objetos,mensajes)
-            alert("ELIMINADO");
+            alert("Deleted");
             LoadData();
         },
         error: function (errorMessage) {

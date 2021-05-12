@@ -61,7 +61,7 @@ function login() {
 
                 $.getJSON('/Student/ListAllStudents', function (resultStudent, textStatus, jqXHR) {
                     $.each(resultStudent, function (key, student) {
-                        if (data.Id == student.Id && student.RegistrationStatus == "Aprobado") {
+                        if (data.Id == student.Id && student.RegistrationStatus == "Approved") {
                             $("#home").hide();
                                 $("#myModalSignLog").hide();
                                 $('.modal-backdrop').hide();
@@ -105,7 +105,7 @@ function login() {
 async function invalidUser() {
     await sleep(1000);
     $('#invalidUser').show();
-    document.querySelector('#invalidUser').innerText = "Datos incorrectos.";
+    document.querySelector('#invalidUser').innerText = "Incorrect Data";
 }
 
 function sleep(ms) {
@@ -230,7 +230,7 @@ function studentInformation(id) {
         contentType: "application/json;charset=utf-8",
         dataType: "json",
         success: function (result) {
-            document.querySelector('#StudentWelcomeMessage').innerText = 'Bienvenido(a) ' + result.StudentName + ' ' + result.LastName;
+            document.querySelector('#StudentWelcomeMessage').innerText = 'Welcome ' + result.StudentName + ' ' + result.LastName;
             document.querySelector('#labelStudentId').innerText = result.Id;
             document.querySelector('#labelStudentCard').innerText = result.StudentCard;
             document.querySelector('#labelStudentUserName').innerText = result.Username;
@@ -258,7 +258,7 @@ function professorInformation(id) {
         dataType: "json",
         success: function (result) {
             document.querySelector('#labelProfessorId').innerText = result.Id;
-            document.querySelector('#ProfessorWelcomeMessage').innerText = 'Bienvenido(a) ' + result.Name + ' ' + result.LastName;
+            document.querySelector('#ProfessorWelcomeMessage').innerText = 'Welcome ' + result.Name + ' ' + result.LastName;
             document.querySelector('#labelProfessorUserName').innerText = result.Username;
             document.querySelector('#labelProfessorName').innerText = result.Name + ' ' + result.LastName;
             document.querySelector('#labelProfessorMail').innerText = result.Mail;
@@ -281,7 +281,7 @@ function loadSocialNetwork() {
         url: "/Student/ListSocialNetworksCatalog",
         data: "{}",
         success: function (data) {
-            var s = '<option value="-1">Seleccione una opción</option>';
+            var s = '<option value="-1">Choose an option</option>';
             for (var i = 0; i < data.length; i++) {
                 s += '<option value="' + data[i].Id + '">' + data[i].Name + '</option>';
             }
