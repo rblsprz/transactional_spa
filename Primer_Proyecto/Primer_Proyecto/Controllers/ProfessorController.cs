@@ -1,4 +1,5 @@
-﻿using Primer_Proyecto.Models;
+﻿/*using Primer_Proyecto.Models;
+using Primer_Proyecto.Models.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace Primer_Proyecto.Controllers
         ProfessorDataEF ProfessorDataEF = new ProfessorDataEF();
         Email Email = new Email();
 
-        public JsonResult Add(Professor professor, Location location, Users user)
+        public JsonResult Add(Professor professor, Location location, User user)
         {
             Email.SendEmail(professor.Mail, "Username", professor.Name + " " + professor.LastName + ", has been added successfully" +
                 "\nUsername " + user.Username +
@@ -25,7 +26,7 @@ namespace Primer_Proyecto.Controllers
             return Json(ProfessorDataEF.Add(professor, location, user), JsonRequestBehavior.AllowGet);
         }
 
-        public JsonResult Update(Professor professor, Location location, Users user)
+        public JsonResult Update(Professor professor, Location location, User user)
         {
             return Json(ProfessorDataEF.Update(professor, location, user), JsonRequestBehavior.AllowGet);
         }
@@ -82,3 +83,4 @@ namespace Primer_Proyecto.Controllers
         }
     }
 }
+*/

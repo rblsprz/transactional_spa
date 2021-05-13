@@ -1,4 +1,5 @@
-﻿using System;
+﻿/*using Primer_Proyecto.Models.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -8,7 +9,7 @@ namespace Primer_Proyecto.Models
 {
     public class ProfessorDataEF
     {
-        public int Add(Professor professor, Location location, Users user)
+        public int Add(Professor professor, Location location, User user)
         {
             int resultToReturn;
 
@@ -32,7 +33,7 @@ namespace Primer_Proyecto.Models
             return resultToReturn;
         }
 
-        public int Update(Professor professor, Location location, Users user)
+        public int Update(Professor professor, Location location, User user)
         {
             int resultToReturn;
 
@@ -156,3 +157,4 @@ namespace Primer_Proyecto.Models
         }
     }
 }
+*/

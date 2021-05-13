@@ -1,4 +1,4 @@
-﻿using Primer_Proyecto.Models;
+﻿/*using Primer_Proyecto.Models;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -9,6 +9,7 @@ using System.Web;
 using System.Web.Mvc;
 using Microsoft.VisualBasic.Devices;
 using System.Windows.Forms;
+using Primer_Proyecto.Models.Entities;
 
 namespace Primer_Proyecto.Controllers
 {
@@ -23,7 +24,7 @@ namespace Primer_Proyecto.Controllers
         StudentDataEF StudentDataEF = new StudentDataEF();
         Email Email = new Email();
 
-        public JsonResult Add(Student student, Location location, Users user)
+        public JsonResult Add(Student student, Location location, User user)
         {
             Email.SendEmail(student.Mail, "Username", student.StudentName + " " + student.LastName +
               ", has been added successfully, your approval is pending ");
@@ -32,7 +33,7 @@ namespace Primer_Proyecto.Controllers
 
 
 
-        public JsonResult Update(Student student, Location location, Users user)
+        public JsonResult Update(Student student, Location location, User user)
         {
             return Json(StudentDataEF.Update(student, location, user), JsonRequestBehavior.AllowGet);
         }
@@ -116,3 +117,4 @@ namespace Primer_Proyecto.Controllers
         }
     }
 }
+*/

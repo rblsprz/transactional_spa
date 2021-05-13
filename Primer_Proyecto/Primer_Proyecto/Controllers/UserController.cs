@@ -1,4 +1,4 @@
-﻿using Primer_Proyecto.Models;
+﻿/*using Primer_Proyecto.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,3 +22,4 @@ namespace Primer_Proyecto.Controllers
         }
     }
 }
+*/
