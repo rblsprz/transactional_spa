@@ -296,7 +296,7 @@ function EditStudent() {
 }
 
 function deleteStudent(id) {
-    var alert = confirm("Are you sure to delete the register?);
+    var alert = confirm("Are you sure to delete the register?");
 
     if (alert) {
         $.ajax({
