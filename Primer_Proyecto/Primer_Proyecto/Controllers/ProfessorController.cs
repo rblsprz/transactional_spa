@@ -19,9 +19,9 @@ namespace Primer_Proyecto.Controllers
 
         public JsonResult Add(Professor professor, Location location, Users user)
         {
-            Email.SendEmail(professor.Mail, "Nuevo Usuario", professor.Name + " " + professor.LastName + ", ha sido añadido satisfactoriamente." +
-                "\nNombre de usuario: " + user.Username +
-                "\nContraseña temporal: " + user.Password + "\nDiríjase al sitio a realizar el cambio de contraseña.");
+            Email.SendEmail(professor.Mail, "Username", professor.Name + " " + professor.LastName + ", has been added successfully" +
+                "\nUsername " + user.Username +
+                "\nTemporal Password " + user.Password + "\nGo to the site to perform the password change");
             return Json(ProfessorDataEF.Add(professor, location, user), JsonRequestBehavior.AllowGet);
         }
 

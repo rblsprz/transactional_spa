@@ -25,8 +25,8 @@ namespace Primer_Proyecto.Controllers
 
         public JsonResult Add(Student student, Location location, Users user)
         {
-            Email.SendEmail(student.Mail, "Nuevo Usuario", student.StudentName + " " + student.LastName +
-              ", ha sido añadido satisfactoriamente, su aprobación se encuentra en espera. ");
+            Email.SendEmail(student.Mail, "Username", student.StudentName + " " + student.LastName +
+              ", has been added successfully, your approval is pending ");
             return Json(StudentDataEF.Add(student, location, user), JsonRequestBehavior.AllowGet);
         }
 
@@ -61,15 +61,15 @@ namespace Primer_Proyecto.Controllers
         public JsonResult StudentApproval(int id)
         {
             var student = StudentDataEF.GetStudentById(id);
-            Email.SendEmail(student.Mail, "Actualización de estado", "El estudiante " + student.StudentName + " " + student.LastName + ", ha sido aprobado.");
-            return Json(StudentDataEF.UpdateStudentStatus(id, "Aprobado"), JsonRequestBehavior.AllowGet);
+            Email.SendEmail(student.Mail, "Status update", "The student " + student.StudentName + " " + student.LastName + ", has been approved");
+            return Json(StudentDataEF.UpdateStudentStatus(id, "Approved"), JsonRequestBehavior.AllowGet);
         }
 
         public JsonResult StudentDeny(int id)
         {
             var student = StudentDataEF.GetStudentById(id);
-            Email.SendEmail(student.Mail, "Actualización de estado", "El estudiante " + student.StudentName + " " + student.LastName + ", ha sido rechazado.");
-            return Json(StudentDataEF.UpdateStudentStatus(id, "Rechazado"), JsonRequestBehavior.AllowGet);
+            Email.SendEmail(student.Mail, "Status update", "The student " + student.StudentName + " " + student.LastName + ", has been rejected ");
+            return Json(StudentDataEF.UpdateStudentStatus(id, "Rejected"), JsonRequestBehavior.AllowGet);
         }
 
         public JsonResult DeleteStudent(int id)
@@ -112,7 +112,7 @@ namespace Primer_Proyecto.Controllers
 
         public void emailAppointment(String email)
         {
-            Email.SendEmail(email, "Nueva cita de atención", "Se le informa que usted posee una nueva cita de atención por parte de un estudiante.");
+            Email.SendEmail(email, "New care appointment", "You are informed that you have a new appointment for care by a student");
         }
     }
 }
