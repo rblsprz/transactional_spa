@@ -2,93 +2,6 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "Antlr/3.4.1.9004": {
-        "type": "package",
-        "compile": {
-          "lib/Antlr3.Runtime.dll": {}
-        },
-        "runtime": {
-          "lib/Antlr3.Runtime.dll": {}
-        }
-      },
-      "AttributeRouting/3.4.2": {
-        "type": "package",
-        "dependencies": {
-          "AttributeRouting.Core": "3.4.2",
-          "AttributeRouting.Core.Web": "3.4.2",
-          "WebActivator": "1.0.0"
-        },
-        "compile": {
-          "lib/net40/AttributeRouting.Web.Mvc.dll": {}
-        },
-        "runtime": {
-          "lib/net40/AttributeRouting.Web.Mvc.dll": {}
-        }
-      },
-      "AttributeRouting.Core/3.5.6": {
-        "type": "package",
-        "compile": {
-          "lib/net40/AttributeRouting.dll": {}
-        },
-        "runtime": {
-          "lib/net40/AttributeRouting.dll": {}
-        }
-      },
-      "AttributeRouting.Core.Http/3.5.6": {
-        "type": "package",
-        "dependencies": {
-          "AttributeRouting.Core": "3.5.6"
-        },
-        "compile": {
-          "lib/net40/AttributeRouting.Web.Http.dll": {}
-        },
-        "runtime": {
-          "lib/net40/AttributeRouting.Web.Http.dll": {}
-        }
-      },
-      "AttributeRouting.Core.Web/3.5.6": {
-        "type": "package",
-        "dependencies": {
-          "AttributeRouting.Core": "3.5.6"
-        },
-        "compile": {
-          "lib/net40/AttributeRouting.Web.dll": {}
-        },
-        "runtime": {
-          "lib/net40/AttributeRouting.Web.dll": {}
-        }
-      },
-      "AttributeRouting.WebApi/3.5.6": {
-        "type": "package",
-        "dependencies": {
-          "AttributeRouting.Core": "3.5.6",
-          "AttributeRouting.Core.Http": "3.5.6",
-          "AttributeRouting.Core.Web": "3.5.6",
-          "Microsoft.AspNet.WebApi.WebHost": "4.0.20710",
-          "WebActivator": "1.0.0"
-        },
-        "compile": {
-          "lib/net40/AttributeRouting.Web.Http.WebHost.dll": {}
-        },
-        "runtime": {
-          "lib/net40/AttributeRouting.Web.Http.WebHost.dll": {}
-        }
-      },
-      "AttributeRouting.WebApi.Hosted/3.5.6": {
-        "type": "package",
-        "dependencies": {
-          "AttributeRouting.Core": "3.5.6",
-          "AttributeRouting.Core.Http": "3.5.6",
-          "Microsoft.AspNet.WebApi.SelfHost": "4.0.20710",
-          "WebActivator": "1.0.0"
-        },
-        "compile": {
-          "lib/net40/AttributeRouting.Web.Http.SelfHost.dll": {}
-        },
-        "runtime": {
-          "lib/net40/AttributeRouting.Web.Http.SelfHost.dll": {}
-        }
-      },
       "Humanizer.Core/2.8.26": {
         "type": "package",
         "compile": {
@@ -96,110 +9,6 @@
         },
         "runtime": {
           "lib/netstandard2.0/Humanizer.dll": {}
-        }
-      },
-      "Microsoft.AspNet.Mvc/3.0.50813.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNet.Razor": "1.0.20105.408",
-          "Microsoft.AspNet.WebPages": "1.0.20105.408"
-        },
-        "compile": {
-          "lib/net40/System.Web.Mvc.dll": {}
-        },
-        "runtime": {
-          "lib/net40/System.Web.Mvc.dll": {}
-        }
-      },
-      "Microsoft.AspNet.Razor/1.0.20105.408": {
-        "type": "package",
-        "compile": {
-          "lib/net40/System.Web.Razor.dll": {}
-        },
-        "runtime": {
-          "lib/net40/System.Web.Razor.dll": {}
-        }
-      },
-      "Microsoft.AspNet.Web.Optimization/1.1.3": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Web.Infrastructure": "1.0.0",
-          "WebGrease": "1.5.2"
-        },
-        "compile": {
-          "lib/net40/System.Web.Optimization.dll": {}
-        },
-        "runtime": {
-          "lib/net40/System.Web.Optimization.dll": {}
-        }
-      },
-      "Microsoft.AspNet.WebApi.Client/4.0.20710": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Net.Http": "[2.0.20710, 2.1.0)",
-          "Newtonsoft.Json": "4.5.6"
-        },
-        "compile": {
-          "lib/net40/System.Net.Http.Formatting.dll": {}
-        },
-        "runtime": {
-          "lib/net40/System.Net.Http.Formatting.dll": {}
-        }
-      },
-      "Microsoft.AspNet.WebApi.Core/4.0.20710": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNet.WebApi.Client": "[4.0.20710, 4.1.0)"
-        },
-        "compile": {
-          "lib/net40/System.Web.Http.dll": {}
-        },
-        "runtime": {
-          "lib/net40/System.Web.Http.dll": {}
-        }
-      },
-      "Microsoft.AspNet.WebApi.SelfHost/4.0.20710": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNet.WebApi.Core": "[4.0.20710, 4.1.0)"
-        },
-        "compile": {
-          "lib/net40/System.Web.Http.SelfHost.dll": {}
-        },
-        "runtime": {
-          "lib/net40/System.Web.Http.SelfHost.dll": {}
-        }
-      },
-      "Microsoft.AspNet.WebApi.WebHost/4.0.20710": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNet.WebApi.Core": "[4.0.20710, 4.1.0)",
-          "Microsoft.Web.Infrastructure": "1.0.0"
-        },
-        "compile": {
-          "lib/net40/System.Web.Http.WebHost.dll": {}
-        },
-        "runtime": {
-          "lib/net40/System.Web.Http.WebHost.dll": {}
-        }
-      },
-      "Microsoft.AspNet.WebPages/1.0.20105.408": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNet.Razor": "1.0.20105.408",
-          "Microsoft.Web.Infrastructure": "1.0.0"
-        },
-        "compile": {
-          "lib/net40/System.Web.Helpers.dll": {},
-          "lib/net40/System.Web.WebPages.Deployment.dll": {},
-          "lib/net40/System.Web.WebPages.Razor.dll": {},
-          "lib/net40/System.Web.WebPages.dll": {}
-        },
-        "runtime": {
-          "lib/net40/System.Web.Helpers.dll": {},
-          "lib/net40/System.Web.WebPages.Deployment.dll": {},
-          "lib/net40/System.Web.WebPages.Razor.dll": {},
-          "lib/net40/System.Web.WebPages.dll": {}
         }
       },
       "Microsoft.CSharp/4.7.0": {
@@ -279,11 +88,11 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore/5.0.5": {
+      "Microsoft.EntityFrameworkCore/5.0.6": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Abstractions": "5.0.5",
-          "Microsoft.EntityFrameworkCore.Analyzers": "5.0.5",
+          "Microsoft.EntityFrameworkCore.Abstractions": "5.0.6",
+          "Microsoft.EntityFrameworkCore.Analyzers": "5.0.6",
           "Microsoft.Extensions.Caching.Memory": "5.0.0",
           "Microsoft.Extensions.DependencyInjection": "5.0.1",
           "Microsoft.Extensions.Logging": "5.0.0",
@@ -298,7 +107,7 @@
           "lib/netstandard2.1/Microsoft.EntityFrameworkCore.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Abstractions/5.0.5": {
+      "Microsoft.EntityFrameworkCore.Abstractions/5.0.6": {
         "type": "package",
         "compile": {
           "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Abstractions.dll": {}
@@ -307,7 +116,7 @@
           "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Abstractions.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Analyzers/5.0.5": {
+      "Microsoft.EntityFrameworkCore.Analyzers/5.0.6": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/_._": {}
@@ -316,12 +125,12 @@
           "lib/netstandard2.0/_._": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Design/5.0.5": {
+      "Microsoft.EntityFrameworkCore.Design/5.0.6": {
         "type": "package",
         "dependencies": {
           "Humanizer.Core": "2.8.26",
           "Microsoft.CSharp": "4.7.0",
-          "Microsoft.EntityFrameworkCore.Relational": "5.0.5"
+          "Microsoft.EntityFrameworkCore.Relational": "5.0.6"
         },
         "compile": {
           "lib/netstandard2.1/_._": {}
@@ -333,10 +142,10 @@
           "build/netcoreapp3.0/Microsoft.EntityFrameworkCore.Design.props": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Relational/5.0.5": {
+      "Microsoft.EntityFrameworkCore.Relational/5.0.6": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "5.0.5",
+          "Microsoft.EntityFrameworkCore": "5.0.6",
           "Microsoft.Extensions.Configuration.Abstractions": "5.0.0"
         },
         "compile": {
@@ -346,11 +155,11 @@
           "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Relational.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.SqlServer/5.0.5": {
+      "Microsoft.EntityFrameworkCore.SqlServer/5.0.6": {
         "type": "package",
         "dependencies": {
           "Microsoft.Data.SqlClient": "2.0.1",
-          "Microsoft.EntityFrameworkCore.Relational": "5.0.5"
+          "Microsoft.EntityFrameworkCore.Relational": "5.0.6"
         },
         "compile": {
           "lib/netstandard2.1/Microsoft.EntityFrameworkCore.SqlServer.dll": {}
@@ -359,10 +168,10 @@
           "lib/netstandard2.1/Microsoft.EntityFrameworkCore.SqlServer.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Tools/5.0.5": {
+      "Microsoft.EntityFrameworkCore.Tools/5.0.6": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Design": "5.0.5"
+          "Microsoft.EntityFrameworkCore.Design": "5.0.6"
         },
         "compile": {
           "lib/netstandard2.1/_._": {}
@@ -562,15 +371,6 @@
           "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.dll": {}
         }
       },
-      "Microsoft.Net.Http/2.0.20710": {
-        "type": "package",
-        "compile": {
-          "lib/net45/_._": {}
-        },
-        "runtime": {
-          "lib/net45/_._": {}
-        }
-      },
       "Microsoft.NETCore.Platforms/3.1.0": {
         "type": "package",
         "compile": {
@@ -587,15 +387,6 @@
         },
         "runtime": {
           "lib/netstandard1.0/_._": {}
-        }
-      },
-      "Microsoft.Web.Infrastructure/1.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/net40/Microsoft.Web.Infrastructure.dll": {}
-        },
-        "runtime": {
-          "lib/net40/Microsoft.Web.Infrastructure.dll": {}
         }
       },
       "Microsoft.Win32.Registry/4.7.0": {
@@ -1729,139 +1520,10 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
-      },
-      "WebActivator/1.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/WebActivator.dll": {}
-        },
-        "runtime": {
-          "lib/WebActivator.dll": {}
-        }
-      },
-      "WebGrease/1.5.2": {
-        "type": "package",
-        "dependencies": {
-          "Antlr": "3.4.1.9004",
-          "Newtonsoft.Json": "5.0.4"
-        },
-        "compile": {
-          "lib/WebGrease.dll": {}
-        },
-        "runtime": {
-          "lib/WebGrease.dll": {}
-        }
       }
     }
   },
   "libraries": {
-    "Antlr/3.4.1.9004": {
-      "sha512": "c1S+HBE+KYA5EBxtn25LEK02hHPH/tDQ6RviUTTCJpZIPoputtn8ArsQJy9lVJWZOnw37ufByO2Fmf1M8wpr8Q==",
-      "type": "package",
-      "path": "antlr/3.4.1.9004",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "antlr.3.4.1.9004.nupkg.sha512",
-        "antlr.nuspec",
-        "lib/Antlr3.Runtime.dll",
-        "lib/Antlr3.Runtime.pdb"
-      ]
-    },
-    "AttributeRouting/3.4.2": {
-      "sha512": "GPFiSPGng5+OgkaKBPKlfLDpSiPO/WFOsCjJLWmAbkEbjsxcV2oSG/va6xtWKuA2eqCMFJf6F+sv+klZ+ZHBjg==",
-      "type": "package",
-      "path": "attributerouting/3.4.2",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "attributerouting.3.4.2.nupkg.sha512",
-        "attributerouting.nuspec",
-        "content/App_Start/AttributeRouting.cs.pp",
-        "content/App_Start/AttributeRouting.vb.pp",
-        "content/web.config.transform",
-        "lib/net40/AttributeRouting.Web.Mvc.dll",
-        "lib/net40/AttributeRouting.Web.Mvc.xml",
-        "readme.txt",
-        "tools/install.ps1"
-      ]
-    },
-    "AttributeRouting.Core/3.5.6": {
-      "sha512": "VUzNqJee4x3rHqzocoxE0BZ0ZGHUQHD9p+n3LKwM8qle0PWbL2OtsqO29kcojE02qoXs/1AYwIRcavt49FXF4g==",
-      "type": "package",
-      "path": "attributerouting.core/3.5.6",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "attributerouting.core.3.5.6.nupkg.sha512",
-        "attributerouting.core.nuspec",
-        "lib/net40/AttributeRouting.dll",
-        "lib/net40/AttributeRouting.xml"
-      ]
-    },
-    "AttributeRouting.Core.Http/3.5.6": {
-      "sha512": "+uNznBxehPBgG6HEEDXRz9YBOtkLsbIsNYPX5ZPBGC9FDnMiKsgYQSCdbX9d7fYuONIvnOMyW5J3Kus07Es4xg==",
-      "type": "package",
-      "path": "attributerouting.core.http/3.5.6",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "attributerouting.core.http.3.5.6.nupkg.sha512",
-        "attributerouting.core.http.nuspec",
-        "lib/net40/AttributeRouting.Web.Http.dll",
-        "lib/net40/AttributeRouting.Web.Http.xml"
-      ]
-    },
-    "AttributeRouting.Core.Web/3.5.6": {
-      "sha512": "E6c3mHhe6R2seyB7VmLV7A5JoYfmx87rjSW8R2Bw8HleHVI/VLXdQodUpLPuB8Z5cwfSQtgbP76y9mWIPWHclQ==",
-      "type": "package",
-      "path": "attributerouting.core.web/3.5.6",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "attributerouting.core.web.3.5.6.nupkg.sha512",
-        "attributerouting.core.web.nuspec",
-        "lib/net40/AttributeRouting.Web.dll",
-        "lib/net40/AttributeRouting.Web.xml"
-      ]
-    },
-    "AttributeRouting.WebApi/3.5.6": {
-      "sha512": "lSyJ+eaX86PEUv4KqJzejesW35UI1WEG9+nR2WVmmZL9ljVdkDL7rz23QlZcfbww2RjLBTVdNlMEsVVbqWNvtQ==",
-      "type": "package",
-      "path": "attributerouting.webapi/3.5.6",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "attributerouting.webapi.3.5.6.nupkg.sha512",
-        "attributerouting.webapi.nuspec",
-        "content/App_Start/AttributeRoutingHttpConfig.cs.pp",
-        "content/App_Start/AttributeRoutingHttpConfig.vb.pp",
-        "content/web.config.transform",
-        "lib/net40/AttributeRouting.Web.Http.WebHost.dll",
-        "lib/net40/AttributeRouting.Web.Http.WebHost.xml",
-        "readme.txt",
-        "tools/install.ps1"
-      ]
-    },
-    "AttributeRouting.WebApi.Hosted/3.5.6": {
-      "sha512": "ddhX1PgREhfoTJEAAggzZcWGtagP+WTJKWpyutVX0871tvXt2FjgW/z+0/FxmpOFGENZpaVa85WCZaWtCV8+gg==",
-      "type": "package",
-      "path": "attributerouting.webapi.hosted/3.5.6",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "attributerouting.webapi.hosted.3.5.6.nupkg.sha512",
-        "attributerouting.webapi.hosted.nuspec",
-        "content/AttributeRoutingConfig.cs.pp",
-        "content/AttributeRoutingConfig.vb.pp",
-        "lib/net40/AttributeRouting.Web.Http.SelfHost.dll",
-        "lib/net40/AttributeRouting.Web.Http.SelfHost.xml",
-        "tools/install.ps1"
-      ]
-    },
     "Humanizer.Core/2.8.26": {
       "sha512": "OiKusGL20vby4uDEswj2IgkdchC1yQ6rwbIkZDVBPIR6al2b7n3pC91elBul9q33KaBgRKhbZH3+2Ur4fnWx2A==",
       "type": "package",
@@ -1876,113 +1538,6 @@
         "lib/netstandard2.0/Humanizer.dll",
         "lib/netstandard2.0/Humanizer.xml",
         "logo.png"
-      ]
-    },
-    "Microsoft.AspNet.Mvc/3.0.50813.1": {
-      "sha512": "0WtbRi7UYtd8uzq34VlMsA5Y4qFsY+56iwaSTQHAt4kenxKlA0wqn52L2r4jTl+BLe/SSujwrAVIvLRsLuR8ZQ==",
-      "type": "package",
-      "path": "microsoft.aspnet.mvc/3.0.50813.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "content/Web.config.install.xdt",
-        "content/Web.config.uninstall.xdt",
-        "lib/net40/System.Web.Mvc.dll",
-        "microsoft.aspnet.mvc.3.0.50813.1.nupkg.sha512",
-        "microsoft.aspnet.mvc.nuspec"
-      ]
-    },
-    "Microsoft.AspNet.Razor/1.0.20105.408": {
-      "sha512": "vRmwL/G31Xc9DusVQUJXmDpTYEVB7xUoIjKqCyuOHrCyG9kzM66MadNjdPLzplSsDoWqiae35US8XiiI3e6SBw==",
-      "type": "package",
-      "path": "microsoft.aspnet.razor/1.0.20105.408",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net40/System.Web.Razor.dll",
-        "microsoft.aspnet.razor.1.0.20105.408.nupkg.sha512",
-        "microsoft.aspnet.razor.nuspec"
-      ]
-    },
-    "Microsoft.AspNet.Web.Optimization/1.1.3": {
-      "sha512": "TWKKpTWEdB8jXp2Vl2TXNKW30GBQg6nnh0y8iZWmGY5c1XY4f649vfDslNHsCsvk9JZxc1Rkm/UGDdfq4gjWRQ==",
-      "type": "package",
-      "path": "microsoft.aspnet.web.optimization/1.1.3",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net40/System.Web.Optimization.dll",
-        "lib/net40/system.web.optimization.xml",
-        "microsoft.aspnet.web.optimization.1.1.3.nupkg.sha512",
-        "microsoft.aspnet.web.optimization.nuspec"
-      ]
-    },
-    "Microsoft.AspNet.WebApi.Client/4.0.20710": {
-      "sha512": "BwFtW0cGr8tg02XalvF8MmznOpYrhquD2eXWI0oF3LLSqLMFoFkb8Pmke/7SnqkiNc+YfsaUqdXEKbjhv1Ctrw==",
-      "type": "package",
-      "path": "microsoft.aspnet.webapi.client/4.0.20710",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net40/System.Net.Http.Formatting.dll",
-        "lib/net40/System.Net.Http.Formatting.xml",
-        "microsoft.aspnet.webapi.client.4.0.20710.nupkg.sha512",
-        "microsoft.aspnet.webapi.client.nuspec"
-      ]
-    },
-    "Microsoft.AspNet.WebApi.Core/4.0.20710": {
-      "sha512": "ufD+tH4W7+eNsb4pzX5oFTDcgI6J3lffughFTkyLHPBZ+A4Eo+VncAxt3lbt9zxxbLHXIbgJHYRLvtgR5YEZAQ==",
-      "type": "package",
-      "path": "microsoft.aspnet.webapi.core/4.0.20710",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "content/web.config.transform",
-        "lib/net40/System.Web.Http.dll",
-        "lib/net40/System.Web.Http.xml",
-        "microsoft.aspnet.webapi.core.4.0.20710.nupkg.sha512",
-        "microsoft.aspnet.webapi.core.nuspec"
-      ]
-    },
-    "Microsoft.AspNet.WebApi.SelfHost/4.0.20710": {
-      "sha512": "wBScQGuvnSA6iVXCEgA8WUYyy91Q+92OVpPTZDHYxFuiLli7SQanK9o6zGagqbssXHjgn28TN8g+hDXPbCdtUA==",
-      "type": "package",
-      "path": "microsoft.aspnet.webapi.selfhost/4.0.20710",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net40/System.Web.Http.SelfHost.dll",
-        "lib/net40/System.Web.Http.SelfHost.xml",
-        "microsoft.aspnet.webapi.selfhost.4.0.20710.nupkg.sha512",
-        "microsoft.aspnet.webapi.selfhost.nuspec"
-      ]
-    },
-    "Microsoft.AspNet.WebApi.WebHost/4.0.20710": {
-      "sha512": "Pqje5F4BJvnN6z2eSIuyCCZNJbIPap/4bYfvvHYy/kiYPj7+cFK+tgcSKWgITwk+6K8v+Bf3Et16DXQQuK+wEg==",
-      "type": "package",
-      "path": "microsoft.aspnet.webapi.webhost/4.0.20710",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net40/System.Web.Http.WebHost.dll",
-        "lib/net40/System.Web.Http.WebHost.xml",
-        "microsoft.aspnet.webapi.webhost.4.0.20710.nupkg.sha512",
-        "microsoft.aspnet.webapi.webhost.nuspec"
-      ]
-    },
-    "Microsoft.AspNet.WebPages/1.0.20105.408": {
-      "sha512": "da1//kx0b6GXJG6V8vGl7PmvhPJE/aNs2mK0QJ9bojgy059BDdYhmAwpTT1ucDgbImbFDdmNGi/XJj2SU0QJeA==",
-      "type": "package",
-      "path": "microsoft.aspnet.webpages/1.0.20105.408",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net40/System.Web.Helpers.dll",
-        "lib/net40/System.Web.WebPages.Deployment.dll",
-        "lib/net40/System.Web.WebPages.Razor.dll",
-        "lib/net40/System.Web.WebPages.dll",
-        "microsoft.aspnet.webpages.1.0.20105.408.nupkg.sha512",
-        "microsoft.aspnet.webpages.nuspec"
       ]
     },
     "Microsoft.CSharp/4.7.0": {
@@ -2135,52 +1690,52 @@
         "runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.pdb"
       ]
     },
-    "Microsoft.EntityFrameworkCore/5.0.5": {
-      "sha512": "lBIGKXhduT94Qats0ImMma9NWnsSLhz04JdD+Mi7DeCDPd3hiA668jREzCiLb9FqcmAIrLx8pxIo9cwjEHfYtQ==",
+    "Microsoft.EntityFrameworkCore/5.0.6": {
+      "sha512": "uEqAprroH469aPCZm4iPA1oD8/YDqEQT9QjINkq4HWFA2kRh7Dm2lXX4uZ4MAzpcxoWCqKni2KbLqG8I0KnGqw==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore/5.0.5",
+      "path": "microsoft.entityframeworkcore/5.0.6",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/netstandard2.1/Microsoft.EntityFrameworkCore.dll",
         "lib/netstandard2.1/Microsoft.EntityFrameworkCore.xml",
-        "microsoft.entityframeworkcore.5.0.5.nupkg.sha512",
+        "microsoft.entityframeworkcore.5.0.6.nupkg.sha512",
         "microsoft.entityframeworkcore.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Abstractions/5.0.5": {
-      "sha512": "jS7+hySzNS9wCmREbWTVaa5EA+aLT7wb1Si1jhMgAiGrbLQSj6wPnS8WbhO5a7iAq45pDEK0KghtrPDFjfTxVw==",
+    "Microsoft.EntityFrameworkCore.Abstractions/5.0.6": {
+      "sha512": "mZCwrwaiE3dSfJZZLihPueGJ2L5/vPU8VPpz21lErYIMmtZmxfSqocXe65bLlwMQ6EO/OcW7P+tvHWPsrAzMTg==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.abstractions/5.0.5",
+      "path": "microsoft.entityframeworkcore.abstractions/5.0.6",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Abstractions.dll",
         "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Abstractions.xml",
-        "microsoft.entityframeworkcore.abstractions.5.0.5.nupkg.sha512",
+        "microsoft.entityframeworkcore.abstractions.5.0.6.nupkg.sha512",
         "microsoft.entityframeworkcore.abstractions.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Analyzers/5.0.5": {
-      "sha512": "czVyD5h0etXlrFHln0GPwlhmNm4yFe8vA/xfW/oN26OT8AAWkA6YPjr+z68/kmPqMWFo8UHxvDBZ9g2TiJY9qQ==",
+    "Microsoft.EntityFrameworkCore.Analyzers/5.0.6": {
+      "sha512": "PhcaRr/5NgTVjm43ITSPSYQGYCUkyuBV1gEDipLnDZI+VsYwyr2HH8pHXDUaY1E6dkZoiWNRt+XNMAsK3qDIKQ==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.analyzers/5.0.5",
+      "path": "microsoft.entityframeworkcore.analyzers/5.0.6",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "analyzers/dotnet/cs/Microsoft.EntityFrameworkCore.Analyzers.dll",
         "lib/netstandard2.0/_._",
-        "microsoft.entityframeworkcore.analyzers.5.0.5.nupkg.sha512",
+        "microsoft.entityframeworkcore.analyzers.5.0.6.nupkg.sha512",
         "microsoft.entityframeworkcore.analyzers.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Design/5.0.5": {
-      "sha512": "bEjgWGrEWtCQl1A3wx1xW+tALhuWHG+0hXFr9G+GrwkVLaZiW0tILqRx1DJ0y4t12dUf8tMsv0LMokKIf8IOFw==",
+    "Microsoft.EntityFrameworkCore.Design/5.0.6": {
+      "sha512": "2hjMovtUx3zvMMJDNjFFtYbiYRg7SNAyRe3JQzCYy7kXfADcyr7tuf9meq0lxGZBf8qvilYcDaBj5M+iq90krQ==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.design/5.0.5",
+      "path": "microsoft.entityframeworkcore.design/5.0.6",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2188,49 +1743,49 @@
         "build/netcoreapp3.0/Microsoft.EntityFrameworkCore.Design.props",
         "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Design.dll",
         "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Design.xml",
-        "microsoft.entityframeworkcore.design.5.0.5.nupkg.sha512",
+        "microsoft.entityframeworkcore.design.5.0.6.nupkg.sha512",
         "microsoft.entityframeworkcore.design.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Relational/5.0.5": {
-      "sha512": "D+9me6olfUKpti0WkMFsKk9T4uTPZ+3mg/NIwq1Fhp/qQAu9yg2FZTUa0O8ugGuiGyJHfi8tMvh+iCL0LTpG4g==",
+    "Microsoft.EntityFrameworkCore.Relational/5.0.6": {
+      "sha512": "zzmO/cAcvsFeU3Ey6643GiLl4hCgGpWdcCW8LHsHP35zmfTirnjm2PrB+wf1wYQlPNyGT9+uypbVSoOopg58Mg==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.relational/5.0.5",
+      "path": "microsoft.entityframeworkcore.relational/5.0.6",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Relational.dll",
         "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Relational.xml",
-        "microsoft.entityframeworkcore.relational.5.0.5.nupkg.sha512",
+        "microsoft.entityframeworkcore.relational.5.0.6.nupkg.sha512",
         "microsoft.entityframeworkcore.relational.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.SqlServer/5.0.5": {
-      "sha512": "f5cjySGx1VSRSzKyu/z2qZJzDbVV7L+jcLnb7+ySs3ctyfO3lqul7x9xM+P5326EyFLva8/ILQLv35L9w3EDFA==",
+    "Microsoft.EntityFrameworkCore.SqlServer/5.0.6": {
+      "sha512": "OQFZB8hOaaU+VO62MHdkAVkPbfH+Yx8Kp+Bp+LKnmX7HxDGe/8DEOJSoHKAE8gFUTaSnJ5/OvBKNxXefeAyT0g==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.sqlserver/5.0.5",
+      "path": "microsoft.entityframeworkcore.sqlserver/5.0.6",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/netstandard2.1/Microsoft.EntityFrameworkCore.SqlServer.dll",
         "lib/netstandard2.1/Microsoft.EntityFrameworkCore.SqlServer.xml",
-        "microsoft.entityframeworkcore.sqlserver.5.0.5.nupkg.sha512",
+        "microsoft.entityframeworkcore.sqlserver.5.0.6.nupkg.sha512",
         "microsoft.entityframeworkcore.sqlserver.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Tools/5.0.5": {
-      "sha512": "YfEG6UQumR2+L/c2c/mdwNH9vRA2KscsCgKCI/REh8KZL65dfoRSkTzLknJ1ai+WK/GM8EI1eClfAyZCTIMhOQ==",
+    "Microsoft.EntityFrameworkCore.Tools/5.0.6": {
+      "sha512": "eh3jspEKaDu/q3+YqdZ6V1Htwjn/eMp5rT9KGHFw4GEKUIg7CVNzGtZ57ZV5HwBus4A/6OcGUGa6/J72UU8ZUg==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.tools/5.0.5",
+      "path": "microsoft.entityframeworkcore.tools/5.0.6",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/netstandard2.1/_._",
-        "microsoft.entityframeworkcore.tools.5.0.5.nupkg.sha512",
+        "microsoft.entityframeworkcore.tools.5.0.6.nupkg.sha512",
         "microsoft.entityframeworkcore.tools.nuspec",
         "tools/EntityFrameworkCore.PS2.psd1",
         "tools/EntityFrameworkCore.PS2.psm1",
@@ -2579,22 +2134,6 @@
         "microsoft.identitymodel.tokens.nuspec"
       ]
     },
-    "Microsoft.Net.Http/2.0.20710": {
-      "sha512": "OsB/5QO9tYJRLYIgBOhRl4Tssh3pw7+UAO9tMGMBg63f98GfjsniVIwLWRC0vcRr/F6HLP/NvRlHyGBhtD7Bmw==",
-      "type": "package",
-      "path": "microsoft.net.http/2.0.20710",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net40/System.Net.Http.WebRequest.dll",
-        "lib/net40/System.Net.Http.WebRequest.xml",
-        "lib/net40/System.Net.Http.dll",
-        "lib/net40/System.Net.Http.xml",
-        "lib/net45/_._",
-        "microsoft.net.http.2.0.20710.nupkg.sha512",
-        "microsoft.net.http.nuspec"
-      ]
-    },
     "Microsoft.NETCore.Platforms/3.1.0": {
       "sha512": "z7aeg8oHln2CuNulfhiLYxCVMPEwBl3rzicjvIX+4sUuCwvXw5oXQEtbiU2c0z4qYL5L3Kmx0mMA/+t/SbY67w==",
       "type": "package",
@@ -2625,18 +2164,6 @@
         "microsoft.netcore.targets.1.1.3.nupkg.sha512",
         "microsoft.netcore.targets.nuspec",
         "runtime.json"
-      ]
-    },
-    "Microsoft.Web.Infrastructure/1.0.0": {
-      "sha512": "FNmvLn5m2LTU/Rs2KWVo0SIIh9Ek+U0ojex7xeDaSHw/zgEP77A8vY5cVWgUtBGS8MJfDGNn8rpXJWEIQaPwTg==",
-      "type": "package",
-      "path": "microsoft.web.infrastructure/1.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net40/Microsoft.Web.Infrastructure.dll",
-        "microsoft.web.infrastructure.1.0.0.nupkg.sha512",
-        "microsoft.web.infrastructure.nuspec"
       ]
     },
     "Microsoft.Win32.Registry/4.7.0": {
@@ -6261,46 +5788,12 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
-    },
-    "WebActivator/1.0.0": {
-      "sha512": "9svr86Y6l/moHfEEBVbiXNhCn82AFHSeBuCcdIkvMVk3ss2+rKyi6IWDlErbJJUdEUHCljM1dG+S8iLVFeBaGQ==",
-      "type": "package",
-      "path": "webactivator/1.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/WebActivator.dll",
-        "lib/WebActivator.pdb",
-        "webactivator.1.0.0.nupkg.sha512",
-        "webactivator.nuspec"
-      ]
-    },
-    "WebGrease/1.5.2": {
-      "sha512": "VoyDSOOugLx3q5IyOgEcjeYZQOqV9VWZQT57UtN4szlYhAmOcEjVfKWXbtRqBuX43pgyL9E7nMSIPoryC8Cu1Q==",
-      "type": "package",
-      "path": "webgrease/1.5.2",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/WebGrease.dll",
-        "tools/WG.exe",
-        "tools/install.ps1",
-        "tools/uninstall.ps1",
-        "webgrease.1.5.2.nupkg.sha512",
-        "webgrease.nuspec"
-      ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "AttributeRouting >= 3.4.2",
-      "AttributeRouting.WebApi >= 3.5.6",
-      "AttributeRouting.WebApi.Hosted >= 3.5.6",
-      "Microsoft.AspNet.Mvc >= 3.0.50813.1",
-      "Microsoft.AspNet.Web.Optimization >= 1.1.3",
-      "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.5",
-      "Microsoft.EntityFrameworkCore.Tools >= 5.0.5"
+      "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.6",
+      "Microsoft.EntityFrameworkCore.Tools >= 5.0.6"
     ]
   },
   "packageFolders": {
@@ -6342,35 +5835,15 @@
       "netcoreapp3.1": {
         "targetAlias": "netcoreapp3.1",
         "dependencies": {
-          "AttributeRouting": {
-            "target": "Package",
-            "version": "[3.4.2, )"
-          },
-          "AttributeRouting.WebApi": {
-            "target": "Package",
-            "version": "[3.5.6, )"
-          },
-          "AttributeRouting.WebApi.Hosted": {
-            "target": "Package",
-            "version": "[3.5.6, )"
-          },
-          "Microsoft.AspNet.Mvc": {
-            "target": "Package",
-            "version": "[3.0.50813.1, )"
-          },
-          "Microsoft.AspNet.Web.Optimization": {
-            "target": "Package",
-            "version": "[1.1.3, )"
-          },
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
-            "version": "[5.0.5, )"
+            "version": "[5.0.6, )"
           },
           "Microsoft.EntityFrameworkCore.Tools": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
             "target": "Package",
-            "version": "[5.0.5, )"
+            "version": "[5.0.6, )"
           }
         },
         "imports": [
@@ -6394,197 +5867,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Antlr 3.4.1.9004' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
-      "libraryId": "Antlr",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'AttributeRouting 3.4.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
-      "libraryId": "AttributeRouting",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'AttributeRouting.Core 3.5.6' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
-      "libraryId": "AttributeRouting.Core",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'AttributeRouting.Core.Http 3.5.6' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
-      "libraryId": "AttributeRouting.Core.Http",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'AttributeRouting.Core.Web 3.5.6' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
-      "libraryId": "AttributeRouting.Core.Web",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'AttributeRouting.WebApi 3.5.6' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
-      "libraryId": "AttributeRouting.WebApi",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'AttributeRouting.WebApi.Hosted 3.5.6' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
-      "libraryId": "AttributeRouting.WebApi.Hosted",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNet.Mvc 3.0.50813.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
-      "libraryId": "Microsoft.AspNet.Mvc",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNet.Razor 1.0.20105.408' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
-      "libraryId": "Microsoft.AspNet.Razor",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNet.Web.Optimization 1.1.3' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
-      "libraryId": "Microsoft.AspNet.Web.Optimization",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNet.WebApi.Client 4.0.20710' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
-      "libraryId": "Microsoft.AspNet.WebApi.Client",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNet.WebApi.Core 4.0.20710' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
-      "libraryId": "Microsoft.AspNet.WebApi.Core",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNet.WebApi.SelfHost 4.0.20710' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
-      "libraryId": "Microsoft.AspNet.WebApi.SelfHost",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNet.WebApi.WebHost 4.0.20710' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
-      "libraryId": "Microsoft.AspNet.WebApi.WebHost",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNet.WebPages 1.0.20105.408' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
-      "libraryId": "Microsoft.AspNet.WebPages",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.Net.Http 2.0.20710' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
-      "libraryId": "Microsoft.Net.Http",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.Web.Infrastructure 1.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
-      "libraryId": "Microsoft.Web.Infrastructure",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'WebActivator 1.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
-      "libraryId": "WebActivator",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'WebGrease 1.5.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
-      "libraryId": "WebGrease",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    }
-  ]
+  }
 }
