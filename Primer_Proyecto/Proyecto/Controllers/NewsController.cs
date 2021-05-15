@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿/*using Newtonsoft.Json;
 using Proyecto.Models;
 using System;
 using System.Collections.Generic;
@@ -173,3 +173,4 @@ namespace Proyecto.Controllers
         }
     }
 }
+*/
