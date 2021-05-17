@@ -58,33 +58,33 @@
                     <ul class="nav navbar-nav navbar-nav-first">
                         <li class="smoothScroll">  </li>
 
-                        <button type="button" id="btnLog" class="btn" onclick="clearTextBoxStudent();">Registrarse</button>
+                        <button type="button" id="btnLog" class="btn" onclick="clearTextBoxStudent();">Register</button>
 
-                        <button type="button" id="btnSignLog" data-toggle="modal" data-target="#myModalSignLog" onclick="clearTextBoxSignLog();" class="btn">Iniciar Sesión</button>
+                        <button type="button" id="btnSignLog" data-toggle="modal" data-target="#myModalSignLog" onclick="clearTextBoxSignLog();" class="btn">Log in</button>
 
-                        <button type="button" id="btnProfessor" onclick="clearTextBoxProfessor();" class="btn">Registrar profesor</button>
+                        <button type="button" id="btnProfessor" onclick="clearTextBoxProfessor();" class="btn">Register professor</button>
 
-                        <button type="button" id="btnCourse" onclick="clearTextBoxCourse();" class="btn">Registrar curso</button>
+                        <button type="button" id="btnCourse" onclick="clearTextBoxCourse();" class="btn">Register course</button>
 
-                        <button type="button" id="btnEnrollCourse" data-toggle="modal" data-target="#myModalEnrollCourse" class="btn" onclick="enrollCourse();">Inscribirse a curso</button>
+                        <button type="button" id="btnEnrollCourse" data-toggle="modal" data-target="#myModalEnrollCourse" class="btn" onclick="enrollCourse();">Sign up for course</button>
 
-                        <button type="button" id="btnEnrollCourseProfessor" data-toggle="modal" data-target="#myModalEnrollCourseProfessor" class="btn">Inscribir profesor a curso</button>
+                        <button type="button" id="btnEnrollCourseProfessor" data-toggle="modal" data-target="#myModalEnrollCourseProfessor" class="btn">Enroll teacher to course</button>
 
-                        <button type="button" id="btnNews" data-toggle="modal" data-target="#modalNews" class="btn" onclick="clearTextBoxNews();">Añadir noticia</button>
+                        <button type="button" id="btnNews" data-toggle="modal" data-target="#modalNews" class="btn" onclick="clearTextBoxNews();">Add news</button>
 
-                        <button type="button" id="btnStudentCourses" class="btn" onclick="studentCourses();">Cursos</button>
+                        <button type="button" id="btnStudentCourses" class="btn" onclick="studentCourses();">Courses</button>
 
-                        <button type="button" id="btnProfessorCourses" class="btn" onclick="professorCourses();">Cursos</button>
+                        <button type="button" id="btnProfessorCourses" class="btn" onclick="professorCourses();">Courses</button>
 
-                        <button type="button" id="btnNewsStudent" class="btn" onclick="newsStudent();">Noticias</button>
+                        <button type="button" id="btnNewsStudent" class="btn" onclick="newsStudent();">News</button>
 
-                        <button type="button" id="btnNewsProfessor" class="btn" onclick="newsProfessor();">Noticias</button>
+                        <button type="button" id="btnNewsProfessor" class="btn" onclick="newsProfessor();">News</button>
 
-                        <button type="button" id="btnReturnStudent" class="btn" onclick="returnStudent();">Volver al perfil</button>
+                        <button type="button" id="btnReturnStudent" class="btn" onclick="returnStudent();">Back to profile</button>
 
-                        <button type="button" id="btnReturnProfessor" class="btn" onclick="returnProfessor();">Volver al perfil</button>
+                        <button type="button" id="btnReturnProfessor" class="btn" onclick="returnProfessor();">Back to profile</button>
 
-                        <button type="button" id="btnLogOut" class="btn" onclick="logOut();">Cerrar Sesión</button>
+                        <button type="button" id="btnLogOut" class="btn" onclick="logOut();">Sign off</button>
 
                     </ul>
                 </div>
@@ -103,21 +103,21 @@
                     <div class="modal-header">
 
                         <button type="button" class="close" data-dismiss="modal">X</button>
-                        <h4 id="HeaderTitleAdd" class="modal-title"> Inicio de sesión </h4>
+                        <h4 id="HeaderTitleAdd" class="modal-title"> Sing in </h4>
 
                     </div>
                     <div class="modal-body">
 
                         <form>
                             <div class="form-group">
-                                <label for="UsernameSignLog">Nombre de usuario</label>
-                                <input type="text" class="form-control" id="UsernameSignLog" placeholder="Ingrese su usuario" autocomplete="off">
+                                <label for="UsernameSignLog"> User </label>
+                                <input type="text" class="form-control" id="UsernameSignLog" placeholder="Enter your user name" autocomplete="off">
 
                             </div>
 
                             <div class="form-group">
-                                <label for="PasswordSignLog">Contraseña</label>
-                                <input type="password" class="form-control" id="PasswordSignLog" placeholder="Ingrese su contraseña" autocomplete="off">
+                                <label for="PasswordSignLog">Password</label>
+                                <input type="password" class="form-control" id="PasswordSignLog" placeholder="Enter your password" autocomplete="off">
                             </div>
 
                         </form>
@@ -125,8 +125,8 @@
 
                     <div class="modal-footer">
                         <label id="invalidUser" hidden="hidden"></label>
-                        <button type="button" class="btn" onclick="login();" id="btnAdd">Iniciar sesión</button>
-                        <button type="button" class="btn btn-default" id="btnClose" data-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn" onclick="login();" id="btnAdd">Sing in</button>
+                        <button type="button" class="btn btn-default" id="btnClose" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
@@ -142,8 +142,8 @@
                     <div class="modal-header">
 
                         <button type="button" class="close" data-dismiss="modal">X</button>
-                        <h4 id="addNewsTitle" class="modal-title"> Insertar noticia </h4>
-                        <h4 id="UpdateNewsTitle" class="modal-title"> Actualizar noticia </h4>
+                        <h4 id="addNewsTitle" class="modal-title"> Insert news </h4>
+                        <h4 id="UpdateNewsTitle" class="modal-title"> Update news </h4>
 
                     </div>
                     <div class="modal-body">
@@ -155,37 +155,37 @@
                             </div>
 
                             <div class="form-group">
-                                <label>ID Usuario</label>
+                                <label>User ID</label>
                                 <input type="text" class="form-control" id="AuthorId" disabled>
                             </div>
 
                             <div class="form-group">
-                                <label>Título</label>
-                                <input type="text" class="form-control" id="NewsTitle" placeholder="Título de la noticia" autocomplete="off">
+                                <label>Title</label>
+                                <input type="text" class="form-control" id="NewsTitle" placeholder="News Title" autocomplete="off">
                             </div>
 
                             <div class="form-group">
-                                <label>Autor</label>
-                                <input type="text" class="form-control" id="Author" placeholder="Autor de la noticia o usuario que publica" autocomplete="off">
+                                <label>Author</label>
+                                <input type="text" class="form-control" id="Author" placeholder="News author" autocomplete="off">
                             </div>
 
                             <div class="form-group">
-                                <label>Fecha de publicación</label>
+                                <label>Publication date</label>
                                 <input type="date" class="form-control" id="Date">
                             </div>
 
                             <div class="form-group">
-                                <label>Noticia</label>
-                                <textarea rows="6" cols="50" class="form-control" id="text" placeholder="Ingrese su noticia" autocomplete="off"></textarea>
+                                <label>News</label>
+                                <textarea rows="6" cols="50" class="form-control" id="text" placeholder="Enter your news" autocomplete="off"></textarea>
                             </div>
 
                         </form>
                     </div>
 
                     <div class="modal-footer">
-                        <button type="button" class="btn" onclick="addNews();" id="btnAddNews">Insertar</button>
-                        <button type="button" class="btn" onclick="updateNews();" id="btnUpdateNews">Actualizar</button>
-                        <button type="button" class="btn btn-default" id="btnClose" data-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn" onclick="addNews();" id="btnAddNews">Insert</button>
+                        <button type="button" class="btn" onclick="updateNews();" id="btnUpdateNews">Update</button>
+                        <button type="button" class="btn btn-default" id="btnClose" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
@@ -201,7 +201,7 @@
                     <div class="modal-header">
 
                         <button type="button" class="close" data-dismiss="modal">X</button>
-                        <h4 id="addNewsTitle" class="modal-title"> Detalle noticia </h4>
+                        <h4 id="addNewsTitle" class="modal-title"> News details </h4>
 
                     </div>
                     <div class="modal-body">
@@ -211,41 +211,41 @@
                             </div>
 
                             <div class="form-group">
-                                <label>Título:</label>
-                                <label id="titleDetails">Título</label>
+                                <label>Title:</label>
+                                <label id="titleDetails">Title</label>
                             </div>
 
                             <div class="form-group">
-                                <label>Autor:</label>
+                                <label>Author:</label>
                                 <label id="authorDetails"></label>
                             </div>
 
                             <div class="form-group">
-                                <label>Fecha de publicación:</label>
+                                <label>Publication date :</label>
                                 <label id="datetimeDetails"></label>
                             </div>
 
                             <div class="form-group">
-                                <label>Noticia:</label>
+                                <label>News:</label>
                                 <label id="newsDetails"></label>
                             </div>
 
                             <div class="form-group">
-                                <label>Comentarios:</label>
+                                <label>Comments:</label>
                                 <ul id="ulComments" class="list-group"></ul>
                             </div>
 
                             <div class="form-group">
-                                <input type="text" class="form-control" id="addComment" placeholder="Comentario" autocomplete="off">
+                                <input type="text" class="form-control" id="addComment" placeholder="Comment" autocomplete="off">
                                 </br>
-                                <button type="button" class="btn" onclick="addComments();" id="btnAddComment">Añadir</button>
+                                <button type="button" class="btn" onclick="addComments();" id="btnAddComment">Add</button>
                             </div>
 
                         </form>
                     </div>
 
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default" id="btnClose" data-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-default" id="btnClose" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
@@ -262,8 +262,8 @@
                     <div class="modal-header">
 
                         <button type="button" class="close" data-dismiss="modal">X</button>
-                        <h4 id="HeaderTitleAddStudent" class="modal-title"> Registro de estudiante </h4>
-                        <h4 id="HeaderTitleUpdateStudent" class="modal-title"> Actualizar estudiante </h4>
+                        <h4 id="HeaderTitleAddStudent" class="modal-title"> Register student </h4>
+                        <h4 id="HeaderTitleUpdateStudent" class="modal-title"> Update student </h4>
 
                     </div>
                     <div class="modal-body">
@@ -277,51 +277,51 @@
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="StudentCard">Carné</label>
-                                        <input type="text" class="form-control" id="StudentCard" placeholder="Carné" autocomplete="off">
+                                        <label for="StudentCard">Carnet</label>
+                                        <input type="text" class="form-control" id="StudentCard" placeholder="Carnet" autocomplete="off">
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="Name">Nombre</label>
-                                        <input type="text" class="form-control" id="Name" placeholder="Nombre" autocomplete="off">
+                                        <label for="Name">Name</label>
+                                        <input type="text" class="form-control" id="Name" placeholder="Name" autocomplete="off">
                                     </div>
 
 
                                     <div class="form-group">
-                                        <label for="Last Name">Apellido</label>
-                                        <input type="text" class="form-control" id="LastName" placeholder="Apellido" autocomplete="off">
+                                        <label for="Last Name">Last Name</label>
+                                        <input type="text" class="form-control" id="LastName" placeholder="Last Name" autocomplete="off">
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="Birthday">Fecha de Nacimiento</label>
-                                        <input type="date" class="form-control" id="Birthday" placeholder="Fecha de Nacimiento">
+                                        <label for="Birthday">Birthday</label>
+                                        <input type="date" class="form-control" id="Birthday" placeholder="Birthday">
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="Mail">Correo eléctronico</label>
-                                        <input type="text" class="form-control" id="Mail" placeholder="Correo eléctronico" autocomplete="off">
+                                        <label for="Mail">Email</label>
+                                        <input type="text" class="form-control" id="Mail" placeholder="Email" autocomplete="off">
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="Image">Fotografía</label>
-                                        <input type="file" class="form-control" id="Image" placeholder="Fotografía">
+                                        <label for="Image">Photo</label>
+                                        <input type="file" class="form-control" id="Image" placeholder="Photo">
                                     </div>
                                 </form>
                             </div>
                             <div class="col-md-6">
                                 <form>
                                     <div class="form-group">
-                                        <label for="Username">Nombre de usuario</label>
-                                        <input type="text" class="form-control" id="Username" placeholder="Nombre de usuario" autocomplete="off">
+                                        <label for="Username">User name</label>
+                                        <input type="text" class="form-control" id="Username" placeholder="User name" autocomplete="off">
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="Password">Contraseña</label>
-                                        <input type="password" class="form-control" id="Password" placeholder="Contraseña" autocomplete="off">
+                                        <label for="Password">Password</label>
+                                        <input type="password" class="form-control" id="Password" placeholder="Password" autocomplete="off">
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="Province">Provincia</label>
+                                        <label for="Province">Province</label>
                                         <select class="form-control" id="ProvinceDropdown" name="ProvinceDropdown"></select>
                                     </div>
 
@@ -346,7 +346,7 @@
                                     <br />
 
                                     <div class="form-group" hidden="hidden" id="DivStudentCheckbox">
-                                        <label>Administrador</label>
+                                        <label>Administrator</label>
                                         <label class="switch">
                                             <input type="checkbox" id="StudentCheckbox">
                                             <span class="slider round"></span>
@@ -360,11 +360,11 @@
                     </div>
 
                     <div class="modal-footer">
-                        <button type="button" class="btn" id="btnAddStudent" onclick="return Add();">Registrarse</button>
-                        <button type="button" class="btn" id="btnUpdateStudent" style="display:none" onclick="EditStudent();">Actualizar</button>
-                        <button type="button" class="btn" id="btnUpdateProfileStudent" style="display:none" onclick="editProfileStudent();">Actualizar</button>
-                        <button type="button" class="btn" id="btnDeleteStudent" onclick="deleteStudentAccount();">Borrar Perfil</button>
-                        <button type="button" class="btn btn-default" id="btnClose" data-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn" id="btnAddStudent" onclick="return Add();">Register</button>
+                        <button type="button" class="btn" id="btnUpdateStudent" style="display:none" onclick="EditStudent();">Update</button>
+                        <button type="button" class="btn" id="btnUpdateProfileStudent" style="display:none" onclick="editProfileStudent();">Update</button>
+                        <button type="button" class="btn" id="btnDeleteStudent" onclick="deleteStudentAccount();">Delete profile</button>
+                        <button type="button" class="btn btn-default" id="btnClose" data-dismiss="modal">Close</button>
 
                     </div>
                 </div>
@@ -382,8 +382,8 @@
                     <div class="modal-header">
 
                         <button type="button" class="close" data-dismiss="modal">X</button>
-                        <h4 id="TitleAddProfessor" class="modal-title"> Registro de profesor </h4>
-                        <h4 id="TitleUpdateProfessor" class="modal-title" hidden="hidden"> Actualizar </h4>
+                        <h4 id="TitleAddProfessor" class="modal-title"> Register professor </h4>
+                        <h4 id="TitleUpdateProfessor" class="modal-title" hidden="hidden"> Update </h4>
 
                     </div>
                     <div class="modal-body">
@@ -392,34 +392,34 @@
                                 <form>
 
                                     <div class="form-group">
-                                        <label for="ProfessorId">Identificador</label>
+                                        <label for="ProfessorId">Identifier</label>
                                         <input type="text" class="form-control" id="ProfessorId" disabled="disabled">
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="ProfessorUsername">Nombre de usuario</label>
-                                        <input type="text" class="form-control" id="ProfessorUsername" placeholder="Nombre de usuario" autocomplete="off">
+                                        <label for="ProfessorUsername">User name</label>
+                                        <input type="text" class="form-control" id="ProfessorUsername" placeholder="User name" autocomplete="off">
 
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="ProfessorPassword">Contraseña</label>
-                                        <input type="password" class="form-control" id="ProfessorPassword" placeholder="Contraseña" autocomplete="off">
+                                        <label for="ProfessorPassword">Password</label>
+                                        <input type="password" class="form-control" id="ProfessorPassword" placeholder="Password" autocomplete="off">
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="ProfessorName">Nombre</label>
-                                        <input type="text" class="form-control" id="ProfessorName" placeholder="Nombre" autocomplete="off">
+                                        <label for="ProfessorName">Name</label>
+                                        <input type="text" class="form-control" id="ProfessorName" placeholder="Name" autocomplete="off">
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="ProfessorLastName">Apellido</label>
-                                        <input type="text" class="form-control" id="ProfessorLastName" placeholder="Apellido" autocomplete="off">
+                                        <label for="ProfessorLastName">LastName</label>
+                                        <input type="text" class="form-control" id="ProfessorLastName" placeholder="LastName" autocomplete="off">
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="ProfessorMail">Correo electrónico</label>
-                                        <input type="text" class="form-control" id="ProfessorMail" placeholder="Correo electrónico" autocomplete="off">
+                                        <label for="ProfessorMail">Email</label>
+                                        <input type="text" class="form-control" id="ProfessorMail" placeholder="Email" autocomplete="off">
                                     </div>
                                 </form>
                             </div>
@@ -427,38 +427,38 @@
                                 <form>
 
                                     <div class="form-group">
-                                        <label for="AcademicDegree">Grado Académico</label>
+                                        <label for="AcademicDegree">Academic Degree</label>
                                         <select class="form-control" id="AcademicDegreeDropdown" name="AcademicDegreeDropdown"></select>
                                     </div>
 
 
                                     <div class="form-group">
-                                        <label for="Province">Provincia</label>
+                                        <label for="Province">Province</label>
                                         <select class="form-control" id="ProfessorProvinceDropdown" name="ProvinceDropdown"></select>
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="Canton">Cantón</label>
+                                        <label for="Canton">Canton</label>
                                         <select class="form-control" id="ProfessorCantonDropdown" name="CantonDropdown"></select>
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="District">Distrito</label>
+                                        <label for="District">District</label>
                                         <select class="form-control" id="ProfessorDistrictDropdown" name="DistrictDropdown"></select>
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="StatusProfessorDropdown">Estado</label>
+                                        <label for="StatusProfessorDropdown">Condition</label>
                                         <select class="form-control" id="StatusProfessorDropdown" disabled="disabled">
-                                            <option value="0">Inactivo</option>
-                                            <option value="1">Activo</option>
+                                            <option value="0">Inactive</option>
+                                            <option value="1">Active</option>
                                         </select>
                                     </div>
 
                                     <br />
 
                                     <div class="form-group">
-                                        <label>Administrador</label>
+                                        <label>Administrator</label>
                                         <label class="switch">
                                             <input type="checkbox" disabled="disabled" id="ProfessorCheckbox">
                                             <span class="slider round"></span>
@@ -472,10 +472,10 @@
                     </div>
 
                     <div class="modal-footer">
-                        <button type="button" class="btn" id="btnAddProfessor" onclick="return AddProfessor();">Registrar</button>
-                        <button type="button" class="btn" id="btnUpdateProfessor" onclick="EditProfessor();">Actualizar</button>
-                        <button type="button" class="btn" id="btnDeleteProfessor" onclick="deleteProfessorAccount();">Borrar perfil</button>
-                        <button type="button" class="btn btn-default" id="btnClose" data-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn" id="btnAddProfessor" onclick="return AddProfessor();">Register</button>
+                        <button type="button" class="btn" id="btnUpdateProfessor" onclick="EditProfessor();">Update</button>
+                        <button type="button" class="btn" id="btnDeleteProfessor" onclick="deleteProfessorAccount();">Delete profile</button>
+                        <button type="button" class="btn btn-default" id="btnClose" data-dismiss="modal">Close</button>
 
                     </div>
                 </div>
@@ -492,7 +492,7 @@
                     <div class="modal-header">
 
                         <button type="button" class="close" data-dismiss="modal">X</button>
-                        <h4 class="modal-title">Actualizar foto</h4>
+                        <h4 class="modal-title">Update photo</h4>
 
                     </div>
                     <div class="modal-body">
@@ -504,7 +504,7 @@
                             </div>
 
                             <div class="form-group">
-                                <label>Foto</label>
+                                <label>Photo</label>
                                 <input type="file" class="form-control" id="imgStudent">
                             </div>
 
@@ -513,8 +513,8 @@
 
                     <div class="modal-footer">
 
-                        <button type="button" class="btn" id="btnUpdateImageStudent" onclick="updateImageStudent();">Actualizar</button>
-                        <button type="button" class="btn btn-default" id="btnClose" data-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn" id="btnUpdateImageStudent" onclick="updateImageStudent();">Update</button>
+                        <button type="button" class="btn btn-default" id="btnClose" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
@@ -530,7 +530,7 @@
                     <div class="modal-header">
 
                         <button type="button" class="close" data-dismiss="modal">X</button>
-                        <h4 class="modal-title">Actualizar foto</h4>
+                        <h4 class="modal-title">Update photo</h4>
 
                     </div>
                     <div class="modal-body">
@@ -542,7 +542,7 @@
                             </div>
 
                             <div class="form-group">
-                                <label>Foto</label>
+                                <label>Photo</label>
                                 <input type="file" class="form-control" id="imgProfessor">
                             </div>
 
@@ -551,8 +551,8 @@
 
                     <div class="modal-footer">
 
-                        <button type="button" class="btn" id="btnUpdateImageProfessor" onclick="updateImageProfessor();">Actualizar</button>
-                        <button type="button" class="btn btn-default" id="btnClose" data-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn" id="btnUpdateImageProfessor" onclick="updateImageProfessor();">Update</button>
+                        <button type="button" class="btn btn-default" id="btnClose" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
@@ -568,8 +568,8 @@
                     <div class="modal-header">
 
                         <button type="button" class="close" data-dismiss="modal">X</button>
-                        <h4 id="TitleAddCourse" class="modal-title"> Registro de curso nuevo </h4>
-                        <h4 id="TitleUpdateCourse" class="modal-title"> Actualizar curso </h4>
+                        <h4 id="TitleAddCourse" class="modal-title"> New course registration </h4>
+                        <h4 id="TitleUpdateCourse" class="modal-title"> Update course </h4>
 
                     </div>
                     <div class="modal-body">
@@ -581,43 +581,43 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="CourseInitials">Siglas</label>
-                                <input type="text" class="form-control" id="CourseInitials" placeholder="Ingrese las siglas del curso" autocomplete="off">
+                                <label for="CourseInitials">Acronym</label>
+                                <input type="text" class="form-control" id="CourseInitials" placeholder="Enter the acronym of the course" autocomplete="off">
                             </div>
 
                             <div class="form-group">
-                                <label for="CourseName">Nombre</label>
-                                <input type="text" class="form-control" id="CourseName" placeholder="Ingrese el nombre del curso" autocomplete="off">
+                                <label for="CourseName">Name</label>
+                                <input type="text" class="form-control" id="CourseName" placeholder="Enter the name of the course" autocomplete="off">
                             </div>
 
                             <div class="form-group">
-                                <label for="IsCourseActive">Estado de curso</label>
+                                <label for="IsCourseActive">Course status</label>
                                 <select class="form-control" id="IsActiveDropdown" name="IsActiveDropdown">
-                                    <option value="0">Inactivo</option>
-                                    <option value="1">Activo</option>
+                                    <option value="0">Inactive</option>
+                                    <option value="1">Active</option>
                                 </select>
                             </div>
 
                             <div class="form-group">
-                                <label for="CourseCredits">Créditos</label>
-                                <input type="text" class="form-control" id="CourseCredits" placeholder="Ingrese los créditos del curso" autocomplete="off">
+                                <label for="CourseCredits">Credits</label>
+                                <input type="text" class="form-control" id="CourseCredits" placeholder="Enter course credits" autocomplete="off">
                             </div>
 
                             <div class="form-group">
                                 <label for="CourseCycle">Ciclo</label>
                                 <select class="form-control" id="CycleDropdown" name="CycleDropdown">
-                                    <option value="1">I Semestre</option>
-                                    <option value="2">II Semestre</option>
-                                    <option value="3">Verano</option>
+                                    <option value="1">I Semester</option>
+                                    <option value="2">II Semester</option>
+                                    <option value="3">Summer</option>
                                 </select>
                             </div>
 
                         </form>
 
                         <div class="modal-footer">
-                            <button type="button" class="btn" onclick="addCourse();" id="btnAddCourse">Registrar curso</button>
-                            <button type="button" class="btn" onclick="editCourse();" id="btnEditCourse">Actualizar</button>
-                            <button type="button" class="btn btn-default" id="btnClose" data-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn" onclick="addCourse();" id="btnAddCourse">Register course</button>
+                            <button type="button" class="btn" onclick="editCourse();" id="btnEditCourse">Update</button>
+                            <button type="button" class="btn btn-default" id="btnClose" data-dismiss="modal">Close</button>
                         </div>
                     </div>
                 </div>
@@ -633,8 +633,8 @@
                         <div class="caption">
                             <div class="container">
                                 <div class="col-md-6 col-sm-12">
-                                    <h1>Recinto de Paraíso</h1>
-                                    <h3>El Recinto de Paraíso fue creado con el fin de generar espacios para la capacitación y el enriquecimiento acádemico, en pro del desarrollo de la comunidad.</h3>
+                                    <h1>Paraíso campus</h1>
+                                    <h3>The Paraíso Campus was created in order to generate spaces for training and academic enrichment, in favor of the development of the community.</h3>
                                 </div>
                             </div>
                         </div>
@@ -644,8 +644,8 @@
                         <div class="caption">
                             <div class="container">
                                 <div class="col-md-6 col-sm-12">
-                                    <h1>Proceso de acreditación</h1>
-                                    <h3>El Bachillerato en Informática Empresarial es la primera carrera exclusiva de todas las sedes regionales de la Universidad de Costa Rica que culmina el proceso de autoevaluación con miras a la acreditación.</h3>
+                                    <h1>Accreditation process</h1>
+                                    <h3>The Baccalaureate in Business Informatics is the first exclusive career of all the regional headquarters of the University of Costa Rica that completes the self-evaluation process and the SINAES accredits it.</h3>
                                 </div>
                             </div>
                         </div>
@@ -655,8 +655,8 @@
                         <div class="caption">
                             <div class="container">
                                 <div class="col-md-6 col-sm-12">
-                                    <h1>Instalaciones</h1>
-                                    <h3>El Recinto cuenta con áreas para el desarrollo de las lecciones, actividades al aire libre y un amplio parqueo para vehículos.</h3>
+                                    <h1>Installations</h1>
+                                    <h3>The Campus has areas for the development of lessons, outdoor activities and ample parking for vehicles.</h3>
                                 </div>
                             </div>
                         </div>
@@ -668,23 +668,23 @@
         <!------News Section-->
         <section id="newsSection" hidden>
             <div class="row">
-                <h2>Noticias</h2>
+                <h2>News</h2>
                 <div class="table-responsive">
                     <table class="table table-bordered table-hover" id="tableNews">
 
                         <thead>
                             <tr>
                                 <th>
-                                    Fecha
+                                    Date
                                 </th>
                                 <th>
-                                    Título
+                                    Title
                                 </th>
                                 <th>
-                                    Autor
+                                    Author
                                 </th>
                                 <th>
-                                    Acción
+                                    Action
                                 </th>
                             </tr>
                         </thead>
@@ -698,28 +698,28 @@
         <!------Student Courses-->
         <section id="StudentCoursesSection" hidden>
             <div class="table-responsive">
-                <h3>Cursos matriculados</h3>
+                <h3>Enrolled courses</h3>
                 <table class="table table-bordered table-hover" id="tableStudentCourses">
 
                     <thead>
                         <tr>
                             <th>
-                                Siglas
+                                Acronym
                             </th>
                             <th>
                                 Name
                             </th>
                             <th>
-                                Créditos
+                                Credits
                             </th>
                             <th>
-                                Ciclo
+                                Cycle
                             </th>
                             <th>
-                                Profesor
+                                Professor
                             </th>
                             <th>
-                                Acción
+                                Action
                             </th>
                         </tr>
                     </thead>
@@ -740,14 +740,14 @@
                     <div class="modal-header">
 
                         <button type="button" class="close" data-dismiss="modal">X</button>
-                        <h4 class="modal-title">Inscribirse a curso </h4>
+                        <h4 class="modal-title">Sign up for course </h4>
 
                     </div>
                     <div class="modal-body">
 
                         <form>
                             <div class="form-group">
-                                <label for="courseList">Cursos</label>
+                                <label for="courseList">Courses</label>
                                 <div class="form-group">
                                     <select class="form-control" id="courseListDropdown" name="courseListDropdown"></select>
                                 </div>
@@ -755,7 +755,7 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="professorList">Profesor</label>
+                                <label for="professorList">Professor</label>
                                 <div class="form-group">
                                     <select class="form-control" id="professorListDropdown" name="professorListDropdown"></select>
                                 </div>
@@ -766,8 +766,8 @@
 
                     <div class="modal-footer">
 
-                        <button type="button" class="btn" onclick="enrollNewCourse();" id="btnEnrollNewCourse">Agregar</button>
-                        <button type="button" class="btn btn-default" id="btnClose" data-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn" onclick="enrollNewCourse();" id="btnEnrollNewCourse">Add</button>
+                        <button type="button" class="btn btn-default" id="btnClose" data-dismiss="modal">Close</button>
 
                     </div>
                 </div>
@@ -784,14 +784,14 @@
                     <div class="modal-header">
 
                         <button type="button" class="close" data-dismiss="modal">X</button>
-                        <h4 class="modal-title">Inscribir profesor a curso</h4>
+                        <h4 class="modal-title">Enroll teacher to course</h4>
 
                     </div>
                     <div class="modal-body">
 
                         <form>
                             <div class="form-group">
-                                <label for="courseList">Cursos</label>
+                                <label for="courseList">Courses</label>
                                 <div class="form-group">
                                     <select class="form-control" id="courseDropdown"></select>
                                 </div>
@@ -799,7 +799,7 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="professorList">Profesor</label>
+                                <label for="professorList">Professor</label>
                                 <div class="form-group">
                                     <select class="form-control" id="professorDropdown"></select>
                                 </div>
@@ -809,8 +809,8 @@
                     </div>
 
                     <div class="modal-footer">
-                        <button type="button" class="btn" onclick="enrollNewCourseProfessor();" id="btnEnrollNewCourseProfessor">Agregar</button>
-                        <button type="button" class="btn btn-default" id="btnClose" data-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn" onclick="enrollNewCourseProfessor();" id="btnEnrollNewCourseProfessor">Add</button>
+                        <button type="button" class="btn btn-default" id="btnClose" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
@@ -818,22 +818,22 @@
 
         <!------Professor Courses-->
         <section id="ProfessorCoursesSection" hidden>
-            <h4>Cursos impartidos</h4>
+            <h4>Courses taught</h4>
             <table class="table table-bordered table-hover" id="professorCourses">
 
                 <thead>
                     <tr>
                         <th>
-                            Siglas
+                            Acronym
                         </th>
                         <th>
-                            Nombre
+                            Name
                         </th>
                         <th>
-                            Ciclo
+                            Cycle
                         </th>
                         <th>
-                            Acción
+                            Action
                         </th>
                     </tr>
                 </thead>
@@ -848,8 +848,8 @@
             <div class="row pre-scrollable">
                 <h2 id="StudentWelcomeMessage"></h2> <hr />
                 <img src="" id="imgProfile" width="150" height="150" title="Editar" onclick="getImageStudent();" />
-                <button type="button" id="btnSocialNetworkStudent" data-toggle="modal" data-target="#myModalSocialNetworkStudent" class="btn">Ajustes Redes Sociales</button>
-                <button type="button" data-toggle="modal" data-target="#myModal" class="btn" id="btngetProfileStudent" onclick="getProfileStudent();">Editar perfil</button>
+                <button type="button" id="btnSocialNetworkStudent" data-toggle="modal" data-target="#myModalSocialNetworkStudent" class="btn">Social Networks Settings</button>
+                <button type="button" data-toggle="modal" data-target="#myModal" class="btn" id="btngetProfileStudent" onclick="getProfileStudent();">Edit profile</button>
 
                 <!---Social Networks-->
 
@@ -862,14 +862,14 @@
                             <div class="modal-header">
 
                                 <button type="button" class="close" data-dismiss="modal">X</button>
-                                <h4 class="modal-title">Redes Sociales </h4>
+                                <h4 class="modal-title">Social Networks</h4>
 
                             </div>
                             <div class="modal-body">
 
                                 <form>
                                     <div class="form-group">
-                                        <label for="socialNetworkList">Redes Sociales</label>
+                                        <label for="socialNetworkList">Social Networks</label>
                                         <div class="form-group">
                                             <select class="form-control" id="SocialNetworkStudentDropdown" name="SocialNetworkDropdown"></select>
                                         </div>
@@ -877,8 +877,8 @@
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="studentSocialNetwork">Red Social</label>
-                                        <input type="text" class="form-control" id="studentSocialNetwork" placeholder="Ejemplo: https://www.facebook.com/UniversidadCostaRica" autocomplete="off">
+                                        <label for="studentSocialNetwork">Social network</label>
+                                        <input type="text" class="form-control" id="studentSocialNetwork" placeholder="Example: https://www.facebook.com/UniversidadCostaRica" autocomplete="off">
                                     </div>
 
                                 </form>
@@ -886,8 +886,8 @@
 
                             <div class="modal-footer">
 
-                                <button type="button" class="btn" id="btnAddSocialNetworkStudent" onclick="addSocialNetworkStudent();">Agregar</button>
-                                <button type="button" class="btn btn-default" id="btnClose" data-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn" id="btnAddSocialNetworkStudent" onclick="addSocialNetworkStudent();">Add</button>
+                                <button type="button" class="btn btn-default" id="btnClose" data-dismiss="modal">Close</button>
                             </div>
                         </div>
                     </div>
@@ -896,56 +896,56 @@
                 <!------Student Information-->
 
                 <div class="col-md-6">
-                    <h3>Datos personales</h3> <hr />
+                    <h3>Personal information</h3> <hr />
                     <form>
                         <div class="form-group" hidden="hidden">
                             <label id="labelStudentId"></label>
                         </div>
 
                         <div class="form-group">
-                            <label for="StudentCard">Carné:</label>
+                            <label for="StudentCard">Carnet:</label>
                             <label id="labelStudentCard"></label>
                         </div>
 
                         <div class="form-group">
-                            <label for="Username">Nombre de usuario:</label>
+                            <label for="Username">User name :</label>
                             <label id="labelStudentUserName"></label>
                         </div>
 
 
                         <div class="form-group">
-                            <label for="Name">Nombre:</label>
+                            <label for="Name">Name:</label>
                             <label id="labelStudentName"></label>
                         </div>
 
                         <div class="form-group">
-                            <label for="Birthday">Fecha de Nacimiento:</label>
+                            <label for="Birthday">Date of birth:</label>
                             <label id="labelStudentBirthday"></label>
                         </div>
 
                         <div class="form-group">
-                            <label for="Mail">Correo eléctronico:</label>
+                            <label for="Mail">Email:</label>
                             <label id="labelStudentMail"></label>
                         </div>
 
-                        <h3>Ubicación</h3> <hr />
+                        <h3>Ubication</h3> <hr />
 
                         <div class="form-group">
-                            <label for="Province">Provincia:</label>
+                            <label for="Province">Province:</label>
                             <label id="labelStudentProvince"></label>
                         </div>
 
                         <div class="form-group">
-                            <label for="Canton">Cantón:</label>
+                            <label for="Canton">Canton:</label>
                             <label id="labelStudentCanton"></label>
                         </div>
 
                         <div class="form-group">
-                            <label for="District">Distrito:</label>
+                            <label for="District">District:</label>
                             <label id="labelStudentDistrict"></label>
                         </div>
 
-                        <h3>Redes Sociales</h3> <hr />
+                        <h3>Social Networks</h3> <hr />
                         <ul id="ulSocialNetworksStudent" class="list-group">
                         </ul>
                     </form>
@@ -960,8 +960,8 @@
             <div class="row pre-scrollable">
                 <h2 id="ProfessorWelcomeMessage"></h2> <hr />
                 <img src="" id="imgProfileProfessor" width="150" height="150" title="Editar" onclick="getImageProfessor();" />
-                <button type="button" id="btnSocialNetworkProfessor" data-toggle="modal" data-target="#myModalSocialNetworkProfessor" class="btn">Ajustes Redes Sociales</button>
-                <button type="button" id="btngetProfileProfessor" data-toggle="modal" data-target="#myModalProfessor" class="btn" onclick="getProfileProfessor();">Editar perfil</button>
+                <button type="button" id="btnSocialNetworkProfessor" data-toggle="modal" data-target="#myModalSocialNetworkProfessor" class="btn">Social Networks Settings</button>
+                <button type="button" id="btngetProfileProfessor" data-toggle="modal" data-target="#myModalProfessor" class="btn" onclick="getProfileProfessor();">Edit profile</button>
 
                 <!---Social Networks-->
 
@@ -974,14 +974,14 @@
                             <div class="modal-header">
 
                                 <button type="button" class="close" data-dismiss="modal">X</button>
-                                <h4 class="modal-title">Redes Sociales </h4>
+                                <h4 class="modal-title">Social Networks</h4>
 
                             </div>
                             <div class="modal-body">
 
                                 <form>
                                     <div class="form-group">
-                                        <label for="socialNetworkList">Redes Sociales</label>
+                                        <label for="socialNetworkList">Social Networks</label>
                                         <div class="form-group">
                                             <select class="form-control" id="SocialNetworkProfessorDropdown" name="SocialNetworkDropdown"></select>
                                         </div>
@@ -989,8 +989,8 @@
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="professorSocialNetwork">Red Social</label>
-                                        <input type="text" class="form-control" id="professorSocialNetwork" placeholder="Ejemplo: https://www.facebook.com/UniversidadCostaRica" autocomplete="off">
+                                        <label for="professorSocialNetwork">Social Network</label>
+                                        <input type="text" class="form-control" id="professorSocialNetwork" placeholder="Example: https://www.facebook.com/UniversidadCostaRica" autocomplete="off">
                                     </div>
 
 
@@ -999,8 +999,8 @@
 
                             <div class="modal-footer">
 
-                                <button type="button" class="btn" id="btnAddSocialNetworkProfessor" onclick="addSocialNetworkProfessor();" id="btnAdd">Agregar</button>
-                                <button type="button" class="btn btn-default" id="btnClose" data-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn" id="btnAddSocialNetworkProfessor" onclick="addSocialNetworkProfessor();" id="btnAdd">Add</button>
+                                <button type="button" class="btn btn-default" id="btnClose" data-dismiss="modal">Close</button>
                             </div>
                         </div>
                     </div>
@@ -1016,44 +1016,44 @@
                         </div>
 
                         <div class="form-group">
-                            <label>Nombre de usuario:</label>
+                            <label>User name:</label>
                             <label id="labelProfessorUserName"></label>
                         </div>
 
                         <div class="form-group">
-                            <label>Nombre:</label>
+                            <label>Name:</label>
                             <label id="labelProfessorName"></label>
                         </div>
 
 
                         <div class="form-group">
-                            <label>Correo electrónico:</label>
+                            <label>Email:</label>
                             <label id="labelProfessorMail"></label>
                         </div>
 
                         <div class="form-group">
-                            <label>Grado Acádemico:</label>
+                            <label>Academic Degree:</label>
                             <label id="labelProfessorAcademicDegree"></label>
                         </div>
 
-                        <h3>Ubicación</h3> <hr />
+                        <h3>Ubication</h3> <hr />
 
                         <div class="form-group">
-                            <label for="Province">Provincia:</label>
+                            <label for="Province">Province:</label>
                             <label id="labelProfessorProvince"></label>
                         </div>
 
                         <div class="form-group">
-                            <label for="Canton">Cantón:</label>
+                            <label for="Canton">Canton:</label>
                             <label id="labelProfessorCanton"></label>
                         </div>
 
                         <div class="form-group">
-                            <label for="District">Distrito:</label>
+                            <label for="District">District:</label>
                             <label id="labelProfessorDistrict"></label>
                         </div>
 
-                        <h3>Redes Sociales</h3> <hr />
+                        <h3>Social Networks</h3> <hr />
                         <ul id="ulSocialNetworksProfessor" class="list-group">
                         </ul>
                     </form>
@@ -1064,29 +1064,29 @@
         <!------Administrator Section-->
 
         <section id="administratorSection" hidden="hidden">
-            <h3>Administrador</h3>
+            <h3>Administrator</h3>
             <div class="row pre-scrollable">
                 <!---ADMINISTRATOR/STUDENT APPROVAL-->
                 <div class="table-responsive">
-                    <h3>Estudiantes en espera</h3>
+                    <h3>Waiting students</h3>
                     <table class="table table-bordered table-hover" id="tableApproval">
 
                         <thead>
                             <tr>
                                 <th>
-                                    Carné
+                                    Carnet
                                 </th>
                                 <th>
-                                    Nombre
+                                    Name
                                 </th>
                                 <th>
-                                    Apellido
+                                    Last Name
                                 </th>
                                 <th>
-                                    Correo
+                                    Email
                                 </th>
                                 <th>
-                                    Acción
+                                    Action
                                 </th>
                             </tr>
                         </thead>
@@ -1097,21 +1097,21 @@
 
                 <!---ADMINISTRATOR/LIST PROFESSOR-->
                 <div class="table-responsive">
-                    <h3>Profesores Registrados</h3>
+                    <h3>Registered Teachers</h3>
                     <table class="table table-bordered table-hover" id="tableProfesor">
                         <thead>
                             <tr>
                                 <th>
-                                    Nombre
+                                    Name
                                 </th>
                                 <th>
-                                    Apellido
+                                    Last Name
                                 </th>
                                 <th>
-                                    Correo
+                                    Email
                                 </th>
                                 <th>
-                                    Acción
+                                    Action
                                 </th>
                             </tr>
                         </thead>
@@ -1122,28 +1122,28 @@
 
                 <!---Courses registered-->
                 <div class="table-responsive">
-                    <h3>Cursos registrados</h3>
+                    <h3>Registered courses</h3>
                     <table class="table table-bordered table-hover table-striped" id="tableCourseRegister">
 
                         <thead>
                             <tr>
                                 <th>
-                                    Siglas
+                                    Acronym
                                 </th>
                                 <th>
-                                    Nombre
+                                    Name
                                 </th>
                                 <th>
-                                    Créditos
+                                    Credits
                                 </th>
                                 <th>
-                                    Ciclo
+                                    Cycle
                                 </th>
                                 <th>
-                                    Estado
+                                    Condition
                                 </th>
                                 <th>
-                                    Acción
+                                    Action
                                 </th>
                             </tr>
                         </thead>
@@ -1154,25 +1154,25 @@
 
                 <!---ALL STUDENTS-->
                 <div class="table-responsive">
-                    <h3>Estudiantes registrados</h3>
+                    <h3>Registered students</h3>
                     <table class="table table-bordered table-hover" id="tableStudents">
 
                         <thead>
                             <tr>
                                 <th>
-                                    Carné
+                                    Carnet
                                 </th>
                                 <th>
-                                    Nombre
+                                    Name
                                 </th>
                                 <th>
-                                    Apellido
+                                    Last Name
                                 </th>
                                 <th>
-                                    Correo
+                                    Email
                                 </th>
                                 <th>
-                                    Acción
+                                    Action
                                 </th>
                             </tr>
                         </thead>
@@ -1182,23 +1182,23 @@
                 </div>
 
                 <!---NEWS-->
-                <h2>Noticias</h2>
+                <h2>News</h2>
                 <div class="table-responsive">
                     <table class="table table-bordered table-hover" id="tableNewsAdministrator">
 
                         <thead>
                             <tr>
                                 <th>
-                                    Fecha
+                                    Date
                                 </th>
                                 <th>
-                                    Título
+                                    Title
                                 </th>
                                 <th>
-                                    Autor
+                                    Author
                                 </th>
                                 <th>
-                                    Acción
+                                    Action
                                 </th>
                             </tr>
                         </thead>
@@ -1209,21 +1209,21 @@
 
                 <!---COMMENTS-->
                 <div class="table-responsive">
-                    <h3>Comentarios</h3>
+                    <h3>Comments</h3>
                     <table class="table table-bordered table-hover" id="tableComments">
                         <thead>
                             <tr>
                                 <th>
-                                    Fecha
+                                    Date
                                 </th>
                                 <th>
-                                    Comentario
+                                    Comment
                                 </th>
                                 <th>
-                                    Autor
+                                    Author
                                 </th>
                                 <th>
-                                    Acción
+                                    Action
                                 </th>
                             </tr>
                         </thead>
@@ -1245,7 +1245,7 @@
                     <div class="modal-header">
 
                         <button type="button" class="close" data-dismiss="modal">X</button>
-                        <h4 id="titlePublicConsultation" class="modal-title" hidden> Consulta pública </h4>
+                        <h4 id="titlePublicConsultation" class="modal-title" hidden>Public consultation</h4>
 
                     </div>
                     <div class="modal-body">
@@ -1256,9 +1256,9 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="addPublicConsult" placeholder="Consulta" autocomplete="off">
+                                    <input type="text" class="form-control" id="addPublicConsult" placeholder="Consult" autocomplete="off">
                                     </br>
-                                    <button type="button" class="btn" onclick="sendPublicConsultationStudent();" id="btnConsultationPublicStudent">Enviar</button>
+                                    <button type="button" class="btn" onclick="sendPublicConsultationStudent();" id="btnConsultationPublicStudent">Send</button>
                                 </div>
 
                                 <form>
@@ -1271,7 +1271,7 @@
 
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <h4> Respuestas </h4>
+                                    <h4> Answers </h4>
                                     <ul id="ulRepliesConsultationspublic" class="list-group"></ul>
                                 </div>
                                 <form id="form">
@@ -1281,7 +1281,7 @@
                     </div>
 
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default" id="btnClose" data-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-default" id="btnClose" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
@@ -1298,7 +1298,7 @@
                     <div class="modal-header">
 
                         <button type="button" class="close" data-dismiss="modal">X</button>
-                        <h4 class="modal-title"> Consulta privada </h4>
+                        <h4 class="modal-title"> Private consultation </h4>
 
                     </div>
                     <div class="modal-body">
@@ -1309,9 +1309,9 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="addPrivateMessage" placeholder="Mensaje" autocomplete="off">
+                                    <input type="text" class="form-control" id="addPrivateMessage" placeholder="Message" autocomplete="off">
                                     </br>
-                                    <button type="button" class="btn" id="btnSendPrivateMessage" onclick="sendPrivateMessage();">Enviar</button>
+                                    <button type="button" class="btn" id="btnSendPrivateMessage" onclick="sendPrivateMessage();">Send</button>
                                     <div class="form-group">
                                         </br>
                                         <ul id="ulPrivateMessage" class="list-group"></ul>
@@ -1320,7 +1320,7 @@
                             </div>
 
                             <div class="col-md-6">
-                                <h4>Conversación</h4>
+                                <h4>Conversation</h4>
                                 <ul id="ulRepliesPrivateMessage" class="list-group"></ul>
                                 <form id="formPrivateMessage">
                                 </form>
@@ -1329,7 +1329,7 @@
                     </div>
 
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default" id="btnClose" data-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-default" id="btnClose" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
@@ -1346,7 +1346,7 @@
                     <div class="modal-header">
 
                         <button type="button" class="close" data-dismiss="modal">X</button>
-                        <h4 class="modal-title"> Solicitar cita de atención </h4>
+                        <h4 class="modal-title"> Request an appointment for atention </h4>
 
                     </div>
                     <div class="modal-body">
@@ -1357,7 +1357,7 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="addAppointment" placeholder="Motivo cita" autocomplete="off">
+                                    <input type="text" class="form-control" id="addAppointment" placeholder="Reason for appointment" autocomplete="off">
                                 </div>
 
                                 <div class="form-group">
@@ -1365,7 +1365,7 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <button type="button" class="btn" onclick="sendAppointment();" id="btnSendAppointment">Enviar</button>
+                                    <button type="button" class="btn" onclick="sendAppointment();" id="btnSendAppointment">Send</button>
                                 </div>
 
                                 <div class="form-group">
@@ -1376,7 +1376,7 @@
                             <div class="col-md-6">
                                 <form>
                                     <div class="form-group">
-                                        <h4>Detalle cita</h4>
+                                        <h4>Appoinment detail</h4>
                                         <ul id="ulStatusAppointment" class="list-group"></ul>
                                     </div>
 
@@ -1385,7 +1385,7 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default" id="btnClose" data-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-default" id="btnClose" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
