@@ -43,7 +43,7 @@ function getCommentById(id) {
 }
 
 function deleteComment(id) {
-    var alert = confirm("¿Está seguro que desea eliminar el registro?");
+    var alert = confirm("Welcome, are you sure you want to delete the record?");
 
     if (alert) {
         $.ajax({

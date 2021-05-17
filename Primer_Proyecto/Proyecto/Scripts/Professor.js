@@ -26,7 +26,7 @@ function clearTextBoxProfessor() {
 
     loadProvinceProfessor();
     loadAcademicDegree();
-    var s = '<option value="-1">Seleccione una opción</option>';
+    var s = '<option value="-1">Select option</option>';
     $("#AcademicDegreeDropdown").html(s);
     $("#ProfessorProvinceDropdown").html(s);
     $("#ProfessorCantonDropdown").html(s);
@@ -53,7 +53,7 @@ function loadProvinceProfessor() {
             url: "/Location/ListAllProvinces",
             data: "{}",
             success: function (data) {
-                var s = '<option value="-1">Seleccione una opción</option>';
+                var s = '<option value="-1">Select option</option>';
                 for (var i = 0; i < data.length; i++) {
                     s += '<option value="' + data[i].Id + '">' + data[i].Name + '</option>';
                 }
@@ -80,7 +80,7 @@ function loadCantonProfessor(province) {
             url: "/Location/ListCantonsByIdProvince/" + province,
             data: "{}",
             success: function (data) {
-                var s = '<option value="-1">Seleccione una opción</option>';
+                var s = '<option value="-1">Select option</option>';
                 for (var i = 0; i < data.length; i++) {
                     s += '<option value="' + data[i].Id + '">' + data[i].Name + '</option>';
                 }
@@ -105,7 +105,7 @@ function loadDistrictProfessor(canton) {
             url: "/Location/ListDistrictsByIdCanton/" + canton,
             data: "{}",
             success: function (data) {
-                var s = '<option value="-1">Seleccione una opción</option>';
+                var s = '<option value="-1">Select option</option>';
                 for (var i = 0; i < data.length; i++) {
                     s += '<option value="' + data[i].Id + '">' + data[i].Name + '</option>';
                 }
@@ -156,9 +156,9 @@ function AddProfessor() {
 
     var active = "";
     if (isActive.Status == 0) {
-        active = "Inactivo"
+        active = "Inactive"
     } else if (isActive.Status == 1) {
-        active = "Activo"
+        active = "Active"
     }
 
     var password = generatePassword();
@@ -212,7 +212,7 @@ function loadAcademicDegree() {
             url: "/Professor/ListAcademicDegree",
             data: "{}",
             success: function (data) {
-                var s = '<option value="-1">Seleccione una opción</option>';
+                var s = '<option value="-1">Select option</option>';
                 for (var i = 0; i < data.length; i++) {
                     s += '<option value="' + data[i].Id + '">' + data[i].Name + '</option>';
                 }
@@ -314,7 +314,7 @@ function loadProfessors() {
                     item.Name,
                     item.LastName,
                     item.Mail,
-                    '<td><a href="#" onclick="getByIdProfessor(' + item.Id + ')">Editar</a> | <a href="#" onclick="deleteProfessor(' + item.Id + ')">Borrar</a></td>'
+                    '<td><a href="#" onclick="getByIdProfessor(' + item.Id + ')">Edit</a> | <a href="#" onclick="deleteProfessor(' + item.Id + ')">Delete</a></td>'
                 ];
                 dataSet.push(data);
             });
@@ -366,9 +366,9 @@ function getByIdProfessor(id) {
             $("#ProfessorDistrictDropdown").val(result.DistrictId);
             
             var status = result.Status;
-            if (status == "Inactivo") {
+            if (status == "Inactive") {
                 $("#StatusProfessorDropdown").val(0);
-            } else if (status == "Activo") {
+            } else if (status == "Active") {
                 $("#StatusProfessorDropdown").val(1);
             }
 
@@ -417,9 +417,9 @@ function EditProfessor() {
 
     var active = "";
     if (isActive.Status == 0) {
-        active = "Inactivo"
+        active = "Inactive"
     } else if (isActive.Status == 1) {
-        active = "Activo"
+        active = "Active"
     }
 
     var professor = {
@@ -456,7 +456,7 @@ function EditProfessor() {
 }
 
 function deleteProfessor(id) {
-    var alert = confirm("¿Está seguro que desea eliminar el registro?");
+    var alert = confirm("¿Are you sure you want to delete the register?");
 
     if (alert) {
         $.ajax({
@@ -519,9 +519,9 @@ function getProfileProfessor() {
                             $("#ProfessorDistrictDropdown").val(data.DistrictId);
 
                             var status = data.Status;
-                            if (status == "Inactivo") {
+                            if (status == "Inactive") {
                                 $("#StatusProfessorDropdown").val(0);
-                            } else if (status == "Activo") {
+                            } else if (status == "Active") {
                                 $("#StatusProfessorDropdown").val(1);
                             }
 
@@ -613,20 +613,20 @@ function professorCourses() {
             $.each(result, function (key, item) {
                 var cycle = "";
                 if (item.Cycle == 1) {
-                    cycle = "I Semestre"
+                    cycle = "I Semester"
                 }
                 else if (item.Cycle == 2) {
-                    cycle = "II Semestre"
+                    cycle = "II Semester"
                 }
                 else if (item.Cycle == 3) {
-                    cycle = "Verano"
+                    cycle = "Summer"
                 }
 
                 html += '<tr>';
                 html += '<td>' + item.Initials + '</td>';
                 html += '<td>' + item.CourseName + '</td>';
                 html += '<td>' + cycle + '</td>';
-                html += '<td><a href="#" onclick="return publicConsultationProfessor(' + item.CourseId + ',' + item.ProfessorId + ')">Consultas públicas</a> | <a href="#" onclick="privateConsultationProfessor(' + item.CourseId + ',' + item.ProfessorId + ')">Consultas privadas</a> | <a href="#" onclick="appointmentProfessor(' + item.CourseId + ',' + item.ProfessorId +')">Citas atención</a></td>';
+                html += '<td><a href="#" onclick="return publicConsultationProfessor(' + item.CourseId + ',' + item.ProfessorId + ')">Public consultations</a> | <a href="#" onclick="privateConsultationProfessor(' + item.CourseId + ',' + item.ProfessorId + ')">Private consultations</a> | <a href="#" onclick="appointmentProfessor(' + item.CourseId + ',' + item.ProfessorId + ')">Attention appointments</a></td>';
             });
             $('.professorCourses').html(html);
 
@@ -680,9 +680,9 @@ function loadAppointmentProfessor(courseId, professorId) {
                     contenido += '<span>' + data.StudentName + " " + data.LastName + ': </span>';
                     contenido += '<span>' + item.Motive + ' </span>';
                     contenido += '</br>';
-                    contenido += '<span>' + "Fecha cita: " + '</span>';
+                    contenido += '<span>' + "Appointment date: " + '</span>';
                     contenido += '<span>' + item.DateTime + '</span>';
-                    contenido += '<button type="button" id=btnViewAppointment class="btn" onclick="viewAppointmentProfessor(' + item.Id + ')">Ver</button>';
+                    contenido += '<button type="button" id=btnViewAppointment class="btn" onclick="viewAppointmentProfessor(' + item.Id + ')">View</button>';
                     contenido += '</li>';
                     $('#ulAppointment').append(contenido);
                 },
@@ -700,12 +700,12 @@ function viewAppointmentProfessor(id) {
     $.getJSON('/Course/GetAppointmentById/', { id }, function (appointment, textStatus, jqXHR) {
         var status = "";
         if (appointment.Accepted == 0) {
-            status = "En espera";
+            status = "On hold";
         } else if (appointment.Accepted == 1) {
-            status = "Aceptada";
+            status = "Accepted";
         }
         else if (appointment.Accepted == 2) {
-            status = "Rechazada";
+            status = "Rejected";
         }
 
         $.ajax({
@@ -719,14 +719,14 @@ function viewAppointmentProfessor(id) {
                 content += '<span>' + student.StudentName + " " + student.LastName + ': </span>';
                 content += '<span>' + appointment.Motive + ' </span>';
                 content += '</br>';
-                content += '<span>' + "Fecha publicación: " + '</span>';
+                content += '<span>' + "Publication date: " + '</span>';
                 content += '<span>' + appointment.DateTime + '</span>';
                 content += '</br>';
-                content += '<span>' + "Estado: " + '</span>';
+                content += '<span>' + "Condition: " + '</span>';
                 content += '<span>' + status + '</span>';
                 content += '</br>';
-                content += '<button type="button" id="btnAcceptApointment" class="btn" onclick="acceptAppointment(' + appointment.Id + ')">Aceptar</button>';
-                content += '<button type="button" id="btnDenyApointment" class="btn" onclick="denyAppointment(' + appointment.Id + ')">Rechazar</button>';
+                content += '<button type="button" id="btnAcceptApointment" class="btn" onclick="acceptAppointment(' + appointment.Id + ')">Accept</button>';
+                content += '<button type="button" id="btnDenyApointment" class="btn" onclick="denyAppointment(' + appointment.Id + ')">Reject</button>';
                 content += '</li>';
                 $('#ulStatusAppointment').append(content);
             },
@@ -788,7 +788,7 @@ function loadDropdownProfessor() {
             url: "/Professor/ListAllProfessors",
             data: "{}",
             success: function (data) {
-                var s = '<option value="-1">Seleccione una opción</option>';
+                var s = '<option value="-1">Select option</option>';
                 for (var i = 0; i < data.length; i++) {
                     s += '<option value="' + data[i].Id + '">' + data[i].Name + " " + data[i].LastName + '</option>';
                 }
@@ -801,7 +801,7 @@ function loadDropdownProfessor() {
 function deleteProfessorAccount() {
     var id = document.getElementById("labelProfessorId").innerHTML;
 
-    var alert = confirm("¿Está seguro que desea eliminar su cuenta?");
+    var alert = confirm("¿Are you sure you want to delete your account?");
 
     if (alert) {
         $.ajax({
