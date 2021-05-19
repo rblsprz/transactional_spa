@@ -804,7 +804,7 @@ function loadPublicConsultationStudent(courseId, professorId) {
                     contenido += '<span>' + data.StudentName + " " + data.LastName + ': </span>';
                     contenido += '<span>' + consultation.Motive + ' </span>';
                     contenido += '</br>';
-                    contenido += '<span>' + "Fecha publicación: " + '</span>';
+                    contenido += '<span>' + "Publication date: " + '</span>';
                     contenido += '<span>' + consultation.DateTime + '</span>';
                     contenido += '<button type="button" id="btnPublicConsultation" class="btn" onclick="viewConsultation(' + consultation.Id + ')">View</button>';
                     contenido += '</li>';
@@ -870,7 +870,7 @@ function viewConsultation(id) {
                                 contenido += '<span>' + professor.Name + " " + professor.LastName + ': </span>';
                                 contenido += '<span>' + item.Motive + ' </span>';
                                 contenido += '</br>';
-                                contenido += '<span>' + "Publication Daten: " + '</span>';
+                                contenido += '<span>' + "Publication Date: " + '</span>';
                                 contenido += '<span>' + item.DateTime + '</span>';
                                 contenido += '</li>';
                                 $('#ulRepliesConsultationspublic').append(contenido);

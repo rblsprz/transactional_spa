@@ -456,7 +456,7 @@ function EditProfessor() {
 }
 
 function deleteProfessor(id) {
-    var alert = confirm("¿Are you sure you want to delete the register?");
+    var alert = confirm("Are you sure you want to delete the register?");
 
     if (alert) {
         $.ajax({
@@ -801,7 +801,7 @@ function loadDropdownProfessor() {
 function deleteProfessorAccount() {
     var id = document.getElementById("labelProfessorId").innerHTML;
 
-    var alert = confirm("¿Are you sure you want to delete your account?");
+    var alert = confirm("Are you sure you want to delete your account?");
 
     if (alert) {
         $.ajax({

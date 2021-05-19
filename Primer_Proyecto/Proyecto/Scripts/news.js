@@ -347,7 +347,7 @@ function getComments(id) {
 }
 
 function deleteComment(id) {
-    var alert = confirm("¿Are you sure you want to delete the register?");
+    var alert = confirm("Are you sure you want to delete the register?");
 
     if (alert) {
         $.ajax({

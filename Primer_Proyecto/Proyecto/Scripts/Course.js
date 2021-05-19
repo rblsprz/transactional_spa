@@ -249,7 +249,7 @@ function loadCourses() {
                     item.Credits,
                     cycle,
                     active,
-                    '<td><a href="#" onclick="getByIdCourse(' + item.Id + ')">Editar</a> | <a href="#" onclick="deleteCourse(' + item.Id + ')">Delete</a></td>'
+                    '<td><a href="#" onclick="getByIdCourse(' + item.Id + ')">Edit</a> | <a href="#" onclick="deleteCourse(' + item.Id + ')">Delete</a></td>'
                 ];
                 dataSet.push(data);
             });
