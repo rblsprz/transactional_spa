@@ -902,4 +902,3 @@ C:\Users\ROBLES\OneDrive\Escritorio\Lenguajes Aplicaciones Comerciales\Primer Pr
 C:\Users\ROBLES\OneDrive\Escritorio\Lenguajes Aplicaciones Comerciales\Primer Proyecto\Primer_Proyecto_MVC\Proyecto\obj\Debug\Proyecto.csproj.CopyComplete
 C:\Users\ROBLES\OneDrive\Escritorio\Lenguajes Aplicaciones Comerciales\Primer Proyecto\Primer_Proyecto_MVC\Proyecto\obj\Debug\Proyecto.dll
 C:\Users\ROBLES\OneDrive\Escritorio\Lenguajes Aplicaciones Comerciales\Primer Proyecto\Primer_Proyecto_MVC\Proyecto\obj\Debug\Proyecto.pdb
-C:\Users\ROBLES\OneDrive\Escritorio\Lenguajes Aplicaciones Comerciales\Primer Proyecto\Primer_Proyecto_MVC\Proyecto\obj\Debug\Proyecto.csprojAssemblyReference.cache

@@ -24,11 +24,11 @@ namespace Proyecto.Models
 
             mmsg.BodyEncoding = System.Text.Encoding.UTF8;
             mmsg.IsBodyHtml = true;
-            mmsg.From = new System.Net.Mail.MailAddress("infoempresarialucr@gmail.com");
+            mmsg.From = new System.Net.Mail.MailAddress("jdrobles0110@gmail.com");
 
             System.Net.Mail.SmtpClient client = new System.Net.Mail.SmtpClient();
 
-            client.Credentials = new System.Net.NetworkCredential("infoempresarialucr@gmail.com", "nws.2020");
+            client.Credentials = new System.Net.NetworkCredential("jdrobles0110@gmail.com", "ucr.2021");
             client.Port = 587;
             client.EnableSsl = true;
             client.Host = "smtp.gmail.com";
