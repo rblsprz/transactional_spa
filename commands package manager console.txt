@@ -1,0 +1,4 @@
+Install-Package Microsoft.EntityFrameworkCore.SqlServer
+Install-Package Microsoft.EntityFrameworkCore.Tools
+Scaffold-DbContext "Server=163.178.107.10;Initial Catalog=MVC_IF4101MVCLPAC;User ID=laboratorios;Password=KmZpo.2796" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models/Entities -Tables AcademicDegree,Appointment,Canton,Course,District,Location,PrivateMessage,Professor,ProfessorCourse,Province,PublicConsultation,RepliesPrivateMessage,RepliesPublicConsultation,SocialNetworksCatalog,SocialNetworksStudent,Student,StudentCourse,Users
+Scaffold-DbContext "Server=163.178.107.10;Initial Catalog=API_IF4101APILPAC;User ID=laboratorios;Password=KmZpo.2796" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models/Entities -Tables Comment,News
