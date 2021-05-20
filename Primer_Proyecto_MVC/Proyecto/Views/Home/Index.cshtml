@@ -58,19 +58,19 @@
                     <ul class="nav navbar-nav navbar-nav-first">
                         <li class="smoothScroll">  </li>
 
-                        <button type="button" id="btnLog" class="btn" onclick="clearTextBoxStudent();">Register</button>
+                        <button type="button" id="btnLog" class="btn" onclick="clearTextBoxStudent();">Sign Up</button>
 
-                        <button type="button" id="btnSignLog" data-toggle="modal" data-target="#myModalSignLog" onclick="clearTextBoxSignLog();" class="btn">Log in</button>
+                        <button type="button" id="btnSignLog" data-toggle="modal" data-target="#myModalSignLog" onclick="clearTextBoxSignLog();" class="btn">Sign In</button>
 
-                        <button type="button" id="btnProfessor" onclick="clearTextBoxProfessor();" class="btn">Register professor</button>
+                        <button type="button" id="btnProfessor" onclick="clearTextBoxProfessor();" class="btn">Register Professor</button>
 
-                        <button type="button" id="btnCourse" onclick="clearTextBoxCourse();" class="btn">Register course</button>
+                        <button type="button" id="btnCourse" onclick="clearTextBoxCourse();" class="btn">Register Course</button>
 
-                        <button type="button" id="btnEnrollCourse" data-toggle="modal" data-target="#myModalEnrollCourse" class="btn" onclick="enrollCourse();">Sign up for course</button>
+                        <button type="button" id="btnEnrollCourse" data-toggle="modal" data-target="#myModalEnrollCourse" class="btn" onclick="enrollCourse();">Sign Up For Course</button>
 
-                        <button type="button" id="btnEnrollCourseProfessor" data-toggle="modal" data-target="#myModalEnrollCourseProfessor" class="btn">Enroll teacher to course</button>
+                        <button type="button" id="btnEnrollCourseProfessor" data-toggle="modal" data-target="#myModalEnrollCourseProfessor" class="btn">Enroll Teacher To Course</button>
 
-                        <button type="button" id="btnNews" data-toggle="modal" data-target="#modalNews" class="btn" onclick="clearTextBoxNews();">Add news</button>
+                        <button type="button" id="btnNews" data-toggle="modal" data-target="#modalNews" class="btn" onclick="clearTextBoxNews();">Add News</button>
 
                         <button type="button" id="btnStudentCourses" class="btn" onclick="studentCourses();">Courses</button>
 
@@ -80,11 +80,11 @@
 
                         <button type="button" id="btnNewsProfessor" class="btn" onclick="newsProfessor();">News</button>
 
-                        <button type="button" id="btnReturnStudent" class="btn" onclick="returnStudent();">Back to profile</button>
+                        <button type="button" id="btnReturnStudent" class="btn" onclick="returnStudent();">Back</button>
 
-                        <button type="button" id="btnReturnProfessor" class="btn" onclick="returnProfessor();">Back to profile</button>
+                        <button type="button" id="btnReturnProfessor" class="btn" onclick="returnProfessor();">Back</button>
 
-                        <button type="button" id="btnLogOut" class="btn" onclick="logOut();">Sign off</button>
+                        <button type="button" id="btnLogOut" class="btn" onclick="logOut();">Sign Off</button>
 
                     </ul>
                 </div>
@@ -111,7 +111,7 @@
                         <form>
                             <div class="form-group">
                                 <label for="UsernameSignLog"> User </label>
-                                <input type="text" class="form-control" id="UsernameSignLog" placeholder="Enter your user name" autocomplete="off">
+                                <input type="text" class="form-control" id="UsernameSignLog" placeholder="Enter your username" autocomplete="off">
 
                             </div>
 
@@ -125,7 +125,7 @@
 
                     <div class="modal-footer">
                         <label id="invalidUser" hidden="hidden"></label>
-                        <button type="button" class="btn" onclick="login();" id="btnAdd">Sing in</button>
+                        <button type="button" class="btn" onclick="login();" id="btnAdd">Sign In</button>
                         <button type="button" class="btn btn-default" id="btnClose" data-dismiss="modal">Close</button>
                     </div>
                 </div>
@@ -142,8 +142,8 @@
                     <div class="modal-header">
 
                         <button type="button" class="close" data-dismiss="modal">X</button>
-                        <h4 id="addNewsTitle" class="modal-title"> Insert news </h4>
-                        <h4 id="UpdateNewsTitle" class="modal-title"> Update news </h4>
+                        <h4 id="addNewsTitle" class="modal-title">Insert News</h4>
+                        <h4 id="UpdateNewsTitle" class="modal-title"> Update News </h4>
 
                     </div>
                     <div class="modal-body">
@@ -166,7 +166,7 @@
 
                             <div class="form-group">
                                 <label>Author</label>
-                                <input type="text" class="form-control" id="Author" placeholder="News author" autocomplete="off">
+                                <input type="text" class="form-control" id="Author" placeholder="News Author" autocomplete="off">
                             </div>
 
                             <div class="form-group">
@@ -176,7 +176,7 @@
 
                             <div class="form-group">
                                 <label>News</label>
-                                <textarea rows="6" cols="50" class="form-control" id="text" placeholder="Enter your news" autocomplete="off"></textarea>
+                                <textarea rows="6" cols="50" class="form-control" id="text" placeholder="Enter your News" autocomplete="off"></textarea>
                             </div>
 
                         </form>
@@ -201,7 +201,7 @@
                     <div class="modal-header">
 
                         <button type="button" class="close" data-dismiss="modal">X</button>
-                        <h4 id="addNewsTitle" class="modal-title"> News details </h4>
+                        <h4 id="addNewsTitle" class="modal-title"> News Details </h4>
 
                     </div>
                     <div class="modal-body">
@@ -262,8 +262,8 @@
                     <div class="modal-header">
 
                         <button type="button" class="close" data-dismiss="modal">X</button>
-                        <h4 id="HeaderTitleAddStudent" class="modal-title"> Register student </h4>
-                        <h4 id="HeaderTitleUpdateStudent" class="modal-title"> Update student </h4>
+                        <h4 id="HeaderTitleAddStudent" class="modal-title"> Register Student </h4>
+                        <h4 id="HeaderTitleUpdateStudent" class="modal-title"> Update Student </h4>
 
                     </div>
                     <div class="modal-body">
@@ -294,7 +294,7 @@
 
                                     <div class="form-group">
                                         <label for="Birthday">Birthday</label>
-                                        <input type="date" class="form-control" id="Birthday" placeholder="Birthday">
+                                        <input type="date" class="form-control" id="Birthday" placeholder="BirthDay">
                                     </div>
 
                                     <div class="form-group">
@@ -312,7 +312,7 @@
                                 <form>
                                     <div class="form-group">
                                         <label for="Username">User name</label>
-                                        <input type="text" class="form-control" id="Username" placeholder="User name" autocomplete="off">
+                                        <input type="text" class="form-control" id="Username" placeholder="Username" autocomplete="off">
                                     </div>
 
                                     <div class="form-group">
@@ -363,7 +363,7 @@
                         <button type="button" class="btn" id="btnAddStudent" onclick="return Add();">Register</button>
                         <button type="button" class="btn" id="btnUpdateStudent" style="display:none" onclick="EditStudent();">Update</button>
                         <button type="button" class="btn" id="btnUpdateProfileStudent" style="display:none" onclick="editProfileStudent();">Update</button>
-                        <button type="button" class="btn" id="btnDeleteStudent" onclick="deleteStudentAccount();">Delete profile</button>
+                        <button type="button" class="btn" id="btnDeleteStudent" onclick="deleteStudentAccount();">Delete Profile</button>
                         <button type="button" class="btn btn-default" id="btnClose" data-dismiss="modal">Close</button>
 
                     </div>
@@ -382,7 +382,7 @@
                     <div class="modal-header">
 
                         <button type="button" class="close" data-dismiss="modal">X</button>
-                        <h4 id="TitleAddProfessor" class="modal-title"> Register professor </h4>
+                        <h4 id="TitleAddProfessor" class="modal-title">Register Professor</h4>
                         <h4 id="TitleUpdateProfessor" class="modal-title" hidden="hidden"> Update </h4>
 
                     </div>
@@ -398,7 +398,7 @@
 
                                     <div class="form-group">
                                         <label for="ProfessorUsername">User name</label>
-                                        <input type="text" class="form-control" id="ProfessorUsername" placeholder="User name" autocomplete="off">
+                                        <input type="text" class="form-control" id="ProfessorUsername" placeholder="Username" autocomplete="off">
 
                                     </div>
 
@@ -414,7 +414,7 @@
 
                                     <div class="form-group">
                                         <label for="ProfessorLastName">LastName</label>
-                                        <input type="text" class="form-control" id="ProfessorLastName" placeholder="LastName" autocomplete="off">
+                                        <input type="text" class="form-control" id="ProfessorLastName" placeholder="Last Name" autocomplete="off">
                                     </div>
 
                                     <div class="form-group">
@@ -474,7 +474,7 @@
                     <div class="modal-footer">
                         <button type="button" class="btn" id="btnAddProfessor" onclick="return AddProfessor();">Register</button>
                         <button type="button" class="btn" id="btnUpdateProfessor" onclick="EditProfessor();">Update</button>
-                        <button type="button" class="btn" id="btnDeleteProfessor" onclick="deleteProfessorAccount();">Delete profile</button>
+                        <button type="button" class="btn" id="btnDeleteProfessor" onclick="deleteProfessorAccount();">Delete Profile</button>
                         <button type="button" class="btn btn-default" id="btnClose" data-dismiss="modal">Close</button>
 
                     </div>
@@ -530,7 +530,7 @@
                     <div class="modal-header">
 
                         <button type="button" class="close" data-dismiss="modal">X</button>
-                        <h4 class="modal-title">Update photo</h4>
+                        <h4 class="modal-title">Update Photo</h4>
 
                     </div>
                     <div class="modal-body">
@@ -568,8 +568,8 @@
                     <div class="modal-header">
 
                         <button type="button" class="close" data-dismiss="modal">X</button>
-                        <h4 id="TitleAddCourse" class="modal-title"> New course registration </h4>
-                        <h4 id="TitleUpdateCourse" class="modal-title"> Update course </h4>
+                        <h4 id="TitleAddCourse" class="modal-title"> New Course Registration </h4>
+                        <h4 id="TitleUpdateCourse" class="modal-title"> Update Course </h4>
 
                     </div>
                     <div class="modal-body">
@@ -582,16 +582,16 @@
 
                             <div class="form-group">
                                 <label for="CourseInitials">Acronym</label>
-                                <input type="text" class="form-control" id="CourseInitials" placeholder="Enter the acronym of the course" autocomplete="off">
+                                <input type="text" class="form-control" id="CourseInitials" placeholder="Enter the Acronym of the Course" autocomplete="off">
                             </div>
 
                             <div class="form-group">
                                 <label for="CourseName">Name</label>
-                                <input type="text" class="form-control" id="CourseName" placeholder="Enter the name of the course" autocomplete="off">
+                                <input type="text" class="form-control" id="CourseName" placeholder="Enter the Name of the Course" autocomplete="off">
                             </div>
 
                             <div class="form-group">
-                                <label for="IsCourseActive">Course status</label>
+                                <label for="IsCourseActive">Course Status</label>
                                 <select class="form-control" id="IsActiveDropdown" name="IsActiveDropdown">
                                     <option value="0">Inactive</option>
                                     <option value="1">Active</option>
@@ -600,7 +600,7 @@
 
                             <div class="form-group">
                                 <label for="CourseCredits">Credits</label>
-                                <input type="text" class="form-control" id="CourseCredits" placeholder="Enter course credits" autocomplete="off">
+                                <input type="text" class="form-control" id="CourseCredits" placeholder="Enter Course Credits" autocomplete="off">
                             </div>
 
                             <div class="form-group">
@@ -615,7 +615,7 @@
                         </form>
 
                         <div class="modal-footer">
-                            <button type="button" class="btn" onclick="addCourse();" id="btnAddCourse">Register course</button>
+                            <button type="button" class="btn" onclick="addCourse();" id="btnAddCourse">Register Course</button>
                             <button type="button" class="btn" onclick="editCourse();" id="btnEditCourse">Update</button>
                             <button type="button" class="btn btn-default" id="btnClose" data-dismiss="modal">Close</button>
                         </div>
@@ -633,8 +633,8 @@
                         <div class="caption">
                             <div class="container">
                                 <div class="col-md-6 col-sm-12">
-                                    <h1>Paraíso campus</h1>
-                                    <h3>The Paraíso Campus was created in order to generate spaces for training and academic enrichment, in favor of the development of the community.</h3>
+                                    <h1>University of Costa Rica</h1>
+                                    <h3>The University of Costa Rica is one of the five public universities of the Republic of Costa Rica, being considered one of the most prestigious and recognized in Latin America and the best in Central America</h3>
                                 </div>
                             </div>
                         </div>
@@ -644,8 +644,8 @@
                         <div class="caption">
                             <div class="container">
                                 <div class="col-md-6 col-sm-12">
-                                    <h1>Accreditation process</h1>
-                                    <h3>The Baccalaureate in Business Informatics is the first exclusive career of all the regional headquarters of the University of Costa Rica that completes the self-evaluation process and the SINAES accredits it.</h3>
+                                    <h1>Business Computing</h1>
+                                    <h3>The training of business computing is built from three areas of knowledge: computing, computing and administration, with the support of mathematics, statistics and logic, having ethics and humanism as the guiding principles.</h3>
                                 </div>
                             </div>
                         </div>
@@ -655,8 +655,8 @@
                         <div class="caption">
                             <div class="container">
                                 <div class="col-md-6 col-sm-12">
-                                    <h1>Installations</h1>
-                                    <h3>The Campus has areas for the development of lessons, outdoor activities and ample parking for vehicles.</h3>
+                                    <h1>Professional Profile</h1>
+                                    <h3>This professional is trained to analyze, design and program systems using state-of-the-art technology; as well as for the planning, control and direction of computer management in the company or institution. He/She is trained to take an active part in complex work and to conduct applied multidisciplinary research.</h3>
                                 </div>
                             </div>
                         </div>
@@ -740,7 +740,7 @@
                     <div class="modal-header">
 
                         <button type="button" class="close" data-dismiss="modal">X</button>
-                        <h4 class="modal-title">Sign up for course </h4>
+                        <h4 class="modal-title">Sign Up for Course </h4>
 
                     </div>
                     <div class="modal-body">
@@ -849,7 +849,7 @@
                 <h2 id="StudentWelcomeMessage"></h2> <hr />
                 <img src="" id="imgProfile" width="150" height="150" title="Editar" onclick="getImageStudent();" />
                 <button type="button" id="btnSocialNetworkStudent" data-toggle="modal" data-target="#myModalSocialNetworkStudent" class="btn">Social Networks Settings</button>
-                <button type="button" data-toggle="modal" data-target="#myModal" class="btn" id="btngetProfileStudent" onclick="getProfileStudent();">Edit profile</button>
+                <button type="button" data-toggle="modal" data-target="#myModal" class="btn" id="btngetProfileStudent" onclick="getProfileStudent();">Edit Profile</button>
 
                 <!---Social Networks-->
 
@@ -877,7 +877,7 @@
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="studentSocialNetwork">Social network</label>
+                                        <label for="studentSocialNetwork">Social Network</label>
                                         <input type="text" class="form-control" id="studentSocialNetwork" placeholder="Example: https://www.facebook.com/UniversidadCostaRica" autocomplete="off">
                                     </div>
 
@@ -908,7 +908,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="Username">User name :</label>
+                            <label for="Username">Username :</label>
                             <label id="labelStudentUserName"></label>
                         </div>
 
@@ -919,7 +919,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="Birthday">Date of birth:</label>
+                            <label for="Birthday">BirthDay:</label>
                             <label id="labelStudentBirthday"></label>
                         </div>
 
@@ -961,7 +961,7 @@
                 <h2 id="ProfessorWelcomeMessage"></h2> <hr />
                 <img src="" id="imgProfileProfessor" width="150" height="150" title="Editar" onclick="getImageProfessor();" />
                 <button type="button" id="btnSocialNetworkProfessor" data-toggle="modal" data-target="#myModalSocialNetworkProfessor" class="btn">Social Networks Settings</button>
-                <button type="button" id="btngetProfileProfessor" data-toggle="modal" data-target="#myModalProfessor" class="btn" onclick="getProfileProfessor();">Edit profile</button>
+                <button type="button" id="btngetProfileProfessor" data-toggle="modal" data-target="#myModalProfessor" class="btn" onclick="getProfileProfessor();">Edit Profile</button>
 
                 <!---Social Networks-->
 
@@ -1245,7 +1245,7 @@
                     <div class="modal-header">
 
                         <button type="button" class="close" data-dismiss="modal">X</button>
-                        <h4 id="titlePublicConsultation" class="modal-title" hidden>Public consultation</h4>
+                        <h4 id="titlePublicConsultation" class="modal-title" hidden>Public Consultation</h4>
 
                     </div>
                     <div class="modal-body">
@@ -1346,7 +1346,7 @@
                     <div class="modal-header">
 
                         <button type="button" class="close" data-dismiss="modal">X</button>
-                        <h4 class="modal-title"> Request an appointment for atention </h4>
+                        <h4 class="modal-title">Request an Appointment for Attention </h4>
 
                     </div>
                     <div class="modal-body">
@@ -1357,7 +1357,7 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="addAppointment" placeholder="Reason for appointment" autocomplete="off">
+                                    <input type="text" class="form-control" id="addAppointment" placeholder="Reason for Appointment" autocomplete="off">
                                 </div>
 
                                 <div class="form-group">
