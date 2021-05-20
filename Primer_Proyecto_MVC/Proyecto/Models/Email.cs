@@ -29,7 +29,7 @@ namespace Proyecto.Models
             System.Net.Mail.SmtpClient client = new System.Net.Mail.SmtpClient();
 
             client.Credentials = new System.Net.NetworkCredential("jdrobles0110@gmail.com", "ucr.2021");
-            client.Port = 587;
+            client.Port = 465;
             client.EnableSsl = true;
             client.Host = "smtp.gmail.com";
 
