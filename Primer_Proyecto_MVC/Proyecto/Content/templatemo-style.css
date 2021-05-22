@@ -8,12 +8,12 @@ https://templatemo.com/tm-516-known
 
   @import url('https://fonts.googleapis.com/css?family=Muli:300,700|Nunito');
 
-  body {
-    background: #ffffff;
+body {
+    background: #00c0f3;
     font-family: 'Buenard';
     overflow-x: hidden;
     padding-top: 70px;
-  }
+}
 
 
   /*---------------------------------------
@@ -256,9 +256,9 @@ https://templatemo.com/tm-516-known
       MENU              
   -----------------------------------------*/
 
-  .custom-navbar {
+.custom-navbar {
     background: #ffffff;
-    border-top: 5px solid #a9cce3 ;
+    border-top: 5px solid #005da4;
     border-bottom: 0;
     -webkit-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
@@ -266,7 +266,7 @@ https://templatemo.com/tm-516-known
     padding: 12px 0;
     margin-bottom: 0;
     padding: 0;
-  }
+}
 
   .custom-navbar .navbar-brand {
     color: #454545;

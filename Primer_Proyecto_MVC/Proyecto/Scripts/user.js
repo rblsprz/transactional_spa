@@ -230,7 +230,7 @@ function studentInformation(id) {
         contentType: "application/json;charset=utf-8",
         dataType: "json",
         success: function (result) {
-            document.querySelector('#StudentWelcomeMessage').innerText = 'Welcome' + result.StudentName + ' ' + result.LastName;
+            document.querySelector('#StudentWelcomeMessage').innerText = 'Welcome ' + result.StudentName + ' ' + result.LastName;
             document.querySelector('#labelStudentId').innerText = result.Id;
             document.querySelector('#labelStudentCard').innerText = result.StudentCard;
             document.querySelector('#labelStudentUserName').innerText = result.Username;
@@ -258,7 +258,7 @@ function professorInformation(id) {
         dataType: "json",
         success: function (result) {
             document.querySelector('#labelProfessorId').innerText = result.Id;
-            document.querySelector('#ProfessorWelcomeMessage').innerText = 'Welcome' + result.Name + ' ' + result.LastName;
+            document.querySelector('#ProfessorWelcomeMessage').innerText = 'Welcome ' + result.Name + ' ' + result.LastName;
             document.querySelector('#labelProfessorUserName').innerText = result.Username;
             document.querySelector('#labelProfessorName').innerText = result.Name + ' ' + result.LastName;
             document.querySelector('#labelProfessorMail').innerText = result.Mail;
