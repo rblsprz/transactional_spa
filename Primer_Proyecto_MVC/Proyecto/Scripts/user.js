@@ -26,17 +26,17 @@ function clearTextBoxSignLog() {
 
 function login() {
 
-    /*var user = {
+    var user = {
         Username: $('#UsernameSignLog').val(),
         Password: $('#PasswordSignLog').val()
-    };*/
+    };
 
     $.getJSON('/User/ListAllUsers', function (result, textStatus, jqXHR) {
         $.each(result, function (key, data) {
-            /*if (user.Username == data.Username && user.Password == data.Password && data.Status == "Active") {
+            if (user.Username == data.Username && user.Password == data.Password && data.Status == "Active") {
                 if (data.IsAdministrator == 1) {
                   $('#btnNews').show();
-                }*/
+                }
                 $.getJSON('/Professor/ListAllProfessors', function (resultProfessor, textStatus, jqXHR) {
                     $.each(resultProfessor, function (key, professor) {
                         if (data.Id == professor.Id) {
@@ -80,7 +80,7 @@ function login() {
                         }
                     });
                 });
-                /*if (user.Username == "admin" && user.Password == "admin") {
+                if (user.Username == "admin" && user.Password == "admin") {
                     $("#home").hide();
                         $("#myModalSignLog").hide();
                         $('.modal-backdrop').hide();
@@ -97,7 +97,7 @@ function login() {
                 }
             } else {
                 invalidUser();
-            }*/
+            }
         });
     });
 }
