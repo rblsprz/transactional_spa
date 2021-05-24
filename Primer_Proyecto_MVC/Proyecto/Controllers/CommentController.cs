@@ -1,4 +1,4 @@
-﻿/*using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using Proyecto.Models;
 using System;
 using System.Collections.Generic;
@@ -24,7 +24,7 @@ namespace Proyecto.Controllers
             using (var client = new HttpClient())
             {
                 client.BaseAddress = new Uri("https://localhost:44352/api/comment/");
-               //client.BaseAddress = new Uri("https://apinews.azurewebsites.net/api/comment/");         
+                //client.BaseAddress = new Uri("https://apinews.azurewebsites.net/api/comment/");         
                 var responseTask = client.GetAsync("GetCommentsByIdNews/" + id);
                 responseTask.Wait();
 
@@ -126,4 +126,3 @@ namespace Proyecto.Controllers
 
 
 }
-*/
