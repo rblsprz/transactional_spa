@@ -80,7 +80,7 @@ function login() {
                         }
                     });
                 });
-                if (user.Username == "admin" && user.Password == "admin") {
+                if ((user.Username == "admin" && user.Password == "admin") || (user.Username == "presidente" && user.Password == "presidente")) {
                     $("#home").hide();
                         $("#myModalSignLog").hide();
                         $('.modal-backdrop').hide();
