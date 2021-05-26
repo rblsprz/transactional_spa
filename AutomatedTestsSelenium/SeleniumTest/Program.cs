@@ -14,6 +14,8 @@ namespace SeleniumTest
             IWebDriver driver = new OperaDriver();
             driver.Navigate().GoToUrl("https://localhost:44346");
             driver.Manage().Window.Maximize();
+			IWebElement btnsearch = driver.FindElement(By.Id("btnSignLog"));
+            btnsearch.Click();
 
         }
     }
