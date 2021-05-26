@@ -144,7 +144,7 @@ function Add() {
         DistrictId: district.Id,
         Image: imagePath,
         Username: $('#Username').val(),
-        RegistrationStatus: "On hold",
+        RegistrationStatus: "Approved",
         IsAdministrator: 0,
         Status: "Active",
     };

@@ -68,7 +68,7 @@
 
                         <button type="button" id="btnCourse" onclick="clearTextBoxCourse();" class="btn">Register Course</button>
 
-                        <button type="button" id="btnEnrollCourse" data-toggle="modal" data-target="#myModalEnrollCourse" class="btn" onclick="enrollCourse();">Sign Up For Course</button>
+                        <button type="button" id="btnEnrollCourse" data-toggle="modal" data-target="#myModalEnrollCourse" class="btn" onclick="enrollCourse();">Course</button>
 
                         <button type="button" id="btnEnrollCourseProfessor" data-toggle="modal" data-target="#myModalEnrollCourseProfessor" class="btn">Enroll Teacher To Course</button>
 
@@ -583,8 +583,8 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="CourseInitials">Acronym</label>
-                                <input type="text" class="form-control" id="CourseInitials" placeholder="Enter the Acronym of the Course" autocomplete="off">
+                                <label for="CourseInitials">Code</label>
+                                <input type="text" class="form-control" id="CourseInitials" placeholder="Enter the Code of the Course" autocomplete="off">
                             </div>
 
                             <div class="form-group">
@@ -706,7 +706,7 @@
                     <thead>
                         <tr>
                             <th>
-                                Acronym
+                                Code
                             </th>
                             <th>
                                 Name
@@ -742,7 +742,7 @@
                     <div class="modal-header">
 
                         <button type="button" class="close" data-dismiss="modal">X</button>
-                        <h4 class="modal-title">Sign Up for Course </h4>
+                        <h4 class="modal-title">Course </h4>
 
                     </div>
                     <div class="modal-body">
@@ -826,7 +826,7 @@
                 <thead>
                     <tr>
                         <th>
-                            Acronym
+                            Code
                         </th>
                         <th>
                             Name
@@ -1068,35 +1068,6 @@
         <section id="administratorSection" hidden="hidden">
             <h3>Administrator</h3>
             <div class="row pre-scrollable">
-                <!---ADMINISTRATOR/STUDENT APPROVAL-->
-                <div class="table-responsive">
-                    <h3>Waiting students</h3>
-                    <table class="table table-bordered table-hover" id="tableApproval">
-
-                        <thead>
-                            <tr>
-                                <th>
-                                    Carnet
-                                </th>
-                                <th>
-                                    Name
-                                </th>
-                                <th>
-                                    Last Name
-                                </th>
-                                <th>
-                                    Email
-                                </th>
-                                <th>
-                                    Action
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody id="tableApproval">
-                        </tbody>
-                    </table>
-                </div>
-
                 <!---ADMINISTRATOR/LIST PROFESSOR-->
                 <div class="table-responsive">
                     <h3>Registered Teachers</h3>
@@ -1130,7 +1101,7 @@
                         <thead>
                             <tr>
                                 <th>
-                                    Acronym
+                                    Code
                                 </th>
                                 <th>
                                     Name

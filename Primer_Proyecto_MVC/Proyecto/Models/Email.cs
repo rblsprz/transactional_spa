@@ -24,15 +24,16 @@ namespace Proyecto.Models
 
             mmsg.BodyEncoding = System.Text.Encoding.UTF8;
             mmsg.IsBodyHtml = true;
-            mmsg.From = new System.Net.Mail.MailAddress("jdrobles0110@gmail.com");
+            mmsg.From = new System.Net.Mail.MailAddress("businesscomputinglpac@gmail.com");
 
             System.Net.Mail.SmtpClient client = new System.Net.Mail.SmtpClient();
 
-            client.Credentials = new System.Net.NetworkCredential("jdrobles0110@gmail.com", "Z87JU666FG");
+            client.UseDefaultCredentials = false;
+            client.Credentials = new System.Net.NetworkCredential("businesscomputinglpac@gmail.com", "iynbzkdhvowyrtlp");
             client.Port = 587;
             client.EnableSsl = true;
             client.Host = "smtp.gmail.com";
-            client.UseDefaultCredentials = false;
+
 
             try
             {

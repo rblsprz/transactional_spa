@@ -1,4 +1,4 @@
-﻿$(document).ready(function () {
+﻿satisfactoriamente$(document).ready(function () {
 });
 
 /*function addComment() {

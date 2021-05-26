@@ -26,8 +26,8 @@ namespace Proyecto.Controllers
 
         public JsonResult Add(Student student, Location location, User user)
         {
-            Email.SendEmail(student.Mail,"Nuevo Usuario", student.StudentName + " " + student.LastName +
-              ", ha sido añadido satisfactoriamente, su aprobación se encuentra en espera. ");
+            Email.SendEmail(student.Mail, "New User", student.StudentName + " " + student.LastName +
+              ", has been approved! Welcome to the Business Computing major from the University of Costa Rica (UCR) ");
             return Json(StudentDataEF.Add(student, location, user), JsonRequestBehavior.AllowGet);
         }
 
@@ -62,15 +62,15 @@ namespace Proyecto.Controllers
         public JsonResult StudentApproval(int id)
         {
             var student = StudentDataEF.GetStudentById(id);
-            Email.SendEmail(student.Mail, "Actualización de estado", "El estudiante " + student.StudentName + " " + student.LastName + ", ha sido aprobado.");
-            return Json(StudentDataEF.UpdateStudentStatus(id, "Aprobado"), JsonRequestBehavior.AllowGet);
+            Email.SendEmail(student.Mail, "Status update", "The student " + student.StudentName + " " + student.LastName + ", has been approved.");
+            return Json(StudentDataEF.UpdateStudentStatus(id, "Approve"), JsonRequestBehavior.AllowGet);
         }
 
         public JsonResult StudentDeny(int id)
         {
             var student = StudentDataEF.GetStudentById(id);
-            Email.SendEmail(student.Mail, "Actualización de estado","El estudiante " + student.StudentName + " " + student.LastName + ", ha sido rechazado.");
-            return Json(StudentDataEF.UpdateStudentStatus(id, "Rechazado"), JsonRequestBehavior.AllowGet);
+            Email.SendEmail(student.Mail, "Status update", "The student " + student.StudentName + " " + student.LastName + ", has been approved rejected.");
+            return Json(StudentDataEF.UpdateStudentStatus(id, "Rejected"), JsonRequestBehavior.AllowGet);
         }
 
         public JsonResult DeleteStudent(int id)
@@ -113,7 +113,7 @@ namespace Proyecto.Controllers
 
         public void emailAppointment(String email)
         {
-            Email.SendEmail(email, "Nueva cita de atención", "Se le informa que usted posee una nueva cita de atención por parte de un estudiante.");
+            Email.SendEmail(email, "New appointment date", "You have a new appointment from a student.");
         }
     }
 }
